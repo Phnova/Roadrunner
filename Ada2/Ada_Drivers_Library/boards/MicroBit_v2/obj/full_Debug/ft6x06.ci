@@ -1,0 +1,137 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb"
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ft6x06.ads:81:9"
+}
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ft6x06.ads:81:9"
+}
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ft6x06.ads:81:9"
+}
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ft6x06.ads:81:9"
+}
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ft6x06.ads:81:9"
+}
+edge: { sourcename: "ft6x06__Tft6x06_deviceCFD"
+  targetname: "-9:ft6x06__ft6x06_device,ft6x06__ft6x06_device"
+  label: "ft6x06.ads:41:9"
+}
+class {
+  classname: "ft6x06__ft6x06_device"
+  label: "ft6x06__ft6x06_device\ft6x06.ads:41:9"
+  parent: "hal__touch_panel__touch_panel_device"
+  virtuals: "1:ft6x06__set_bounds,1:hal__touch_panel__touch_panel_device\n
+             2:ft6x06__active_touch_points,2:hal__touch_panel__touch_panel_device\n
+             3:ft6x06__get_touch_point,3:hal__touch_panel__touch_panel_device\n
+             4:ft6x06__get_all_touch_points,4:hal__touch_panel__touch_panel_device\n
+             -1:ft6x06___size__2,-1:hal__touch_panel__touch_panel_device\n
+             -10:ft6x06__ft6x06_devicePI__2,-10:hal__touch_panel__touch_panel_device\n
+             -9:ft6x06__ft6x06_deviceDF__2,-9:hal__touch_panel__touch_panel_device\n
+             5:ft6x06__check_id\n
+             6:ft6x06__tp_set_use_interrupts\n
+             7:ft6x06__i2c_read\n
+             8:ft6x06__i2c_write"
+}
+edge: { sourcename: "ft6x06__i2c_read"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "ft6x06.adb:265:16"
+}
+edge: { sourcename: "ft6x06__i2c_write"
+  targetname: "3:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "ft6x06.adb:288:16"
+}
+node: { title: "ft6x06__ft6206_pressure_registersIP" label: "ft6206_pressure_registersIP\n<built-in>\n16 bytes (static)" }
+node: { title: "ft6x06__ft6x06_deviceIP" label: "ft6x06_deviceIP\n<built-in>\n24 bytes (static)" }
+node: { title: "ft6x06___size__2" label: "ft6x06\n<built-in>\n16 bytes (static)" }
+node: { title: "ft6x06__ft6x06_devicePI__2" label: "ft6x06_devicePI\n<built-in>\n56 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "system__put_images__record_between" label: "Record_Between\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:111:14" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "system__put_images__put_image_integer" label: "Put_Image_Integer\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:55:14" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__put_image_integer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__put_image_integer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "system__put_images__put_image_unsigned" label: "Put_Image_Unsigned\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:65:14" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__put_image_unsigned" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "ft6x06__ft6x06_devicePI__2" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "ft6x06__ft6x06_deviceDF__2" label: "ft6x06_deviceDF\n<built-in>\n16 bytes (static)" }
+node: { title: "ft6x06__Tft6x06_deviceCFD" label: "Tft6x06_deviceCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ft6x06__Tft6x06_deviceCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:41:9" }
+node: { title: "ft6x06__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "ft6x06__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:39:1" }
+node: { title: "ft6x06__check_id" label: "Check_Id\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:44:4\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "ft6x06__check_id" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:44:4" }
+edge: { sourcename: "ft6x06__check_id" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:49:20" }
+node: { title: "ft6x06__tp_set_use_interrupts" label: "Tp_Set_Use_Interrupts\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:67:4\n24 bytes (static)" }
+edge: { sourcename: "ft6x06__tp_set_use_interrupts" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:67:4" }
+edge: { sourcename: "ft6x06__tp_set_use_interrupts" targetname: "ft6x06__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:80:11" }
+node: { title: "ft6x06__set_bounds" label: "Set_Bounds\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:87:15\n24 bytes (static)" }
+edge: { sourcename: "ft6x06__set_bounds" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:87:15" }
+node: { title: "ft6x06__active_touch_points" label: "Active_Touch_Points\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:104:4\n24 bytes (static)" }
+edge: { sourcename: "ft6x06__active_touch_points" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:104:4" }
+edge: { sourcename: "ft6x06__active_touch_points" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:110:23" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "ft6x06__active_touch_points" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:125:35" }
+node: { title: "ft6x06__get_touch_point" label: "Get_Touch_Point\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:134:4\n64 bytes (static)" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:134:4" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__active_touch_points" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:158:25" }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:164:15" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:166:22" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:172:23" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:181:22" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:187:23" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "ft6x06__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:196:34" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:208:23" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:209:23" }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:212:42" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:212:50" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:212:50" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:215:43" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:215:51" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:215:51" }
+edge: { sourcename: "ft6x06__get_touch_point" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:222:22" }
+node: { title: "ft6x06__get_all_touch_points" label: "Get_All_Touch_Points\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:234:4\n144 bytes (dynamic)" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:234:4" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "ft6x06__active_touch_points" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:238:41" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:239:29" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:243:10" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:247:46" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "ft6x06__get_touch_point" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:247:28" }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:250:7" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "ft6x06__get_all_touch_points" targetname: "memcpy" }
+node: { title: "ft6x06__i2c_read" label: "I2c_Read\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:257:4\n64 bytes (static)" }
+edge: { sourcename: "ft6x06__i2c_read" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:257:4" }
+edge: { sourcename: "ft6x06__i2c_read" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:265:16" }
+node: { title: "ft6x06__i2c_write" label: "I2c_Write\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:281:4\n72 bytes (static)" }
+edge: { sourcename: "ft6x06__i2c_write" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:281:4" }
+edge: { sourcename: "ft6x06__i2c_write" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:288:16" }
+node: { title: "ft6x06___elabb" label: "Ft6x06\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.adb:38:1\n4 bytes (static)" }
+node: { title: "ft6x06___elabs" label: "Ft6x06\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:39:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "ft6x06___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "ft6x06___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft6x06\ft6x06.ads:81:9" }
+}

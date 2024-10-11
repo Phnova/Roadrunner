@@ -1,0 +1,2 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-sdmmc.ads:311:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-sdmmc.ads:367:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

@@ -1,0 +1,43 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads"
+node: { title: "nrf_svd__gpiote__config_mode_fieldRP" label: "config_mode_fieldRP\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__gpiote__config_mode_fieldRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:252:9" }
+node: { title: "nrf_svd__gpiote__config_polarity_fieldH" label: "config_polarity_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Ttasks_out_registersBIP" label: "Ttasks_out_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Ttasks_set_registersBIP" label: "Ttasks_set_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Ttasks_clr_registersBIP" label: "Ttasks_clr_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Tevents_in_registersBIP" label: "Tevents_in_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Tintenset_in_field_arrayBIP" label: "Tintenset_in_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenset_in_fieldEQ" label: "intenset_in_fieldEQ\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenset_in_fieldIP" label: "intenset_in_fieldIP\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenset_registerEQ" label: "intenset_registerEQ\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__gpiote__intenset_registerEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:148:9" }
+node: { title: "nrf_svd__gpiote__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Tintenclr_in_field_arrayBIP" label: "Tintenclr_in_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenclr_in_fieldEQ" label: "intenclr_in_fieldEQ\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenclr_in_fieldIP" label: "intenclr_in_fieldIP\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__gpiote__intenclr_registerEQ" label: "intenclr_registerEQ\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__gpiote__intenclr_registerEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:234:9" }
+node: { title: "nrf_svd__gpiote__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__config_registerIP" label: "config_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__gpiote__Tconfig_registersBIP" label: "Tconfig_registersBIP\n<built-in>\n32 bytes (static)" }
+edge: { sourcename: "nrf_svd__gpiote__Tconfig_registersBIP" targetname: "nrf_svd__gpiote__config_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:344:4" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:nrf_svd__gpiote__gpiote_peripheralEQ__E131s.0" label: "E131s\n<built-in>\n96 bytes (static)" }
+node: { title: "nrf_svd__gpiote__gpiote_peripheralEQ" label: "gpiote_peripheralEQ\n<built-in>\n24 bytes (static)" }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "nrf_svd__gpiote__intenset_registerEQ" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "nrf_svd__gpiote__intenclr_registerEQ" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:nrf_svd__gpiote__gpiote_peripheralEQ__E131s.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralEQ" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:nrf_svd__gpiote__gpiote_peripheralEQ__E142s.1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:351:9" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:nrf_svd__gpiote__gpiote_peripheralEQ__E142s.1" label: "E142s\n<built-in>\n96 bytes (static)" }
+node: { title: "nrf_svd__gpiote__gpiote_peripheralIP" label: "gpiote_peripheralIP\n<built-in>\n32 bytes (static)" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralIP" targetname: "nrf_svd__gpiote__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:368:7" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralIP" targetname: "nrf_svd__gpiote__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:370:7" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralIP" targetname: "nrf_svd__gpiote__Tconfig_registersBIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:373:7" }
+edge: { sourcename: "nrf_svd__gpiote__gpiote_peripheralIP" targetname: "nrf_svd__gpiote__Tconfig_registersBIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpiote.ads:376:7" }
+}

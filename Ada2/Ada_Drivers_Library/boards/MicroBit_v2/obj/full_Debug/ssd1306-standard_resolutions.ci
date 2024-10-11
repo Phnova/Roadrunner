@@ -1,0 +1,286 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads"
+edge: { sourcename: "ssd1306__standard_resolutions__TT6sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:38:7"
+}
+edge: { sourcename: "ssd1306__standard_resolutions___size__TT39sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI__TT50sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_96x16_screenCFD"
+  targetname: "-9:ssd1306__standard_resolutions__ssd1306_96x16_screen,ssd1306__standard_resolutions__ssd1306_96x16_screen"
+  label: "ssd1306-standard_resolutions.ads:34:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__TT16sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:44:7"
+}
+edge: { sourcename: "ssd1306__standard_resolutions___size__TT125sCFD__2"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI__TT136sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_128x32_screenCFD"
+  targetname: "-9:ssd1306__standard_resolutions__ssd1306_128x32_screen,ssd1306__standard_resolutions__ssd1306_128x32_screen"
+  label: "ssd1306-standard_resolutions.ads:40:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__TT26sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:50:7"
+}
+edge: { sourcename: "ssd1306__standard_resolutions___size__TT211sCFD__3"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI__TT222sCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_128x64_screenCFD"
+  targetname: "-9:ssd1306__standard_resolutions__ssd1306_128x64_screen,ssd1306__standard_resolutions__ssd1306_128x64_screen"
+  label: "ssd1306-standard_resolutions.ads:46:9"
+}
+class {
+  classname: "ssd1306__standard_resolutions__ssd1306_96x16_screen"
+  label: "ssd1306__standard_resolutions__ssd1306_96x16_screen\ssd1306-standard_resolutions.ads:34:9"
+  parent: "ssd1306__ssd1306_screen"
+  virtuals: "-1:ssd1306__standard_resolutions___size,-1:ssd1306__ssd1306_screen\n
+             -10:ssd1306__standard_resolutions__ssd1306_96x16_screenPI,-10:ssd1306__ssd1306_screen\n
+             -9:ssd1306__standard_resolutions__ssd1306_96x16_screenDF,-9:ssd1306__ssd1306_screen"
+}
+class {
+  classname: "ssd1306__standard_resolutions__ssd1306_128x32_screen"
+  label: "ssd1306__standard_resolutions__ssd1306_128x32_screen\ssd1306-standard_resolutions.ads:40:9"
+  parent: "ssd1306__ssd1306_screen"
+  virtuals: "-1:ssd1306__standard_resolutions___size__2,-1:ssd1306__ssd1306_screen\n
+             -10:ssd1306__standard_resolutions__ssd1306_128x32_screenPI,-10:ssd1306__ssd1306_screen\n
+             -9:ssd1306__standard_resolutions__ssd1306_128x32_screenDF,-9:ssd1306__ssd1306_screen"
+}
+class {
+  classname: "ssd1306__standard_resolutions__ssd1306_128x64_screen"
+  label: "ssd1306__standard_resolutions__ssd1306_128x64_screen\ssd1306-standard_resolutions.ads:46:9"
+  parent: "ssd1306__ssd1306_screen"
+  virtuals: "-1:ssd1306__standard_resolutions___size__3,-1:ssd1306__ssd1306_screen\n
+             -10:ssd1306__standard_resolutions__ssd1306_128x64_screenPI,-10:ssd1306__ssd1306_screen\n
+             -9:ssd1306__standard_resolutions__ssd1306_128x64_screenDF,-9:ssd1306__ssd1306_screen"
+}
+node: { title: "ssd1306__standard_resolutions__TT6sCFD" label: "TT6sCFD\n<built-in>\n16 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__TT6sCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:38:7" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_96x16_screenIP" label: "ssd1306_96x16_screenIP\n<built-in>\n48 bytes (static)" }
+node: { title: "ssd1306__ssd1306_screenIP" label: "SSD1306_SCREENIP\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306.ads:216:9" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenIP" targetname: "ssd1306__ssd1306_screenIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:38:7" }
+node: { title: "ada__tags__register_interface_offset" label: "Register_Interface_Offset\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:539:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenIP" targetname: "ada__tags__register_interface_offset" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "ssd1306__standard_resolutions___size" label: "standard_resolutions\n<built-in>\n24 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" label: "ssd1306_96x16_screenPI\n<built-in>\n272 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "system__put_images__put_image_thin_pointer" label: "Put_Image_Thin_Pointer\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:75:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "system__put_images__record_between" label: "Record_Between\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:111:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "ssd1306__ssd1306_bitmap_bufferPI__2" label: "SSD1306_BITMAP_BUFFERPI\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306.ads:174:9" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "ssd1306__ssd1306_bitmap_bufferPI__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "system__wch_stw__string_to_wide_wide_string" label: "String_To_Wide_Wide_String\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-wchstw.ads:62:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_96x16_screenPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_96x16_screenDF" label: "ssd1306_96x16_screenDF\n<built-in>\n16 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__Tssd1306_96x16_screenCFD" label: "Tssd1306_96x16_screenCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_96x16_screenCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "ssd1306__standard_resolutions__TT16sCFD" label: "TT16sCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__TT16sCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:44:7" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x32_screenIP" label: "ssd1306_128x32_screenIP\n<built-in>\n48 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenIP" targetname: "ssd1306__ssd1306_screenIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:44:7" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenIP" targetname: "ada__tags__register_interface_offset" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+node: { title: "ssd1306__standard_resolutions___size__2" label: "standard_resolutions\n<built-in>\n24 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" label: "ssd1306_128x32_screenPI\n<built-in>\n272 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "ssd1306__ssd1306_bitmap_bufferPI__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x32_screenPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x32_screenDF" label: "ssd1306_128x32_screenDF\n<built-in>\n16 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__Tssd1306_128x32_screenCFD" label: "Tssd1306_128x32_screenCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_128x32_screenCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+node: { title: "ssd1306__standard_resolutions__TT26sCFD" label: "TT26sCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__TT26sCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:50:7" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x64_screenIP" label: "ssd1306_128x64_screenIP\n<built-in>\n48 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenIP" targetname: "ssd1306__ssd1306_screenIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:50:7" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenIP" targetname: "ada__tags__register_interface_offset" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+node: { title: "ssd1306__standard_resolutions___size__3" label: "standard_resolutions\n<built-in>\n24 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" label: "ssd1306_128x64_screenPI\n<built-in>\n272 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__put_image_thin_pointer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "ssd1306__ssd1306_bitmap_bufferPI__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions__ssd1306_128x64_screenPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+node: { title: "ssd1306__standard_resolutions__ssd1306_128x64_screenDF" label: "ssd1306_128x64_screenDF\n<built-in>\n16 bytes (static)" }
+node: { title: "ssd1306__standard_resolutions__Tssd1306_128x64_screenCFD" label: "Tssd1306_128x64_screenCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "ssd1306__standard_resolutions__Tssd1306_128x64_screenCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+node: { title: "ssd1306__standard_resolutions__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:32:1" }
+edge: { sourcename: "ssd1306__standard_resolutions__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:32:1" }
+edge: { sourcename: "ssd1306__standard_resolutions__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:32:1" }
+node: { title: "ssd1306__standard_resolutions___elabs" label: "STANDARD_RESOLUTIONS\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:32:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:34:9" }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:40:9" }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+edge: { sourcename: "ssd1306__standard_resolutions___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306-standard_resolutions.ads:46:9" }
+}

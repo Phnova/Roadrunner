@@ -1,0 +1,24 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads"
+node: { title: "nrf_svd__lpcomp__psel_psel_fieldH" label: "psel_psel_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__refsel_refsel_fieldH" label: "refsel_refsel_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__shorts_registerIP" label: "shorts_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__result_registerIP" label: "result_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__enable_registerIP" label: "enable_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__psel_registerIP" label: "psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__refsel_registerIP" label: "refsel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__extrefsel_registerIP" label: "extrefsel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__anadetect_registerIP" label: "anadetect_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__hyst_registerIP" label: "hyst_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__lpcomp__lpcomp_peripheralIP" label: "lpcomp_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__shorts_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:628:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:630:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:632:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__enable_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:636:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:638:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__refsel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:640:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__extrefsel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:642:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__anadetect_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:644:7" }
+edge: { sourcename: "nrf_svd__lpcomp__lpcomp_peripheralIP" targetname: "nrf_svd__lpcomp__hyst_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-lpcomp.ads:646:7" }
+}

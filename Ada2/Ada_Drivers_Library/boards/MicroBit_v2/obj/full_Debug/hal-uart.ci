@@ -1,0 +1,74 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads"
+edge: { sourcename: "hal__uart__transmitDP"
+  targetname: "1:hal__uart__uart_port,hal__uart__uart_port"
+  label: "hal-uart.ads:60:21"
+}
+edge: { sourcename: "hal__uart__transmitDP_2"
+  targetname: "1:hal__uart__uart_port,hal__uart__uart_port"
+  label: "hal-uart.ads:68:21"
+}
+edge: { sourcename: "hal__uart__receiveDP"
+  targetname: "1:hal__uart__uart_port,hal__uart__uart_port"
+  label: "hal-uart.ads:76:21"
+}
+edge: { sourcename: "hal__uart__receiveDP_2"
+  targetname: "1:hal__uart__uart_port,hal__uart__uart_port"
+  label: "hal-uart.ads:84:21"
+}
+edge: { sourcename: "hal__uart__Tuart_portCFD"
+  targetname: "-9:hal__uart__uart_port,hal__uart__uart_port"
+  label: "hal-uart.ads:48:9"
+}
+class {
+  classname: "hal__uart__uart_port"
+  label: "hal__uart__uart_port\hal-uart.ads:48:9"
+  virtuals: "1:hal__uart__data_size\n
+             2:hal__uart__transmit\n
+             3:hal__uart__transmit__2\n
+             4:hal__uart__receive\n
+             5:hal__uart__receive__2\n
+             -1:hal__uart___size\n
+             -10:hal__uart__uart_portPI\n
+             -2:hal__uart__uart_portSR\n
+             -3:hal__uart__uart_portSW\n
+             -4:hal__uart__uart_portSI\n
+             -5:hal__uart__uart_portSO\n
+             -9:hal__uart__uart_portDF"
+}
+node: { title: "hal__uart__uart_statusH" label: "uart_statusH\n<built-in>\n32 bytes (static)" }
+node: { title: "hal__uart__uart_data_8bIP" label: "uart_data_8bIP\n<built-in>\n16 bytes (static)" }
+node: { title: "hal__uart__uart_data_9bIP" label: "uart_data_9bIP\n<built-in>\n16 bytes (static)" }
+node: { title: "hal__uart__transmitDP" label: "transmitDP\n<built-in>\n40 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "hal__uart__transmitDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:60:21" }
+node: { title: "hal__uart__transmitDP_2" label: "transmitDP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "hal__uart__transmitDP_2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:68:21" }
+node: { title: "hal__uart__receiveDP" label: "receiveDP\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "hal__uart__receiveDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:76:21" }
+node: { title: "hal__uart__receiveDP_2" label: "receiveDP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "hal__uart__receiveDP_2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:84:21" }
+node: { title: "hal__uart__Tuart_portCFD" label: "Tuart_portCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "hal__uart__Tuart_portCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:48:9" }
+node: { title: "hal__uart__finalize_spec" label: "finalize_spec\n<built-in>\n16 bytes (static)" }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:86:25" shape : ellipse }
+edge: { sourcename: "hal__uart__finalize_spec" targetname: "system__finalization_masters__finalize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:50:9" }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__uart__finalize_spec" targetname: "_Unwind_Resume" }
+node: { title: "__gnat_begin_handler_v1" label: "gnat_begin_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__uart__finalize_spec" targetname: "__gnat_begin_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:32:1" }
+node: { title: "__gnat_end_handler_v1" label: "gnat_end_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__uart__finalize_spec" targetname: "__gnat_end_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:32:1" }
+node: { title: "hal__uart___elabs" label: "UART\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:32:1\n8 bytes (static)" }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:151:9" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:50:9" }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:188:25" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "system__finalization_masters__initialize__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:50:9" }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:191:14" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "system__finalization_masters__set_base_pool" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:50:9" }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:116:14" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:50:9" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:48:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "hal__uart___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:48:9" }
+}

@@ -1,0 +1,5 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV2640\ov2640.adb:266:44: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV2640\ov2640.adb:493:60: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV2640\ov2640.adb:504:24: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV2640\ov2640.adb:513:24: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV2640\ov2640.ads:51:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

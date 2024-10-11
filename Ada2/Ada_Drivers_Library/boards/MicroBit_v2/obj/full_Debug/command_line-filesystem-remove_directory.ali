@@ -1,0 +1,143 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U command_line.filesystem.remove_directory%b  command_line-filesystem-remove_directory.adb  e1163320 OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W command_line.filesystem%s  command_line-filesystem.adb  command_line-filesystem.ali
+W file_io%s		file_io.adb		file_io.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U command_line.filesystem.remove_directory%s  command_line-filesystem-remove_directory.ads  c6806643 EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W command_line.filesystem%s  command_line-filesystem.adb  command_line-filesystem.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D adl_config.ads	20240918101450 0263fc13 adl_config%s
+D command_line.ads	20240918101452 29283dc6 command_line%s
+D command_line-filesystem.ads  20240918101452 9888f716 command_line.filesystem%s
+D command_line-filesystem-remove_directory.ads  20240918101452 5e089155 command_line.filesystem.remove_directory%s
+D command_line-filesystem-remove_directory.adb  20240918101452 f43ebbdc command_line.filesystem.remove_directory%b
+D file_io.ads		20240918101452 4b2019a9 file_io%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-block_drivers.ads	20240918101452 3a6f071f hal.block_drivers%s
+D hal-filesystem.ads	20240918101452 6998b52b hal.filesystem%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D system.ads		20240605232314 124d8146 system%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240605232314 a1861007 system.stream_attributes%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [name command_line__filesystem__remove_directory 37 13 none]
+G c Z s b [execute command_line__filesystem__remove_directory 41 14 none]
+G c Z s b [help command_line__filesystem__remove_directory 47 14 none]
+G c Z s s [rmdir_cmdDF command_line__filesystem__remove_directory 52 9 none]
+G c Z s s [rmdir_cmdIP command_line__filesystem__remove_directory 52 9 none]
+G r c none [execute command_line__filesystem__remove_directory 41 14 none] [next command_line 43 13 none]
+G r c none [execute command_line__filesystem__remove_directory 41 14 none] [remove_directory file_io 167 13 none]
+G r s command [rmdir_cmdIP command_line__filesystem__remove_directory 52 9 none] [commandIP command_line 102 9 none]
+X 11 command_line.ads
+32K9*Command_Line 146e17 13|32r9 54r5 14|34r14 82r5
+34P9*Put_Procedure 13|43r34 48r31 14|43r18 73r31
+35P9*Put_Line_Procedure 13|44r34 49r31 14|44r18 74r31
+41R9*Arguments 96e14 13|42r41 14|42r25
+43V13*Next{string} 14|50R43
+54H9*Command 104e14 13|34r26 52r26
+X 12 command_line-filesystem.ads
+32K22*Filesystem 11|32k9 12|37e28 13|32r22 54r18 14|34r27 82r18
+X 13 command_line-filesystem-remove_directory.ads
+32K33*Remove_Directory 12|32k22 13|52E9 54l29 54e45 14|34b38 82l29 82t45
+34R9*Rmdir_Cmd<11|54R9> 37P13 37r26 41P14 41r41 47P14 47r38 52c9 52e50 14|41r25
+. 72r38
+37V13*Name{string}<11|58p13> 37>19
+37r19 This{34R9}
+41U14*Execute<11|61p14> 41=23 42=23 43>23 44>23 14|40b25 65l8 65t15
+41r23 This{34R9} 14|41b7 46r28
+42c23 Args<11|41R9> 14|42b7 50m38 50r38
+43p23 Put{11|34P9} 14|43b7 46r34
+44p23 Put_Line{11|35P9} 14|44b7 60r16
+47U14*Help<11|66p14> 47=20 48>20 49>20 14|72b14 80l8 80t12
+47r20 This{34R9} 14|72b20 76r33
+48p20 Put{11|34P9} 14|73b20 76r28
+49p20 Put_Line{11|35P9} 14|74b20 78r7 79r7
+X 14 command_line-filesystem-remove_directory.adb
+50a13 Arg{string} 53r16 57r49 60r56
+51e13 Status{15|44E9} 57m13 59r16 61r28
+X 15 file_io.ads
+42K9*File_IO 14|32w6 32r19 57r23 15|250e12
+44E9*Status_Code 14|51r22 15|69e31
+45n7*OK{44E9} 14|59r26
+167V13*Remove_Directory{44E9} 14|57s31
+X 38 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 45 s-taskin.ads
+398V13*Get_Sec_Stack{38|46P9} 399i<c,__gnat_get_secondary_stack>22
+

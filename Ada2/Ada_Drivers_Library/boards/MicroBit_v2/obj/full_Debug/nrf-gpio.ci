@@ -1,0 +1,159 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb"
+edge: { sourcename: "nrf__gpio__gpio_pointPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "nrf-gpio.ads:66:9"
+}
+edge: { sourcename: "nrf__gpio__set_modeDP"
+  targetname: "1:nrf__gpio__gpio_point,nrf__gpio__gpio_point"
+  label: "hal-gpio.ads:63:28"
+}
+edge: { sourcename: "nrf__gpio__set_pull_resistorDP"
+  targetname: "1:nrf__gpio__gpio_point,nrf__gpio__gpio_point"
+  label: "hal-gpio.ads:73:28"
+}
+edge: { sourcename: "nrf__gpio__toggleDP"
+  targetname: "2:nrf__gpio__gpio_point,nrf__gpio__gpio_point"
+  label: "hal-gpio.ads:93:28"
+}
+edge: { sourcename: "nrf__gpio__Tgpio_pointCFD"
+  targetname: "-9:nrf__gpio__gpio_point,nrf__gpio__gpio_point"
+  label: "nrf-gpio.ads:66:9"
+}
+class {
+  classname: "nrf__gpio__gpio_point"
+  label: "nrf__gpio__gpio_point\nrf-gpio.ads:66:9"
+  parent: "hal__gpio__gpio_point"
+  virtuals: "1:nrf__gpio__support,1:hal__gpio__gpio_point\n
+             2:nrf__gpio__mode,2:hal__gpio__gpio_point\n
+             3:nrf__gpio__set_mode,3:hal__gpio__gpio_point\n
+             4:nrf__gpio__pull_resistor,4:hal__gpio__gpio_point\n
+             5:nrf__gpio__set_pull_resistor,5:hal__gpio__gpio_point\n
+             6:nrf__gpio__set,6:hal__gpio__gpio_point\n
+             7:nrf__gpio__set__2,7:hal__gpio__gpio_point\n
+             8:nrf__gpio__clear,8:hal__gpio__gpio_point\n
+             9:nrf__gpio__toggle,9:hal__gpio__gpio_point\n
+             -1:nrf__gpio___size,-1:hal__gpio__gpio_point\n
+             -10:nrf__gpio__gpio_pointPI,-10:hal__gpio__gpio_point\n
+             -2:nrf__gpio__gpio_pointSR,-2:hal__gpio__gpio_point\n
+             -3:nrf__gpio__gpio_pointSW,-3:hal__gpio__gpio_point\n
+             -4:nrf__gpio__gpio_pointSI,-4:hal__gpio__gpio_point\n
+             -5:nrf__gpio__gpio_pointSO,-5:hal__gpio__gpio_point\n
+             -9:nrf__gpio__gpio_pointDF,-9:hal__gpio__gpio_point\n
+             10:nrf__gpio__configure_io\n
+             -6:nrf__gpio__Oeq\n
+             -7:nrf__gpio___assign\n
+             -8:nrf__gpio__gpio_pointDA"
+}
+node: { title: "nrf__gpio__pin_driveH" label: "pin_driveH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf__gpio__gpio_configurationIP" label: "gpio_configurationIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio__gpio_pointIP" label: "gpio_pointIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio___size" label: "gpio\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio__gpio_pointPI" label: "gpio_pointPI\n<built-in>\n24 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "system__put_images__put_image_integer" label: "Put_Image_Integer\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:55:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointPI" targetname: "system__put_images__put_image_integer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__gpio_pointSR" label: "gpio_pointSR\n<built-in>\n24 bytes (static)" }
+node: { title: "system__stream_attributes__i_i" label: "I_I\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:109:13" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointSR" targetname: "system__stream_attributes__i_i" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__gpio_pointSW" label: "gpio_pointSW\n<built-in>\n24 bytes (static)" }
+node: { title: "system__stream_attributes__w_i" label: "W_I\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:147:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__gpio_pointSW" targetname: "system__stream_attributes__w_i" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__gpio_pointSI" label: "gpio_pointSI\n<built-in>\n32 bytes (static)" }
+edge: { sourcename: "nrf__gpio__gpio_pointSI" targetname: "nrf__gpio__gpio_pointIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+edge: { sourcename: "nrf__gpio__gpio_pointSI" targetname: "nrf__gpio__gpio_pointSR" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__gpio_pointSO" label: "gpio_pointSO\n<built-in>\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__gpio_pointSO" targetname: "nrf__gpio__gpio_pointSW" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__Oeq" label: "=\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio___assign" label: "gpio\n<built-in>\n440 bytes (static)" }
+node: { title: "nrf__gpio__gpio_pointDA" label: "gpio_pointDA\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio__gpio_pointDF" label: "gpio_pointDF\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__gpio__set_modeDP" label: "set_modeDP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_modeDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:63:28" }
+node: { title: "nrf__gpio__set_modeSP" label: "set_modeSP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_modeSP" targetname: "nrf__gpio__support" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:63:28" }
+node: { title: "nrf__gpio__set_modeICW" label: "set_modeICW\n<built-in>\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_modeICW" targetname: "nrf__gpio__set_modeSP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:82:14" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-assert.ads:46:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__set_modeICW" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:82:14" }
+edge: { sourcename: "nrf__gpio__set_modeICW" targetname: "nrf__gpio__set_mode" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:82:14" }
+node: { title: "nrf__gpio__set_pull_resistorDP" label: "set_pull_resistorDP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_pull_resistorDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:73:28" }
+node: { title: "nrf__gpio__set_pull_resistorSP" label: "set_pull_resistorSP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_pull_resistorSP" targetname: "nrf__gpio__support" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:73:28" }
+node: { title: "nrf__gpio__set_pull_resistorICW" label: "set_pull_resistorICW\n<built-in>\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_pull_resistorICW" targetname: "nrf__gpio__set_pull_resistorSP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:90:14" }
+edge: { sourcename: "nrf__gpio__set_pull_resistorICW" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:90:14" }
+edge: { sourcename: "nrf__gpio__set_pull_resistorICW" targetname: "nrf__gpio__set_pull_resistor" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:90:14" }
+node: { title: "nrf__gpio__toggleDP" label: "toggleDP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__toggleDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:93:28" }
+node: { title: "nrf__gpio__toggleSP" label: "toggleSP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__toggleSP" targetname: "nrf__gpio__mode" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:93:28" }
+node: { title: "nrf__gpio__toggleICW" label: "toggleICW\n<built-in>\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__toggleICW" targetname: "nrf__gpio__toggleSP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:112:14" }
+edge: { sourcename: "nrf__gpio__toggleICW" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:112:14" }
+edge: { sourcename: "nrf__gpio__toggleICW" targetname: "nrf__gpio__toggle" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:112:14" }
+node: { title: "nrf__gpio__Tgpio_pointCFD" label: "Tgpio_pointCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__Tgpio_pointCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__support" label: "Support\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:71:4\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__gpio__support" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:74:13" }
+node: { title: "nrf__gpio__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:34:1" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:nrf__gpio__T135s" label: "T135s\n<built-in>\n56 bytes (static)" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:nrf__gpio__T135s" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:nrf__gpio__T135s" targetname: "nrf__gpio__gpio_pointSI" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "nrf__gpio__mode" label: "Mode\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:37:4\n32 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__gpio__mode" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:37:4" }
+edge: { sourcename: "nrf__gpio__mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:42:30" }
+edge: { sourcename: "nrf__gpio__mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:47:30" }
+node: { title: "nrf__gpio__set_mode" label: "Set_Mode\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:59:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_mode" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:59:4" }
+edge: { sourcename: "nrf__gpio__set_mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:66:27" }
+edge: { sourcename: "nrf__gpio__set_mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:69:29" }
+edge: { sourcename: "nrf__gpio__set_mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:73:31" }
+edge: { sourcename: "nrf__gpio__set_mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:76:29" }
+node: { title: "nrf__gpio__set" label: "Set\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:87:4\n24 bytes (static)" }
+node: { title: "nrf__gpio__pull_resistor" label: "Pull_Resistor\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:105:4\n32 bytes (static)" }
+edge: { sourcename: "nrf__gpio__pull_resistor" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:105:4" }
+node: { title: "nrf_svd__gpio__pin_cnf_pull_fieldRP" label: "PIN_CNF_PULL_FIELDRP\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-gpio.ads:438:9" shape : ellipse }
+edge: { sourcename: "nrf__gpio__pull_resistor" targetname: "nrf_svd__gpio__pin_cnf_pull_fieldRP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:110:50" }
+edge: { sourcename: "nrf__gpio__pull_resistor" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:110:50" }
+edge: { sourcename: "nrf__gpio__pull_resistor" targetname: "nrf_svd__gpio__pin_cnf_pull_fieldRP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:116:53" }
+edge: { sourcename: "nrf__gpio__pull_resistor" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:116:53" }
+node: { title: "nrf__gpio__set_pull_resistor" label: "Set_Pull_Resistor\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:130:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__set_pull_resistor" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:130:4" }
+edge: { sourcename: "nrf__gpio__set_pull_resistor" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:136:15" }
+edge: { sourcename: "nrf__gpio__set_pull_resistor" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:142:15" }
+node: { title: "nrf__gpio__set__2" label: "Set\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:153:15\n32 bytes (static)" }
+node: { title: "nrf__gpio__clear" label: "Clear\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:168:15\n32 bytes (static)" }
+node: { title: "nrf__gpio__toggle" label: "Toggle\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:183:15\n16 bytes (static)" }
+edge: { sourcename: "nrf__gpio__toggle" targetname: "nrf__gpio__set" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:187:14" }
+edge: { sourcename: "nrf__gpio__toggle" targetname: "nrf__gpio__clear" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:188:14" }
+edge: { sourcename: "nrf__gpio__toggle" targetname: "nrf__gpio__set__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:190:14" }
+node: { title: "nrf__gpio__configure_io" label: "Configure_Io\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:198:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:198:4" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:206:43" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:210:45" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:214:44" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:219:45" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:229:45" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:235:43" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:239:45" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:243:44" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:248:45" }
+edge: { sourcename: "nrf__gpio__configure_io" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:258:45" }
+node: { title: "nrf__gpio___elabb" label: "Gpio\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:34:1\n4 bytes (static)" }
+node: { title: "nrf__gpio___elabs" label: "Gpio\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:34:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "nrf__gpio___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:66:9" }
+}

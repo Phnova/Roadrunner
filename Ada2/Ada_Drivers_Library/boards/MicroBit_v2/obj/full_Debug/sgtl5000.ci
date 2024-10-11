@@ -1,0 +1,198 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb"
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "sgtl5000.ads:282:9"
+}
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "sgtl5000.ads:282:9"
+}
+edge: { sourcename: "sgtl5000__Tsgtl5000_dacCFD"
+  targetname: "-9:sgtl5000__sgtl5000_dac,sgtl5000__sgtl5000_dac"
+  label: "sgtl5000.ads:38:9"
+}
+class {
+  classname: "sgtl5000__sgtl5000_dac"
+  label: "sgtl5000__sgtl5000_dac\sgtl5000.ads:38:9"
+  parent: "sgtl5000__sgtl5000_dac"
+  virtuals: "1:sgtl5000__valid_id\n
+             2:sgtl5000__set_dac_volume\n
+             3:sgtl5000__set_adc_volume\n
+             4:sgtl5000__set_headphones_volume\n
+             5:sgtl5000__set_line_out_volume\n
+             6:sgtl5000__mute_headphones\n
+             7:sgtl5000__mute_line_out\n
+             8:sgtl5000__mute_adc\n
+             9:sgtl5000__mute_dac\n
+             10:sgtl5000__set_power_control\n
+             11:sgtl5000__set_reference_control\n
+             12:sgtl5000__set_short_detectors\n
+             13:sgtl5000__set_linereg_control\n
+             14:sgtl5000__set_lineout_control\n
+             15:sgtl5000__set_analog_power\n
+             16:sgtl5000__set_clock_control\n
+             17:sgtl5000__set_pll\n
+             18:sgtl5000__set_i2s_control\n
+             19:sgtl5000__select_adc_source\n
+             20:sgtl5000__select_dap_source\n
+             21:sgtl5000__select_dap_mix_source\n
+             22:sgtl5000__select_dac_source\n
+             23:sgtl5000__select_hp_source\n
+             24:sgtl5000__select_i2s_out_source\n
+             25:sgtl5000__i2c_write\n
+             26:sgtl5000__i2c_read\n
+             27:sgtl5000__modify\n
+             -1:sgtl5000___size\n
+             -10:sgtl5000__sgtl5000_dacPI\n
+             -9:sgtl5000__sgtl5000_dacDF"
+}
+edge: { sourcename: "sgtl5000__i2c_write"
+  targetname: "1:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "sgtl5000.adb:63:16"
+}
+edge: { sourcename: "sgtl5000__i2c_read"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "sgtl5000.adb:87:16"
+}
+node: { title: "sgtl5000__sgtl5000_dacIP" label: "sgtl5000_dacIP\n<built-in>\n24 bytes (static)" }
+node: { title: "sgtl5000___size" label: "sgtl5000\n<built-in>\n16 bytes (static)" }
+node: { title: "sgtl5000__sgtl5000_dacPI" label: "sgtl5000_dacPI\n<built-in>\n32 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+node: { title: "system__put_images__record_between" label: "Record_Between\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:111:14" shape : ellipse }
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "sgtl5000__sgtl5000_dacPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+node: { title: "sgtl5000__sgtl5000_dacDF" label: "sgtl5000_dacDF\n<built-in>\n16 bytes (static)" }
+node: { title: "sgtl5000__Tsgtl5000_dacCFD" label: "Tsgtl5000_dacCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__Tsgtl5000_dacCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:38:9" }
+node: { title: "sgtl5000__lineout_currentH" label: "lineout_currentH\n<built-in>\n32 bytes (static)" }
+node: { title: "sgtl5000__lineout_currentRP" label: "lineout_currentRP\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "sgtl5000__lineout_currentRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:157:9" }
+node: { title: "sgtl5000__rate_modeH" label: "rate_modeH\n<built-in>\n32 bytes (static)" }
+node: { title: "sgtl5000__sys_fs_freqH" label: "sys_fs_freqH\n<built-in>\n32 bytes (static)" }
+node: { title: "sgtl5000__mclk_modeH" label: "mclk_modeH\n<built-in>\n32 bytes (static)" }
+node: { title: "sgtl5000__data_len_modeH" label: "data_len_modeH\n<built-in>\n32 bytes (static)" }
+node: { title: "sgtl5000__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "sgtl5000__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:36:1" }
+node: { title: "sgtl5000__modify" label: "MODIFY\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:38:4\n32 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "sgtl5000__modify" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:38:4" }
+edge: { sourcename: "sgtl5000__modify" targetname: "sgtl5000__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:43:27" }
+edge: { sourcename: "sgtl5000__modify" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:49:11" }
+node: { title: "sgtl5000__i2c_write" label: "I2C_WRITE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:56:4\n56 bytes (static)" }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:56:4" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:65:61" }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:66:44" }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:67:63" }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:68:46" }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:63:16" }
+node: { title: "__gnat_rcheck_PE_Explicit_Raise" label: "gnat_rcheck_PE_Explicit_Raise\n<built-in>" shape : ellipse }
+edge: { sourcename: "sgtl5000__i2c_write" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:71:10" }
+node: { title: "sgtl5000__i2c_read" label: "I2C_READ\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:79:4\n64 bytes (static)" }
+edge: { sourcename: "sgtl5000__i2c_read" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:79:4" }
+edge: { sourcename: "sgtl5000__i2c_read" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:87:16" }
+edge: { sourcename: "sgtl5000__i2c_read" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:94:10" }
+node: { title: "sgtl5000__valid_id" label: "VALID_ID\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:103:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__valid_id" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:103:4" }
+edge: { sourcename: "sgtl5000__valid_id" targetname: "sgtl5000__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:104:35" }
+node: { title: "sgtl5000__set_dac_volume" label: "SET_DAC_VOLUME\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:114:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_dac_volume" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:114:4" }
+edge: { sourcename: "sgtl5000__set_dac_volume" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:118:11" }
+node: { title: "sgtl5000__set_adc_volume" label: "SET_ADC_VOLUME\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:126:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_adc_volume" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:126:4" }
+edge: { sourcename: "sgtl5000__set_adc_volume" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:131:11" }
+node: { title: "sgtl5000__set_headphones_volume" label: "SET_HEADPHONES_VOLUME\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:141:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_headphones_volume" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:141:4" }
+edge: { sourcename: "sgtl5000__set_headphones_volume" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:145:11" }
+node: { title: "sgtl5000__set_line_out_volume" label: "SET_LINE_OUT_VOLUME\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:154:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_line_out_volume" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:154:4" }
+edge: { sourcename: "sgtl5000__set_line_out_volume" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:158:11" }
+node: { title: "sgtl5000__mute_headphones" label: "MUTE_HEADPHONES\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:167:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__mute_headphones" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:167:4" }
+edge: { sourcename: "sgtl5000__mute_headphones" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:171:11" }
+node: { title: "sgtl5000__mute_line_out" label: "MUTE_LINE_OUT\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:180:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__mute_line_out" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:180:4" }
+edge: { sourcename: "sgtl5000__mute_line_out" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:184:11" }
+node: { title: "sgtl5000__mute_adc" label: "MUTE_ADC\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:193:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__mute_adc" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:193:4" }
+edge: { sourcename: "sgtl5000__mute_adc" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:197:11" }
+node: { title: "sgtl5000__mute_dac" label: "MUTE_DAC\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:206:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__mute_dac" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:206:4" }
+edge: { sourcename: "sgtl5000__mute_dac" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:210:11" }
+node: { title: "sgtl5000__set_power_control" label: "SET_POWER_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:219:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_power_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:219:4" }
+edge: { sourcename: "sgtl5000__set_power_control" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:243:11" }
+node: { title: "sgtl5000__set_reference_control" label: "SET_REFERENCE_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:252:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_reference_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:252:4" }
+edge: { sourcename: "sgtl5000__set_reference_control" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:264:11" }
+node: { title: "sgtl5000__set_short_detectors" label: "SET_SHORT_DETECTORS\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:271:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_short_detectors" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:271:4" }
+edge: { sourcename: "sgtl5000__set_short_detectors" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:286:11" }
+node: { title: "sgtl5000__set_linereg_control" label: "SET_LINEREG_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:293:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_linereg_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:293:4" }
+edge: { sourcename: "sgtl5000__set_linereg_control" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:309:11" }
+node: { title: "sgtl5000__set_lineout_control" label: "SET_LINEOUT_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:316:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_lineout_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:316:4" }
+edge: { sourcename: "sgtl5000__set_lineout_control" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:321:11" }
+node: { title: "sgtl5000__set_analog_power" label: "SET_ANALOG_POWER\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:331:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_analog_power" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:331:4" }
+edge: { sourcename: "sgtl5000__set_analog_power" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:395:11" }
+node: { title: "sgtl5000__set_clock_control" label: "SET_CLOCK_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:402:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_clock_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:402:4" }
+edge: { sourcename: "sgtl5000__set_clock_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:409:31" }
+edge: { sourcename: "sgtl5000__set_clock_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:415:31" }
+edge: { sourcename: "sgtl5000__set_clock_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:421:31" }
+edge: { sourcename: "sgtl5000__set_clock_control" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:427:11" }
+node: { title: "sgtl5000__set_pll" label: "SET_PLL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:434:4\n40 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:434:4" }
+node: { title: "__gnat_rcheck_CE_Divide_By_Zero" label: "gnat_rcheck_CE_Divide_By_Zero\n<built-in>" shape : ellipse }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "__gnat_rcheck_CE_Divide_By_Zero" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:438:57" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:440:88" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:444:30" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:444:59" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:442:11" }
+edge: { sourcename: "sgtl5000__set_pll" targetname: "sgtl5000__i2c_read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:449:45" }
+node: { title: "sgtl5000__set_i2s_control" label: "SET_I2S_CONTROL\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:462:4\n24 bytes (static)" }
+edge: { sourcename: "sgtl5000__set_i2s_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:462:4" }
+edge: { sourcename: "sgtl5000__set_i2s_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:473:31" }
+edge: { sourcename: "sgtl5000__set_i2s_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:485:31" }
+edge: { sourcename: "sgtl5000__set_i2s_control" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:491:31" }
+edge: { sourcename: "sgtl5000__set_i2s_control" targetname: "sgtl5000__i2c_write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:504:11" }
+node: { title: "sgtl5000__select_adc_source" label: "SELECT_ADC_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:511:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_adc_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:511:4" }
+edge: { sourcename: "sgtl5000__select_adc_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:518:26" }
+edge: { sourcename: "sgtl5000__select_adc_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:516:11" }
+node: { title: "sgtl5000__select_dap_source" label: "SELECT_DAP_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:528:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_dap_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:528:4" }
+edge: { sourcename: "sgtl5000__select_dap_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:534:26" }
+edge: { sourcename: "sgtl5000__select_dap_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:532:11" }
+node: { title: "sgtl5000__select_dap_mix_source" label: "SELECT_DAP_MIX_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:543:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_dap_mix_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:543:4" }
+edge: { sourcename: "sgtl5000__select_dap_mix_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:549:26" }
+edge: { sourcename: "sgtl5000__select_dap_mix_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:547:11" }
+node: { title: "sgtl5000__select_dac_source" label: "SELECT_DAC_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:558:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_dac_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:558:4" }
+edge: { sourcename: "sgtl5000__select_dac_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:564:26" }
+edge: { sourcename: "sgtl5000__select_dac_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:562:11" }
+node: { title: "sgtl5000__select_hp_source" label: "SELECT_HP_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:574:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_hp_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:574:4" }
+edge: { sourcename: "sgtl5000__select_hp_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:581:26" }
+edge: { sourcename: "sgtl5000__select_hp_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:579:11" }
+node: { title: "sgtl5000__select_i2s_out_source" label: "SELECT_I2S_OUT_SOURCE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:591:4\n16 bytes (static)" }
+edge: { sourcename: "sgtl5000__select_i2s_out_source" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:591:4" }
+edge: { sourcename: "sgtl5000__select_i2s_out_source" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:597:26" }
+edge: { sourcename: "sgtl5000__select_i2s_out_source" targetname: "sgtl5000__modify" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:595:11" }
+node: { title: "sgtl5000___elabb" label: "SGTL5000\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:32:1\n4 bytes (static)" }
+node: { title: "sgtl5000___elabs" label: "SGTL5000\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:36:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "sgtl5000___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "sgtl5000___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.ads:282:9" }
+}

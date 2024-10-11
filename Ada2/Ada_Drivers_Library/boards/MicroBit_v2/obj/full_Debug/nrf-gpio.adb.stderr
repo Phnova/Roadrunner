@@ -1,0 +1,4 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:62:07: warning: renamed variable "CNF_P0" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:63:11: warning: renamed variable "CNF_P1" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:202:07: warning: renamed variable "CNF_P0" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.adb:203:11: warning: renamed variable "CNF_P1" is not referenced [-gnatwu]

@@ -1,0 +1,113 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB LC TF  ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U generic_timers%b	generic_timers.adb	0f94ef26 NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W system%s		system.ads		system.ali
+
+U generic_timers%s	generic_timers.ads	f5ea1cc5 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.timing_events%s  a-rttiev.adb	a-rttiev.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-reatim.ads		20240605232314 cfe92427 ada.real_time%s
+D a-rttiev.ads		20240605232314 f8eb9b1f ada.real_time.timing_events%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D generic_timers.ads	20240918101450 0d0187da generic_timers%s
+D generic_timers.adb	20240918101450 10d8e9ba generic_timers%b
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D system.ads		20240605232314 124d8146 system%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-bbtiev.ads		20240605232314 110cc417 system.bb.timing_events%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [generic_timers standard 29 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|21r6 26r20 39r16 10|20r8 21r13 54r16 58r24 70r16
+X 2 a-reatim.ads
+40K13*Real_Time 181e18 9|21r10 26r24 39r20 10|21r17 26r41 40r25 54r20 56r10
+. 57r10 58r28 70r20 72r10 73r10
+50M9*Time<22|46M9> 10|21r27
+60I9*Time_Span<22|81I9> 9|26r34
+67V13*Clock{50M9}<22|134p13> 10|58s38
+71V14*"+"{50M9} 10|58s44
+X 3 a-rttiev.ads
+38K23*Timing_Events 74e32 9|21w20 39r30 10|26r51 40r35 54r30 56r20 57r20
+. 70r30 72r20 73r20
+40R9*Timing_Event<23|35R9> 72e17 9|39r44 10|26r65 40r49
+42P9*Timing_Event_Handler 10|54r44 70r44
+45U14*Set_Handler 10|57s34
+50V13*Current_Handler{42P9} 10|56s34 72s34
+53U14*Cancel_Handler<23|54p14> 10|73s34
+X 9 generic_timers.ads
+24b4 One_Shot{boolean} 10|43r17
+25a4 Timer_Name{string} 10|60r33 75r57
+26i4 Period{2|60I9} 10|58r46
+27U19 Action 10|42s10
+29k9*Generic_Timers 24z4 25z4 26z4 27z19 39E4 41l5 41e19 10|18b14 86l5 86t19
+31X4*Timer_Error 10|60r16 75r19
+33U14*Start 10|44s13 53b14 62l8 62t13
+34U14*Stop 10|68b14 78l8 78t12 84r29
+35U14*Cancel 10|84b14
+39r4 The_Event{3|40R9} 10|56r51 58m13 58r13 72r51 73m50 73r50
+X 10 generic_timers.adb
+23w14 Events 33b19 47l8 47t14 58r54
+26U17 Handler 26=26 39b17 46l11 46t18 58r61
+26r26 Event{3|40R9} 40b10
+69b7 Success{boolean} 73m61 74r17
+X 12 system.ads
+50K9*System 10|16w6 24r24 12|166e11
+116I12*Any_Priority{integer} 10|24r31
+X 22 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+

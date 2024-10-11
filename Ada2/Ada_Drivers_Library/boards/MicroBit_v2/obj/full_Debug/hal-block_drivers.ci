@@ -1,0 +1,46 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads"
+edge: { sourcename: "hal__block_drivers__Tblock_driverCFD"
+  targetname: "-9:hal__block_drivers__block_driver,hal__block_drivers__block_driver"
+  label: "hal-block_drivers.ads:34:9"
+}
+class {
+  classname: "hal__block_drivers__block_driver"
+  label: "hal__block_drivers__block_driver\hal-block_drivers.ads:34:9"
+  virtuals: "1:hal__block_drivers__read\n
+             2:hal__block_drivers__write\n
+             -1:hal__block_drivers___size\n
+             -10:hal__block_drivers__block_driverPI\n
+             -2:hal__block_drivers__block_driverSR\n
+             -3:hal__block_drivers__block_driverSW\n
+             -4:hal__block_drivers__block_driverSI\n
+             -5:hal__block_drivers__block_driverSO\n
+             -9:hal__block_drivers__block_driverDF"
+}
+node: { title: "hal__block_drivers__readDP" label: "readDP\n<built-in>\n88 bytes (static)" }
+node: { title: "hal__block_drivers__writeDP" label: "writeDP\n<built-in>\n88 bytes (static)" }
+node: { title: "hal__block_drivers__Tblock_driverCFD" label: "Tblock_driverCFD\n<built-in>\n16 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "hal__block_drivers__Tblock_driverCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:34:9" }
+node: { title: "hal__block_drivers__finalize_spec" label: "finalize_spec\n<built-in>\n16 bytes (static)" }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:86:25" shape : ellipse }
+edge: { sourcename: "hal__block_drivers__finalize_spec" targetname: "system__finalization_masters__finalize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:35:9" }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__block_drivers__finalize_spec" targetname: "_Unwind_Resume" }
+node: { title: "__gnat_begin_handler_v1" label: "gnat_begin_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__block_drivers__finalize_spec" targetname: "__gnat_begin_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:32:1" }
+node: { title: "__gnat_end_handler_v1" label: "gnat_end_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__block_drivers__finalize_spec" targetname: "__gnat_end_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:32:1" }
+node: { title: "hal__block_drivers___elabs" label: "BLOCK_DRIVERS\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:32:1\n8 bytes (static)" }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:151:9" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:35:9" }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:188:25" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "system__finalization_masters__initialize__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:35:9" }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:191:14" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "system__finalization_masters__set_base_pool" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:35:9" }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:116:14" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:35:9" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:34:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "hal__block_drivers___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-block_drivers.ads:34:9" }
+}

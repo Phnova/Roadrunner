@@ -1,0 +1,301 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U semihosting.filesystem%b  semihosting-filesystem.adb  6810759b OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W semihosting%s		semihosting.adb		semihosting.ali
+
+U semihosting.filesystem%s  semihosting-filesystem.ads  8c2c7fd3 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.filesystem%s	hal-filesystem.ads	hal-filesystem.ali
+W semihosting%s		semihosting.adb		semihosting.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.wch_stw%s	s-wchstw.adb		s-wchstw.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-assert.ads		20240605232314 ba465f5c ada.assertions%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-filesystem.ads	20240918101452 6998b52b hal.filesystem%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D semihosting.ads	20240918101450 ca4eee59 semihosting%s
+D semihosting-filesystem.ads  20240918101450 04b8ecaf semihosting.filesystem%s
+D semihosting-filesystem.adb  20240918101450 6ca89934 semihosting.filesystem%b
+D system.ads		20240605232314 124d8146 system%s
+D s-assert.ads		20240605232314 9c4520c7 system.assertions%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-retsta.ads		20240605232314 0f6b06cb system.return_stack%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240605232314 a1861007 system.stream_attributes%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240605232314 d9032363 system.wch_con%s
+D s-wchstw.ads		20240605232314 2d112c01 system.wch_stw%s
+G a e
+G c Z s b [create_file semihosting__filesystem 52 13 none]
+G c Z s b [create_node semihosting__filesystem 56 13 none]
+G c Z s b [create_directory semihosting__filesystem 61 13 none]
+G c Z s b [unlink semihosting__filesystem 66 13 none]
+G c Z s b [remove_directory semihosting__filesystem 71 13 none]
+G c Z s b [rename semihosting__filesystem 75 13 none]
+G c Z s b [truncate_file semihosting__filesystem 80 13 none]
+G c Z s b [open semihosting__filesystem 86 13 none]
+G c Z s b [open semihosting__filesystem 93 13 none]
+G c Z s b [root_node semihosting__filesystem 99 13 none]
+G c Z s b [close semihosting__filesystem 106 14 none]
+G c Z s b [get_fs semihosting__filesystem 122 13 none]
+G c Z s b [size semihosting__filesystem 127 13 none]
+G c Z s b [mode semihosting__filesystem 131 13 none]
+G c Z s b [read semihosting__filesystem 135 13 none]
+G c Z s b [write semihosting__filesystem 141 13 none]
+G c Z s b [offset semihosting__filesystem 147 13 none]
+G c Z s b [flush semihosting__filesystem 152 13 none]
+G c Z s b [seek semihosting__filesystem 157 13 none]
+G c Z s b [close semihosting__filesystem 163 14 none]
+G c Z s b [get_file_handle semihosting__filesystem 169 13 none]
+G c Z s s [shfsDA semihosting__filesystem 165 9 none]
+G c Z s s [shfsDF semihosting__filesystem 165 9 none]
+G c Z s s [shfsIP semihosting__filesystem 165 9 none]
+G c Z s s [shfs_file_handleDA semihosting__filesystem 113 9 none]
+G c Z s s [shfs_file_handleDF semihosting__filesystem 113 9 none]
+G c Z s s [shfs_file_handleIP semihosting__filesystem 113 9 none]
+G r c none [open semihosting__filesystem 86 13 none] [open semihosting 57 13 none]
+G r c none [read semihosting__filesystem 135 13 none] [read semihosting 58 13 none]
+G r c none [seek semihosting__filesystem 157 13 none] [seek semihosting 65 13 none]
+G r c none [close semihosting__filesystem 163 14 none] [close semihosting 56 13 none]
+X 11 hal.ads
+34K9*HAL 166e8 15|37r6 37r26 38w6 38r15 42r21 165r21
+97M9*UInt32<13|81M9>
+160M9*UInt64<13|84M9>
+X 12 hal-filesystem.ads
+34K13*Filesystem 227e19 15|37w10 37r30 42r25 165r25
+35E9*Status_Code 60e31 15|54r33 59r33 63r38 68r28 73r38 78r28 83r35 90r26
+. 96r26 103r14 138r26 144r27 154r14 160r26 16|46r14 61r14 75r14 89r14 103r14
+. 118r14 133r14 149r14 186r14 202r14 253r14 279r14 298r26 396r14
+36n7*OK{35E9} 16|174r17 267r17 322r17 397r8
+42n7*No_Such_File{35E9} 16|155r17 166r17
+54n7*Invalid_Parameter{35E9} 16|257r17 284r17 303r17
+55n7*Input_Output_Error{35E9} 16|264r17 319r17
+59n7*Read_Only_File_System{35E9} 16|50r14 65r14 79r14 93r14 107r14 122r14
+. 137r14 159r17 287r14
+60n7*Operation_Not_Permitted{35E9} 16|190r14 206r14
+62E9*File_Mode 62e57 15|88r29 132r39 16|147r17 372r39
+62n23*Read_Only{62E9} 16|158r18 373r8
+63E9*Seek_Mode 72e16 15|158r28 16|296r28
+66n7*From_Start{63E9} 16|311r15
+68n7*From_End{63E9} 16|313r15
+70n7*Forward{63E9} 16|307r15
+72n7*Backward{63E9} 16|309r15
+74M9*File_Size<11|160M9> 15|82r37 116r27 128r39 137r35 143r29 149r14 159r35
+. 16|132r16 252r23 278r16 297r35 300r16 359r39 382r14
+79h9*Filesystem_Driver 15|42r36 165r36
+80P9*Any_Filesystem_Driver(79R9) 15|124r14 16|350r14 351r8
+82h9*Directory_Handle
+83P9*Any_Directory_Handle(82R9) 15|95r32 16|185r20
+85h9*File_Handle 15|113r33
+86P9*Any_File_Handle(85R9) 15|89r33 16|148r21 173r21
+88h9*Node_Handle
+89P9*Any_Node_Handle(88R9) 15|102r20 16|201r20
+X 13 interfac.ads
+81M9*Unsigned_32
+84M9*Unsigned_64
+X 14 semihosting.ads
+35K9*Semihosting 74e16 15|40r9 173r5 16|37r14 162r13 260r10 317r10 338r10
+. 399r5
+37M9*SH_Word<11|97M9> 15|115r27 16|152r12 165r15 262r46 317r37
+39M12*Flag{37M9}
+42m4*OPEN_FLAG_RB{39M12} 16|163r43
+56V13*Close{37M9} 16|338s22
+57V13*Open{37M9} 16|162s25
+57a19 Filename{string} 16|162r31
+57m38 Mode{39M12} 16|163r31
+58V13*Read{37M9} 16|260s22
+58m19 File_Handle{37M9} 16|260r28
+59m19 Buffer_Address{17|80M9} 16|261r28
+60m19 Buffer_Size{37M9} 16|262r28
+65V13*Seek{37M9} 16|317s22
+X 15 semihosting-filesystem.ads
+40K21*Filesystem 14|35k9 15|110E9 173l17 173e27 16|37b26 399l17 399t27
+42R9*SHFS<12|79R9> 43r32 52P13 52r40 56p13 56r40 61p13 61r45 66P13 66r35
+. 71P13 71r45 75p13 75r35 80p13 80r44 86P13 86r36 93P13 93r35 99P13 100r23
+. 106P14 106r35 165c9 167e14 169p13 169r44 16|44r21 58r21 73r21 87r21 101r21
+. 115r21 130r23 145r24 183r23 199r23 213r44 240r35
+43P9*Any_SHFS(42R9) 114r27
+45E9*File_Kind 45e47 58r33 16|60r14
+45n23*Regular_File{45E9}
+45n37*Directory{45E9}
+52V13*Create_File{12|35E9}<12|102p13> 52=26 53>26 16|43b24 51l8 51t19
+52r26 This{42R9} 16|44b7 48r28
+53a26 Path{string} 16|45b7 48r34
+56V13*Create_Node{12|35E9} 56=26 57>26 58>26 16|57b13 66l8 66t19
+56r26 This{42R9} 16|58b7 63r28
+57a26 Path{string} 16|59b7 63r34
+58e26 Kind{45E9} 16|60b7 63r40
+61V13*Create_Directory{12|35E9} 61=31 62>31 16|72b13 80l8 80t24
+61r31 This{42R9} 16|73b7 77r28
+62a31 Path{string} 16|74b7 77r34
+66V13*Unlink{12|35E9}<12|106p13> 66=21 67>21 16|86b24 94l8 94t14
+66r21 This{42R9} 16|87b7 91r28
+67a21 Path{string} 16|88b7 91r34
+71V13*Remove_Directory{12|35E9}<12|111p13> 71=31 72>31 16|100b24 108l8 108t24
+71r31 This{42R9} 16|101b7 105r28
+72a31 Path{string} 16|102b7 105r34
+75V13*Rename{12|35E9} 75=21 76>21 77>21 16|114b13 123l8 123t14
+75r21 This{42R9} 16|115b7 120r28
+76a21 Old_Path{string} 16|116b7 120r34
+77a21 New_Path{string} 16|117b7 120r44
+80V13*Truncate_File{12|35E9} 80=28 81>28 82>28 16|129b13 138l8 138t21
+80r28 This{42R9} 16|130b7 135r42
+81a28 Path{string} 16|131b7 135r28
+82m28 Length{12|74M9} 16|132b7 135r34
+86V13*Open{12|35E9}<12|165p13> 86=19 87>19 88>19 89<19 16|144b24 176l8 176t12
+86r19 This{42R9} 16|145b7 168m16 168r16 169m19 169r19
+87a19 Path{string} 16|146b7 154r10 162r43
+88e19 Mode{12|62E9} 16|147b7 158r10
+89p19 Handler{12|86P9} 16|148b7 173m10
+93V13*Open{12|35E9}<12|95p13> 93=19 94>19 95<19 16|182b24 191l8 191t12
+93r19 This{42R9} 16|183b7 188r28
+94a19 Path{string} 16|184b7 188r34
+95p19 Handle{12|83P9} 16|185b7 188r40
+99V13*Root_Node{12|35E9}<12|121p13> 100=7 101>7 102<7 16|198b13 207l8 207t17
+100r7 This{42R9} 16|199b7 204r40
+101a7 As{string} 16|200b7 204r28
+102p7 Handle{12|89P9} 16|201b7 204r32
+106U14*Close<12|225p14> 106=21 16|240b14 243l8 243t13
+106r21 This{42R9} 16|240b21
+110R9 SHFS_File_Handle 111r47 113c9 123r21 128r14 132r14 135r35 141r36 148r14
+. 153r21 157r35 163r35 16|226r21 250r23 276r21 295r35 331r23 349r21 359r14
+. 372r14 381r14 395r21
+111P9 SHFS_File_Handle_Access(110R9) 118r27 166r22 170r46 16|151r12 214r46
+. 216r13
+113R9 SHFS_File_Handle<12|85R9> 119e14 122P13 127P13 131P13 135P13 141P13
+. 147P13 152P13 157P13 163P14
+114p7*FS{43P9} 16|169m13 351r36
+115m7*FD{14|37M9} 16|170m13 260r51 317r33 338r34
+116m7*Absolute_Position{12|74M9} 16|172m13 266m15 266r41 308r28 310r28 321m15
+117b7*Is_Open{boolean} 16|171m13 220r38 227m14 256r19 283r19 302r19 334r19
+. 339m15
+118p7*Next{111P9} 16|221r21 228m14
+122V13 Get_FS{12|80P9}<12|181p13> 123=7 16|348b13
+123r7 This{113R9} 16|351r31
+127V13 Size{12|74M9}<12|184p13> 128>7 16|314s28 358b13 364l8 364t12
+128r7 This{113R9} 16|359b7
+131V13 Mode{12|62E9}<12|187p13> 132>7 16|371b13
+132r7 This{113R9}
+135V13 Read{12|35E9}<12|190p13> 135=19 136>19 137=19 16|249b24 269l8 269t12
+135r19 This{113R9} 16|250b7 256r14 260r46 266m10 266r36
+136m19 Addr{17|80M9} 16|251b7 261r46
+137m19 Length{12|74M9} 16|252b7 262r55 266r61
+141V13 Write{12|35E9}<12|197p13> 141=20 142>20 143>20 16|275b24 288l8 288t13
+141r20 This{113R9} 16|276b7 283r14
+142m20 Addr{17|80M9} 16|277b7 281r28
+143m20 Length{12|74M9} 16|278b7 281r34
+147V13 Offset{12|74M9}<12|205p13> 148>7 16|380b13 387l8 387t14
+148r7 This{113R9} 16|381b7
+152V13 Flush{12|35E9}<12|209p13> 153=7 16|394b13
+153r7 This{113R9}
+157V13 Seek{12|35E9}<12|213p13> 157=19 158>19 159=19 16|295b13 324l8 324t12
+157r19 This{113R9} 16|295b19 302r14 308r23 310r23 314r23 317r28 321m10
+158e19 Origin{12|63E9} 16|296b19 306r12
+159m19 Amount{12|74M9} 16|297b19 308r48 310r48 312r23 314r35
+163U14 Close<12|219p14> 163=21 16|330b25 341l8 341t13
+163r21 This{113R9} 16|331b7 334r14 338r29 339m10
+166p7 File_Handles{111P9} 16|216r45 228r27 229m15
+169V13 Get_File_Handle{111P9} 169=30 16|168s21 213b13 233l8 233t23
+169r30 This{42R9} 16|213b30 216r40 228r22 229m10
+X 16 semihosting-filesystem.adb
+151p7 FH{15|111P9} 168m10 169r10 170r10 171r10 172r10 173r38
+152m7 FD{14|37M9} 162m7 165r10 170r19
+216p7 Ret{15|111P9} 220r13 220r34 221m10 221r17 225r10 226m10 227r10 228r10
+. 229r31 232r14
+300m7 Target{12|74M9} 308m13 310m13 312m13 314m13 317r46 321r36
+X 17 system.ads
+50K9*System 15|136r28 142r29 16|251r16 277r16 17|166e11
+80M9*Address 15|136r35 142r36 16|251r23 277r23
+X 37 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 44 s-taskin.ads
+398V13*Get_Sec_Stack{37|46P9} 399i<c,__gnat_get_secondary_stack>22
+

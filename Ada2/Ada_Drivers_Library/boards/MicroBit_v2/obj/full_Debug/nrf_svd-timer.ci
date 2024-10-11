@@ -1,0 +1,41 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads"
+node: { title: "nrf_svd__timer__bitmode_bitmode_fieldH" label: "bitmode_bitmode_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf_svd__timer__Ttasks_capture_registersBIP" label: "Ttasks_capture_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__Tevents_compare_registersBIP" label: "Tevents_compare_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__shorts_registerIP" label: "shorts_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__Tintenset_compare_field_arrayBIP" label: "Tintenset_compare_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:nrf_svd__timer__intenset_compare_fieldEQ__E150s.0" label: "E150s\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__timer__intenset_compare_fieldEQ" label: "intenset_compare_fieldEQ\n<built-in>\n32 bytes (static)" }
+edge: { sourcename: "nrf_svd__timer__intenset_compare_fieldEQ" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:nrf_svd__timer__intenset_compare_fieldEQ__E150s.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:276:9" }
+node: { title: "nrf_svd__timer__intenset_compare_fieldIP" label: "intenset_compare_fieldIP\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__timer__intenset_registerEQ" label: "intenset_registerEQ\n<built-in>\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__timer__intenset_registerEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:296:9" }
+node: { title: "nrf_svd__timer__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__Tintenclr_compare_field_arrayBIP" label: "Tintenclr_compare_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:nrf_svd__timer__intenclr_compare_fieldEQ__E180s.1" label: "E180s\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__timer__intenclr_compare_fieldEQ" label: "intenclr_compare_fieldEQ\n<built-in>\n32 bytes (static)" }
+edge: { sourcename: "nrf_svd__timer__intenclr_compare_fieldEQ" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:nrf_svd__timer__intenclr_compare_fieldEQ__E180s.1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:342:9" }
+node: { title: "nrf_svd__timer__intenclr_compare_fieldIP" label: "intenclr_compare_fieldIP\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf_svd__timer__intenclr_registerEQ" label: "intenclr_registerEQ\n<built-in>\n24 bytes (static)" }
+edge: { sourcename: "nrf_svd__timer__intenclr_registerEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:362:9" }
+node: { title: "nrf_svd__timer__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__mode_registerIP" label: "mode_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__bitmode_registerIP" label: "bitmode_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__prescaler_registerIP" label: "prescaler_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__Tcc_registersBIP" label: "Tcc_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__timer__timer_peripheralEQ" label: "timer_peripheralEQ\n<built-in>\n176 bytes (static)" }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:468:9" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:468:9" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralEQ" targetname: "nrf_svd__timer__intenset_registerEQ" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:468:9" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralEQ" targetname: "nrf_svd__timer__intenclr_registerEQ" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:468:9" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralEQ" targetname: "memcmp" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:468:9" }
+node: { title: "nrf_svd__timer__timer_peripheralIP" label: "timer_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__shorts_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:484:7" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:486:7" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:488:7" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__mode_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:490:7" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__bitmode_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:492:7" }
+edge: { sourcename: "nrf_svd__timer__timer_peripheralIP" targetname: "nrf_svd__timer__prescaler_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-timer.ads:494:7" }
+}

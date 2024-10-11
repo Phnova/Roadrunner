@@ -1,0 +1,39 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb"
+node: { title: "microbit__music__noteIP" label: "noteIP\n<built-in>\n16 bytes (static)" }
+node: { title: "microbit__music__melodyIP" label: "melodyIP\n<built-in>\n16 bytes (static)" }
+node: { title: "microbit__music__volumeup" label: "Volumeup\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:36:4\n8 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__music__volumeup" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:39:27" }
+node: { title: "microbit__iosfortasking__write" label: "Write\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.ads:34:14" shape : ellipse }
+edge: { sourcename: "microbit__music__volumeup" targetname: "microbit__iosfortasking__write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:43:10" }
+node: { title: "microbit__music__volumedown" label: "Volumedown\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:47:4\n8 bytes (static)" }
+edge: { sourcename: "microbit__music__volumedown" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:50:27" }
+edge: { sourcename: "microbit__music__volumedown" targetname: "microbit__iosfortasking__write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:54:10" }
+node: { title: "microbit__music__midi_to_freq_hz" label: "Midi_To_Freq_Hz\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:58:4\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__music__midi_to_freq_hz" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:69:17" }
+node: { title: "microbit__music__play" label: "Play\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:78:4\n16 bytes (static)" }
+node: { title: "microbit__iosfortasking__set" label: "Set\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.ads:22:14" shape : ellipse }
+edge: { sourcename: "microbit__music__play" targetname: "microbit__iosfortasking__set" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:86:10" }
+edge: { sourcename: "microbit__music__play" targetname: "microbit__iosfortasking__write" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:90:10" }
+node: { title: "__gnat_rcheck_CE_Divide_By_Zero" label: "gnat_rcheck_CE_Divide_By_Zero\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__music__play" targetname: "__gnat_rcheck_CE_Divide_By_Zero" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:93:42" }
+node: { title: "microbit__iosfortasking__set_analog_period_us" label: "Set_Analog_Period_Us\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.ads:30:14" shape : ellipse }
+edge: { sourcename: "microbit__music__play" targetname: "microbit__iosfortasking__set_analog_period_us" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:93:10" }
+node: { title: "microbit__music__play__2" label: "Play\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:101:4\n24 bytes (static)" }
+edge: { sourcename: "microbit__music__play__2" targetname: "microbit__music__play" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:103:7" }
+node: { title: "ada__real_time__clock" label: "Clock\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\a-reatim.ads:67:13" shape : ellipse }
+edge: { sourcename: "microbit__music__play__2" targetname: "ada__real_time__clock" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:104:7" }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\a-reatim.ads:127:13" shape : ellipse }
+edge: { sourcename: "microbit__music__play__2" targetname: "ada__real_time__milliseconds" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:104:7" }
+node: { title: "ada__real_time__Oadd" label: "+\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\a-reatim.ads:71:13" shape : ellipse }
+edge: { sourcename: "microbit__music__play__2" targetname: "ada__real_time__Oadd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:104:7" }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\a-retide.ads:42:14" shape : ellipse }
+edge: { sourcename: "microbit__music__play__2" targetname: "ada__real_time__delays__delay_until" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:104:7" }
+node: { title: "microbit__music__play__3" label: "Play\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:112:4\n56 bytes (static)" }
+edge: { sourcename: "microbit__music__play__3" targetname: "microbit__music__play__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:118:10" }
+edge: { sourcename: "microbit__music__play__3" targetname: "microbit__iosfortasking__set" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:122:7" }
+node: { title: "microbit__music__stopmusic" label: "Stopmusic\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:125:4\n4 bytes (static)" }
+node: { title: "microbit__music___elabb" label: "Music\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:34:1\n8 bytes (static)" }
+edge: { sourcename: "microbit__music___elabb" targetname: "microbit__iosfortasking__set_analog_period_us" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.adb:132:5" }
+}

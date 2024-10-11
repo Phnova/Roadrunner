@@ -1,0 +1,3 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:38:57: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:39:35: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:40:56: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

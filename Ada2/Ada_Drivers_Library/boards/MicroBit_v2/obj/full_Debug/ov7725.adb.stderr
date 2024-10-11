@@ -1,0 +1,3 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV7725\ov7725.adb:40:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV7725\ov7725.adb:146:44: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\camera\OV7725\ov7725.adb:172:44: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

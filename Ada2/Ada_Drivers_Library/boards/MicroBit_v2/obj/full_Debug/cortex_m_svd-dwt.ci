@@ -1,0 +1,5 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-dwt.ads"
+node: { title: "cortex_m_svd__dwt__ctrl_registerIP" label: "ctrl_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__dwt__dwt_peripheralIP" label: "dwt_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "cortex_m_svd__dwt__dwt_peripheralIP" targetname: "cortex_m_svd__dwt__ctrl_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-dwt.ads:100:7" }
+}

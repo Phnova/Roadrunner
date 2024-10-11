@@ -1,0 +1,5 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal.ads"
+node: { title: "hal__uint8_arrayIP" label: "uint8_arrayIP\n<built-in>\n16 bytes (static)" }
+node: { title: "hal__uint16_arrayIP" label: "uint16_arrayIP\n<built-in>\n16 bytes (static)" }
+node: { title: "hal__uint32_arrayIP" label: "uint32_arrayIP\n<built-in>\n16 bytes (static)" }
+}

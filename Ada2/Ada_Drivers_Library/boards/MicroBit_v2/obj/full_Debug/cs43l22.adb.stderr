@@ -1,0 +1,2 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\CS43L22\cs43l22.adb:49:27: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\CS43L22\cs43l22.adb:50:27: warning: aspect Unreferenced specified for "Status" [enabled by default]

@@ -1,0 +1,170 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb"
+edge: { sourcename: "nrf__uart__uart_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "nrf-uart.ads:105:9"
+}
+edge: { sourcename: "nrf__uart__uart_devicePI__2"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "nrf-uart.ads:105:9"
+}
+edge: { sourcename: "nrf__uart__uart_devicePI__2"
+  targetname: "3:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "nrf-uart.ads:105:9"
+}
+edge: { sourcename: "nrf__uart__transmitDP"
+  targetname: "1:nrf__uart__uart_device,nrf__uart__uart_device"
+  label: "hal-uart.ads:60:21"
+}
+edge: { sourcename: "nrf__uart__transmitDP_2"
+  targetname: "1:nrf__uart__uart_device,nrf__uart__uart_device"
+  label: "hal-uart.ads:68:21"
+}
+edge: { sourcename: "nrf__uart__receiveDP"
+  targetname: "1:nrf__uart__uart_device,nrf__uart__uart_device"
+  label: "hal-uart.ads:76:21"
+}
+edge: { sourcename: "nrf__uart__receiveDP_2"
+  targetname: "1:nrf__uart__uart_device,nrf__uart__uart_device"
+  label: "hal-uart.ads:84:21"
+}
+edge: { sourcename: "nrf__uart__Tuart_deviceCFD"
+  targetname: "-9:nrf__uart__uart_device,nrf__uart__uart_device"
+  label: "nrf-uart.ads:39:9"
+}
+class {
+  classname: "nrf__uart__uart_device"
+  label: "nrf__uart__uart_device\nrf-uart.ads:39:9"
+  parent: "hal__uart__uart_port"
+  virtuals: "1:nrf__uart__data_size,1:hal__uart__uart_port\n
+             2:nrf__uart__transmit,2:hal__uart__uart_port\n
+             3:nrf__uart__transmit__2,3:hal__uart__uart_port\n
+             4:nrf__uart__receive,4:hal__uart__uart_port\n
+             5:nrf__uart__receive__2,5:hal__uart__uart_port\n
+             -1:nrf__uart___size__2,-1:hal__uart__uart_port\n
+             -10:nrf__uart__uart_devicePI__2,-10:hal__uart__uart_port\n
+             -2:nrf__uart__uart_deviceSR__2,-2:hal__uart__uart_port\n
+             -3:nrf__uart__uart_deviceSW__2,-3:hal__uart__uart_port\n
+             -4:nrf__uart__uart_deviceSI__2,-4:hal__uart__uart_port\n
+             -5:nrf__uart__uart_deviceSO__2,-5:hal__uart__uart_port\n
+             -9:nrf__uart__uart_deviceDF__2,-9:hal__uart__uart_port\n
+             6:nrf__uart__configure\n
+             7:nrf__uart__enable\n
+             8:nrf__uart__disable\n
+             9:nrf__uart__enable_flow_control\n
+             10:nrf__uart__disable_flow_control\n
+             -6:nrf__uart__Oeq\n
+             -7:nrf__uart___assign\n
+             -8:nrf__uart__uart_deviceDA"
+}
+node: { title: "nrf__uart__uart_deviceIP" label: "uart_deviceIP\n<built-in>\n24 bytes (static)" }
+node: { title: "nrf__uart___size__2" label: "uart\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__uart__uart_devicePI__2" label: "uart_devicePI\n<built-in>\n120 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "system__put_images__record_between" label: "Record_Between\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:111:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "system__put_images__record_between" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "system__wch_stw__string_to_wide_wide_string" label: "String_To_Wide_Wide_String\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-wchstw.ads:62:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "system__wch_stw__string_to_wide_wide_string" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_devicePI__2" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__uart_deviceSR__2" label: "uart_deviceSR\n<built-in>\n24 bytes (static)" }
+node: { title: "system__stream_attributes__i_b" label: "I_B\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:106:13" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_deviceSR__2" targetname: "system__stream_attributes__i_b" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__uart_deviceSW__2" label: "uart_deviceSW\n<built-in>\n24 bytes (static)" }
+node: { title: "system__stream_attributes__w_b" label: "W_B\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:144:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_deviceSW__2" targetname: "system__stream_attributes__w_b" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__uart_deviceSI__2" label: "uart_deviceSI\n<built-in>\n32 bytes (static)" }
+node: { title: "system__stream_attributes__i_as" label: "I_As\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:105:13" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_deviceSI__2" targetname: "system__stream_attributes__i_as" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "nrf__uart__uart_deviceSI__2" targetname: "nrf__uart__uart_deviceIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "nrf__uart__uart_deviceSI__2" targetname: "nrf__uart__uart_deviceSR__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__uart_deviceSO__2" label: "uart_deviceSO\n<built-in>\n32 bytes (static)" }
+node: { title: "system__stream_attributes__w_as" label: "W_As\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-stratt.ads:143:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__uart_deviceSO__2" targetname: "system__stream_attributes__w_as" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "nrf__uart__uart_deviceSO__2" targetname: "nrf__uart__uart_deviceSW__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__Oeq" label: "=\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__uart___assign" label: "uart\n<built-in>\n448 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Discriminant_Check" label: "gnat_rcheck_CE_Discriminant_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__uart___assign" targetname: "__gnat_rcheck_CE_Discriminant_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__uart_deviceDA" label: "uart_deviceDA\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__uart__uart_deviceDF__2" label: "uart_deviceDF\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf__uart__transmitDP" label: "transmitDP\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:60:21" }
+node: { title: "nrf__uart__transmitSP" label: "transmitSP\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitSP" targetname: "nrf__uart__data_size" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:60:21" }
+node: { title: "nrf__uart__transmitICW" label: "transmitICW\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitICW" targetname: "nrf__uart__transmitSP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:74:14" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-assert.ads:46:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__transmitICW" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:74:14" }
+edge: { sourcename: "nrf__uart__transmitICW" targetname: "nrf__uart__transmit" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:74:14" }
+node: { title: "nrf__uart__transmitDP_2" label: "transmitDP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitDP_2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:68:21" }
+node: { title: "nrf__uart__transmitSP_2" label: "transmitSP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitSP_2" targetname: "nrf__uart__data_size" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:68:21" }
+node: { title: "nrf__uart__transmitICW_2" label: "transmitICW_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmitICW_2" targetname: "nrf__uart__transmitSP_2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:88:14" }
+edge: { sourcename: "nrf__uart__transmitICW_2" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:88:14" }
+edge: { sourcename: "nrf__uart__transmitICW_2" targetname: "nrf__uart__transmit__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:88:14" }
+node: { title: "nrf__uart__receiveDP" label: "receiveDP\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:76:21" }
+node: { title: "nrf__uart__receiveSP" label: "receiveSP\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveSP" targetname: "nrf__uart__data_size" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:76:21" }
+node: { title: "nrf__uart__receiveICW" label: "receiveICW\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveICW" targetname: "nrf__uart__receiveSP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:81:14" }
+edge: { sourcename: "nrf__uart__receiveICW" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:81:14" }
+edge: { sourcename: "nrf__uart__receiveICW" targetname: "nrf__uart__receive" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:81:14" }
+node: { title: "nrf__uart__receiveDP_2" label: "receiveDP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveDP_2" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:84:21" }
+node: { title: "nrf__uart__receiveSP_2" label: "receiveSP_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveSP_2" targetname: "nrf__uart__data_size" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-uart.ads:84:21" }
+node: { title: "nrf__uart__receiveICW_2" label: "receiveICW_2\n<built-in>\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receiveICW_2" targetname: "nrf__uart__receiveSP_2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:96:14" }
+edge: { sourcename: "nrf__uart__receiveICW_2" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:96:14" }
+edge: { sourcename: "nrf__uart__receiveICW_2" targetname: "nrf__uart__receive__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:96:14" }
+node: { title: "nrf__uart__Tuart_deviceCFD" label: "Tuart_deviceCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf__uart__Tuart_deviceCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:39:9" }
+node: { title: "nrf__uart__baud_rateH" label: "baud_rateH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf__uart__baud_rateRP" label: "baud_rateRP\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__uart__baud_rateRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:43:9" }
+node: { title: "nrf__uart__data_size" label: "Data_Size\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:69:4\n16 bytes (static)" }
+node: { title: "nrf__uart__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "nrf__uart__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:37:1" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:nrf__uart__T184s" label: "T184s\n<built-in>\n56 bytes (static)" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:nrf__uart__T184s" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:nrf__uart__T184s" targetname: "nrf__uart__uart_deviceSI__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "nrf__uart__configure" label: "Configure\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:40:4\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__uart__configure" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:40:4" }
+node: { title: "nrf__uart__enable" label: "Enable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:52:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__uart__enable" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:52:4" }
+node: { title: "nrf__uart__disable" label: "Disable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:71:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__uart__disable" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:71:4" }
+node: { title: "nrf__uart__enable_flow_control" label: "Enable_Flow_Control\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:86:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__uart__enable_flow_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:86:4" }
+node: { title: "nrf__uart__disable_flow_control" label: "Disable_Flow_Control\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:100:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__uart__disable_flow_control" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:100:4" }
+node: { title: "nrf__uart__transmit" label: "Transmit\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:112:4\n48 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmit" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:112:4" }
+node: { title: "nrf__uart__receive" label: "Receive\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:146:4\n48 bytes (static)" }
+edge: { sourcename: "nrf__uart__receive" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:146:4" }
+node: { title: "nrf__uart__transmit__2" label: "Transmit\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:180:4\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__transmit__2" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:180:4" }
+node: { title: "__gnat_rcheck_PE_Explicit_Raise" label: "gnat_rcheck_PE_Explicit_Raise\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__uart__transmit__2" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:187:7" }
+node: { title: "nrf__uart__receive__2" label: "Receive\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:195:4\n40 bytes (static)" }
+edge: { sourcename: "nrf__uart__receive__2" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:195:4" }
+edge: { sourcename: "nrf__uart__receive__2" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:202:7" }
+node: { title: "nrf__uart___elabb" label: "Uart\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.adb:34:1\n4 bytes (static)" }
+node: { title: "nrf__uart___elabs" label: "Uart\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:37:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "nrf__uart___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "nrf__uart___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-uart.ads:105:9" }
+}

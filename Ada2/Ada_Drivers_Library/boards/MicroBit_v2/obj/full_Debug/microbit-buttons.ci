@@ -1,0 +1,24 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb"
+node: { title: "microbit__buttons__Tbutton_state_arrayBIP" label: "Tbutton_state_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" label: "Initialize\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:49:4\n32 bytes (static)" }
+node: { title: "nrf__gpio__gpio_configurationIP" label: "Gpio_Configurationip\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:58:9" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" targetname: "nrf__gpio__gpio_configurationIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:50:7" }
+node: { title: "nrf__gpio__configure_io" label: "Configure_Io\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:117:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" targetname: "nrf__gpio__configure_io" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:58:12" }
+node: { title: "microbit__timewithrtc1__timer__tick_subscribeP" label: "Tick_Subscribep\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-timewithrtc1.ads:45:5" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" targetname: "microbit__timewithrtc1__timer__tick_subscribeP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:61:19" }
+node: { title: "__gnat_rcheck_PE_Explicit_Raise" label: "gnat_rcheck_PE_Explicit_Raise\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:62:10" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__tick_handler" label: "Tick_Handler\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:71:4\n32 bytes (static)" }
+node: { title: "nrf__gpio__set" label: "Set\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio.ads:94:13" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__tick_handler" targetname: "nrf__gpio__set" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:76:17" }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__tick_handler" targetname: "__gnat_rcheck_CE_Access_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:90:23" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__tick_handler" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:90:23" }
+node: { title: "microbit__buttons__state" label: "State\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:101:4\n16 bytes (static)" }
+node: { title: "microbit__buttons__subscribe" label: "Subscribe\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:110:4\n24 bytes (static)" }
+node: { title: "microbit__buttons__unsubscribe" label: "Unsubscribe\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:126:4\n24 bytes (static)" }
+node: { title: "microbit__buttons___elabb" label: "Buttons\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:35:1\n8 bytes (static)" }
+edge: { sourcename: "microbit__buttons___elabb" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:microbit__buttons__initialize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-buttons.adb:138:4" }
+}

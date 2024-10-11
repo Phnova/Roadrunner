@@ -1,0 +1,62 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U cortex_m.hints%b	cortex_m-hints.adb	5a739a41 NE OO PK
+W cortex_m%s		cortex_m.ads		cortex_m.ali
+W system%s		system.ads		system.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+U cortex_m.hints%s	cortex_m-hints.ads	5e897c79 BN EE NE OO PK
+W cortex_m%s		cortex_m.ads		cortex_m.ali
+
+D cortex_m.ads		20240918101450 38b367df cortex_m%s
+D cortex_m-hints.ads	20240918101450 663a1ba6 cortex_m.hints%s
+D cortex_m-hints.adb	20240918101450 f18389f9 cortex_m.hints%b
+D system.ads		20240605232314 124d8146 system%s
+D s-maccod.ads		20240605232314 cdca081e system.machine_code%s
+G a e
+G c Z s b [send_event cortex_m__hints 43 14 none]
+G c Z s b [wait_for_event cortex_m__hints 49 14 none]
+G c Z s b [wait_for_interrupt cortex_m__hints 56 14 none]
+G c Z s b [yield cortex_m__hints 61 14 none]
+X 1 cortex_m.ads
+32K9*Cortex_M 34e13 2|41r9 70r5 3|33r14 71r5
+X 2 cortex_m-hints.ads
+41K18*Hints 1|32k9 2|70l14 70e19 3|33b23 71l14 71t19
+43U14*Send_Event 3|48b14 51l8 51t18
+49U14*Wait_For_Event 3|57b14 60l8 60t22
+56U14*Wait_For_Interrupt 3|66b14 69l8 69t26
+61U14*Yield 3|39b14 42l8 42t13
+X 4 system.ads
+50K9*System 3|31r6 31r31 4|166e11
+X 5 s-maccod.ads
+36K16*Machine_Code 3|31w13 31r38 5|133e24
+85U14*Asm 3|41s7 50s7 59s7 68s7
+90b6 Volatile{boolean} 3|41r21 50r19 59r19 68r19
+

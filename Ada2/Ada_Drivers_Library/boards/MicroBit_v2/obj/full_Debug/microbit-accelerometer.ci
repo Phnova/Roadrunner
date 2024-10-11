@@ -1,0 +1,31 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb"
+edge: { sourcename: "microbit__accelerometer__TTaccSCFD"
+  targetname: "-9:lsm303agr__lsm303agr_accelerometer,lsm303agr__lsm303agr_accelerometer"
+  label: "microbit-accelerometer.adb:36:4"
+}
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__TTaccSCFD" label: "TTaccSCFD\n<built-in>\n16 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__TTaccSCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:36:4" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__initialize" label: "Initialize\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:44:4\n8 bytes (static)" }
+node: { title: "microbit__i2c__initialized" label: "Initialized\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-i2c.ads:38:13" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__initialize" targetname: "microbit__i2c__initialized" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:46:26" }
+node: { title: "microbit__i2c__initialize" label: "Initialize\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-i2c.ads:44:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__initialize" targetname: "microbit__i2c__initialize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:47:22" }
+node: { title: "lsm303agr__configure" label: "CONFIGURE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.ads:79:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__initialize" targetname: "lsm303agr__configure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:50:10" }
+node: { title: "microbit__accelerometer__acceldataraw" label: "Acceldataraw\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:57:4\n16 bytes (static)" }
+node: { title: "lsm303agr__read_accelerometer_raw" label: "READ_ACCELEROMETER_RAW\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.ads:87:13" shape : ellipse }
+edge: { sourcename: "microbit__accelerometer__acceldataraw" targetname: "lsm303agr__read_accelerometer_raw" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:58:11" }
+node: { title: "microbit__accelerometer__acceldata" label: "Acceldata\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:60:4\n16 bytes (static)" }
+node: { title: "lsm303agr__read_accelerometer" label: "READ_ACCELEROMETER\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.ads:84:13" shape : ellipse }
+edge: { sourcename: "microbit__accelerometer__acceldata" targetname: "lsm303agr__read_accelerometer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:61:11" }
+node: { title: "microbit__accelerometer__magdata" label: "Magdata\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:63:4\n16 bytes (static)" }
+node: { title: "lsm303agr__read_magnetometer" label: "READ_MAGNETOMETER\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.ads:91:13" shape : ellipse }
+edge: { sourcename: "microbit__accelerometer__magdata" targetname: "lsm303agr__read_magnetometer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:64:11" }
+node: { title: "microbit__accelerometer___elabb" label: "Accelerometer\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:34:1\n8 bytes (static)" }
+node: { title: "microbit__i2c__controller" label: "Controller\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-i2c.ads:59:13" shape : ellipse }
+edge: { sourcename: "microbit__accelerometer___elabb" targetname: "microbit__i2c__controller" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:36:58" }
+node: { title: "lsm303agr__lsm303agr_accelerometerIP" label: "LSM303AGR_ACCELEROMETERIP\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.ads:98:9" shape : ellipse }
+edge: { sourcename: "microbit__accelerometer___elabb" targetname: "lsm303agr__lsm303agr_accelerometerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:36:4" }
+edge: { sourcename: "microbit__accelerometer___elabb" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:microbit__accelerometer__initialize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-accelerometer.adb:67:4" }
+}

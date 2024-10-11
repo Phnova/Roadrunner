@@ -1,0 +1,407 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U nrf.radio%b		nrf-radio.adb		665785cd NE OO PK
+W cortex_m%s		cortex_m.ads		cortex_m.ali
+W cortex_m.nvic%s	cortex_m-nvic.adb	cortex_m-nvic.ali
+W nrf%s			nrf.ads			nrf.ali
+W nrf.clock%s		nrf-clock.adb		nrf-clock.ali
+W nrf_svd%s		nrf_svd.ads		nrf_svd.ali
+W nrf_svd.radio%s	nrf_svd-radio.ads	nrf_svd-radio.ali
+W system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U nrf.radio%s		nrf-radio.ads		ad0293f1 EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W nrf%s			nrf.ads			nrf.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-assert.ads		20240605232314 ba465f5c ada.assertions%s
+D cortex_m.ads		20240918101450 38b367df cortex_m%s
+D cortex_m-nvic.ads	20240918101450 72ffb636 cortex_m.nvic%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D nrf.ads		20240918101450 74cf72f5 nrf%s
+D nrf-clock.ads		20240918101450 3bc4307d nrf.clock%s
+D nrf-radio.ads		20240918101450 f28f290a nrf.radio%s
+D nrf-radio.adb		20240918101450 40682ce9 nrf.radio%b
+D nrf_svd.ads		20240918101450 87ba21d7 nrf_svd%s
+D nrf_svd-radio.ads	20240918101450 5155d28d nrf_svd.radio%s
+D system.ads		20240605232314 124d8146 system%s
+D s-assert.ads		20240605232314 9c4520c7 system.assertions%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [setup_for_bluetooth_low_energy nrf__radio 36 14 none]
+G c Z s b [state nrf__radio 93 13 none]
+G c Z s b [enable_shortcut nrf__radio 96 14 none]
+G c Z s b [disable_shortcut nrf__radio 99 14 none]
+G c Z s b [set_packet nrf__radio 102 14 none]
+G c Z s b [set_frequency nrf__radio 105 14 none]
+G c Z s b [set_power nrf__radio 108 14 none]
+G c Z s b [set_mode nrf__radio 111 14 none]
+G c Z s b [set_logic_addresses nrf__radio 114 14 none]
+G c Z s b [translate_logic_address nrf__radio 123 14 none]
+G c Z s b [set_tx_address nrf__radio 128 14 none]
+G c Z s b [rx_match_address nrf__radio 140 13 none]
+G c Z s b [set_rx_addresses nrf__radio 144 14 none]
+G c Z s b [configure_crc nrf__radio 147 14 none]
+G c Z s b [crc_error nrf__radio 154 13 none]
+G c Z s b [configure_whitening nrf__radio 157 14 none]
+G c Z s b [configure_packet nrf__radio 164 14 none]
+G c Z s b [setup_for_rf_nrf52 nrf__radio 193 14 none]
+G c Z s b [isinitialized nrf__radio 200 12 none]
+G c Z s b [dataready nrf__radio 202 12 none]
+G c Z s b [get_safeframebuffer nrf__radio 204 12 none]
+G c Z s b [set_queuedepth nrf__radio 206 13 none]
+G c Z s b [get_queuedepth nrf__radio 208 12 none]
+G c Z s b [deepcopyintosafeframebuffer nrf__radio 210 13 none]
+G c Z s b [get_rssisample nrf__radio 212 12 none]
+G c Z s b [set_rssi nrf__radio 214 13 none]
+G c Z s b [get_rssi nrf__radio 217 13 none]
+G c Z s s [Tpayload_dataBIP nrf__radio 178 4 none]
+G c Z s s [framebufferIP nrf__radio 181 9 none]
+G c Z s s [TrxqueuearrayBIP nrf__radio 220 4 none]
+G c Z s b [set_nrf52fastrampup nrf__radio 237 14 none]
+G c Z s s [Tlogic_address_maskBIP nrf__radio 121 4 none]
+G r c none [setup_for_rf_nrf52 nrf__radio 193 14 none] [set_high_freq_source nrf__clock 43 14 none]
+G r c none [setup_for_rf_nrf52 nrf__radio 193 14 none] [start_high_freq nrf__clock 49 14 none]
+G r c none [setup_for_rf_nrf52 nrf__radio 193 14 none] [high_freq_running nrf__clock 47 13 none]
+X 3 cortex_m.ads
+32K9*Cortex_M 34e13 10|35r6 35r25
+X 4 cortex_m-nvic.ads
+48K18*NVIC 258e18 10|35w15 35r34
+X 5 hal.ads
+34K9*HAL 166e8 9|32w6 32r15 10|405r22 406r29 407r48 422r56 423r56
+39M9*UInt2 9|148r45 10|475r45
+41M9*UInt3 9|116r29 120r36 10|406r33 446r43
+43M9*UInt4 9|166r38 167r38 10|529r38 530r38
+47M9*UInt6 9|158r51 10|515r51
+49M9*UInt7 9|187r23 212r35 214r36 217r29 228r20 10|303r35 342r20 352r29 374r43
+. 520r19
+53M9*UInt8<6|70M9> 9|72r26 76r27 117r48 125r56 174r49 175r46 176r42 179r9
+. 182r23 183r23 184r23 185r23 206r39 208r34 229r20 10|257r35 265r40 407r52
+. 423r60
+97M9*UInt32<6|81M9> 9|115r29 124r56 150r45 151r45 190r29 10|365r34 405r26
+. 422r60 477r45 478r45
+X 6 interfac.ads
+70M9*Unsigned_8
+81M9*Unsigned_32
+X 7 nrf.ads
+34K9*nRF 43e8 9|34r9 262r5 10|34r6 34r25 37r14 553r5
+X 8 nrf-clock.ads
+32K13*Clock 69e14 10|34w10 34r29
+38n35*HFCLK_RC{38E9} 10|77r29
+43U14*Set_High_Freq_Source 10|77s7
+47V13*High_Freq_Running{boolean} 10|79s17
+49U14*Start_High_Freq 10|78s7
+X 9 nrf-radio.ads
+34K13*Radio 7|34k9 9|226E4 262l9 262e14 10|37b18 553l9 553t14
+36U14*Setup_For_Bluetooth_Low_Energy 10|41b14 59l8 59t38
+52E9*Radio_State 60e37 93r26 239r8 10|180r26
+52n25*Disabled{52E9} 239r25 10|184r34
+53n25*Rx_Ramp_Up{52E9} 240r25 10|185r30
+54n25*Rx_Idle{52E9} 241r25 10|186r32
+55n25*Rx_State{52E9} 242r25 10|187r28
+56n25*Rx_Disabled{52E9} 243r25 10|188r35
+57n25*Tx_Ramp_Up{52E9} 244r25 10|189r30
+58n25*Tx_Idle{52E9} 245r25 10|190r32
+59n25*Tx_State{52E9} 246r25 10|191r28
+60n25*Tx_Disabled{52E9} 247r25 10|192r35
+62E9*Shortcut 68e41 96r39 99r40 10|200r39 224r40
+62n22*Ready_To_Start{62E9} 10|169r24 203r15 227r15
+63n22*End_To_Disable{62E9} 10|170r24 205r15 229r15
+64n22*Disabled_To_TXen{62E9} 10|207r15 231r15
+65n22*Disabled_To_RXen{62E9} 10|209r15 233r15
+66n22*Address_To_RSSIstart{62E9} 10|171r24 211r15 235r15
+67n22*End_To_Start{62E9} 10|213r15 237r15
+68n22*Address_To_BCstart{62E9} 10|215r15 239r15
+72M12*Packet_Len{5|53M9} 168r38 169r38 10|531r38 532r38
+74I9*Radio_Frequency_MHz<short_integer> 105r33 193r45 10|61r45 372r33 374r54
+76M12*Radio_Group{5|53M9} 197r41 227r20 10|65r41
+78E9*Radio_Power 86e35 108r29 195r41 249r8 10|63r41 381r29
+78n25*Zero_Dbm{78E9} 249r25
+79n25*Pos_4_Dbm{78E9} 250r25
+80n25*Pos_8_Dbm{78E9} 251r25
+81n25*Neg_30_Dbm{78E9} 252r25
+82n25*Neg_20_Dbm{78E9} 253r25
+83n25*Neg_16_Dbm{78E9} 254r25
+84n25*Neg_12_Dbm{78E9} 255r25
+85n25*Neg_8_Dbm{78E9} 256r25
+86n25*Neg_4_Dbm{78E9} 257r25
+88E9*Radio_Mode 91e34 111r31 194r41 10|62r41 391r31
+88n24*Nordic_1MBIT{88E9} 10|394r42
+89n24*Nordic_2MBIT{88E9} 10|395r42
+90n24*Nordic_250KBIT{88E9} 10|396r42
+91n24*BLE_1MBIT{88E9} 10|43r17 397r42
+93V13*State{52E9} 10|180b13 194l8 194t13
+96U14*Enable_Shortcut 96>31 10|169s7 170s7 171s7 200b14 218l8 218t23
+96e31 Short{62E9} 10|200b31 202r12
+99U14*Disable_Shortcut 99>32 10|224b14 242l8 242t24
+99e32 Short{62E9} 10|224b32 226r12
+102U14*Set_Packet 102>26 10|164s4 361b14 366l8 366t18
+102m26 PacketAddress{13|80M9} 10|362b7 365r78
+105U14*Set_Frequency 105>29 10|155s4 372b14 375l8 375t21
+105i29 F{74I9} 10|372b29 374r50
+108U14*Set_Power 108>25 10|156s4 381b14 385l8 385t17
+108e25 P{78E9} 10|381b25 384r41
+111U14*Set_Mode 111>24 10|43s7 154s4 391b14 398l8 398t16
+111e24 Mode{88E9} 10|391b24 393r39
+114U14*Set_Logic_Addresses 115>7 115>14 116>7 117>7 117>12 117>17 117>22
+. 117>27 117>32 117>37 117>42 10|142s7 404b14 415l8 415t27
+115m7 Base0{5|97M9} 10|142r28 405b7 410r29
+115m14 Base1{5|97M9} 10|143r27 405b14 411r29
+116m7 Base_Length_In_Byte{5|41M9} 10|144r27 406b7 412r36
+117m7 AP0{5|53M9} 10|145r27 407b7 413r36
+117m12 AP1{5|53M9} 10|146r27 407b12 413r41
+117m17 AP2{5|53M9} 10|147r27 407b17 413r46
+117m22 AP3{5|53M9} 10|148r27 407b22 413r51
+117m27 AP4{5|53M9} 10|149r27 407b27 414r36
+117m32 AP5{5|53M9} 10|150r27 407b32 414r41
+117m37 AP6{5|53M9} 10|151r27 407b37 414r46
+117m42 AP7{5|53M9} 10|152r27 407b42 414r51
+120M9*Radio_Logic_Address<5|41M9> 121r38 123r52 128r43 140r37 10|421r52 444r43
+. 453r37 455r14
+121A9*Logic_Address_Mask(boolean)<120M9> 144r46 10|462r46
+123U14*Translate_Logic_Address 123>39 124<39 125<39 10|421b14 438l8 438t31
+123m39 Logic_Addr{120M9} 10|421b39 426r12 432r12 434r58 436r58
+124m39 Base{5|97M9} 10|422b39 428m13 430m13
+125m39 Prefix{5|53M9} 10|423b39 434m13 436m13
+128U14*Set_TX_Address 128>30 10|158s4 444b14 447l8 447t22
+128m30 Logic_Addr{120M9} 10|444b30 446r50
+140V13*RX_Match_Address{120M9} 10|453b13 456l8 456t24
+144U14*Set_RX_Addresses 144>32 10|159s4 462b14 468l8 468t24
+144a32 Enable_Mask{121A9} 10|462b32 464r20 466r16
+147U14*Configure_CRC 147>29 148>29 149>29 150>29 151>29 10|52s7 126s6 474b14
+. 499l8 499t21
+147b29 Enable{boolean} 152r22 10|52r22 126r21 474b29 481r10
+148m29 Length{5|39M9} 152r34 10|53r22 127r21 475b29 482r15
+149b29 Skip_Address{boolean} 10|54r22 128r21 476b29 496r43
+150m29 Polynomial{5|97M9} 10|55r22 129r21 477b29 497r39
+151m29 Initial_Value{5|97M9} 10|56r22 130r21 478b29 498r39
+154V13*CRC_Error{boolean} 10|505b13 508l8 508t17
+157U14*Configure_Whitening 157>35 158>35 10|58s7 157s4 514b14 521l8 521t27
+157b35 Enable{boolean} 10|514b35 518r41
+158m35 Initial_Value{5|47M9} 10|515b35 520r26
+160E9*Length_Field_Endianness 160e63 170r38 10|533r38
+160n37*Little_Endian{160E9} 10|50r57 124r57 548r60
+160n52*Big_Endian{160E9}
+162E9*Length_Field_S0 162e53 165r38 10|528r38
+162n29*LengthZero{162E9} 10|119r57 537r63
+162n41*LengthIsOne{162E9} 10|45r57
+164U14*Configure_Packet 165>7 166>7 167>7 168>7 169>7 170>7 10|45s7 119s6
+. 527b14 552l8 552t24
+165e7 S0_Field_Size_In_Byte{162E9} 10|45r25 119r24 528b7 537r39
+166m7 S1_Field_Size_In_Bit{5|43M9} 10|46r25 120r25 529b7 542r35
+167m7 Length_Field_Size_In_Bit{5|43M9} 10|47r25 121r25 530b7 536r35
+168m7 Max_Packet_Length_In_Byte{72M12} 10|48r25 122r25 531b7 546r36
+169m7 Static_Packet_Length_In_Byte{72M12} 10|49r25 123r25 532b7 547r37
+170e7 On_Air_Endianness{160E9} 10|50r25 124r25 533b7 548r40
+174m4*MICROBIT_RADIO_MAXIMUM_RX_BUFFERS{5|53M9} 220r37
+175m4*MICROBIT_RADIO_MAX_PACKET_SIZE{5|53M9} 178r37 10|122r57
+176m4*MICROBIT_RADIO_HEADER_SIZE{5|53M9}
+178A9*Payload_Data(5|53M9)<5|53M9> 186r23
+181R9*Framebuffer 188e14 204r39 220r75 222r20 223r20 230r23 10|249r40
+182m7*Length{5|53M9} 10|272m23 272r39
+183m7*Version{5|53M9} 10|273m23 273r40
+184m7*Group{5|53M9} 10|274m23 274r38
+185m7*Protocol{5|53M9} 10|275m23 275r41
+186a7*Payload{178A9} 10|278r23 279m24 279r44
+187m7*RSSI{5|49M9} 10|276m23 276r37
+190M12*Radio_Address{5|97M9} 196r49 10|64r49
+193U14*Setup_For_RF_nrf52 193>34 194>34 195>34 196>34 197>34 10|61b14 174l8
+. 174t26
+193i34 Frequency{74I9} 10|61b34 155r18
+194e34 Mode{88E9} 10|62b34 154r14
+195e34 Power{78E9} 10|63b34 156r14
+196m34 Base0Address{190M12} 10|64b34 142r37
+197m34 Group{76M12} 10|65b34 145r36
+200V12*IsInitialized{boolean} 198s20 215s17 218s19 10|321b13 324l8 324t21
+202V12*DataReady{boolean} 10|313b13 316l8 316t17
+204V12*Get_SafeFramebuffer{181R9} 10|249b13 252l8 252t27
+206U13*Set_QueueDepth 206>28 10|265b14 268l5 268t19
+206m28 newDepth{5|53M9} 10|265b29 267r21
+208V12*Get_QueueDepth{5|53M9} 10|257b13 260l8 260t22
+210U13*DeepCopyIntoSafeFramebuffer 10|270b13 298l8 298t35
+212V12*Get_RSSIsample{5|49M9} 10|303b13 306l8 306t22
+214U13*Set_RSSI 214>23 10|341b14 346l8 346t16
+214m23 rssi_value{5|49M9} 10|342b7 345r15
+217V13*Get_RSSI{5|49M9} 10|352b13 355l8 355t16
+220A9*RxQueueArray(181R9)<5|53M9> 224r20
+222r4*RxBuf{181R9} 10|164m15 164r15 272r33 273r34 274r32 275r35 276r31 278r17
+. 279r38
+223r4*TxBuf{181R9}
+224a4*RxQueue{220A9}
+226b4 IsInit{boolean} 10|173m7 323r19
+227m4 Group{76M12}
+228m4 rssi{5|49M9} 10|345m7 354r14
+229m4 QueueDepth{5|53M9} 10|259r14 267m7 315r19
+230r4 SafeFramebuffer{181R9} 10|251r14 272m7 273m7 274m7 275m7 276m7 279m8
+237U14 Set_Nrf52FastRampup 10|161s4 331b14 335l8 335t27
+X 10 nrf-radio.adb
+278m11 i<6|70M9> 279r32 279r52
+464m11 Index<5|41M9> 465r54 466r29
+X 11 nrf_svd.ads
+49K9*NRF_SVD 10|32r6 32r25 11|122e12
+X 12 nrf_svd-radio.ads
+48K17*RADIO 10|32w14 32r33 12|1774e18
+58n7*Disabled{56E9} 10|228r48
+60n7*Enabled{56E9} 10|204r48
+69n7*Disabled{67E9} 10|230r48
+71n7*Enabled{67E9} 10|206r48
+80n7*Disabled{78E9} 10|232r50
+82n7*Enabled{78E9} 10|208r50
+91n7*Disabled{89E9} 10|234r50
+93n7*Enabled{89E9} 10|210r50
+102n7*Disabled{100E9} 10|236r54
+104n7*Enabled{100E9} 10|212r54
+113n7*Disabled{111E9} 10|238r46
+115n7*Enabled{111E9} 10|214r46
+124n7*Disabled{122E9} 10|240r52
+126n7*Enabled{122E9} 10|216r52
+146e7*READY_START{56E9} 10|204m33 228m33
+148e7*END_DISABLE{67E9} 10|206m33 230m33
+150e7*DISABLED_TXEN{78E9} 10|208m33 232m33
+153e7*DISABLED_RXEN{89E9} 10|210m33 234m33
+156e7*ADDRESS_RSSISTART{100E9} 10|212m33 236m33
+159e7*END_START{111E9} 10|214m33 238m33
+161e7*ADDRESS_BCSTART{122E9} 10|216m33 240m33
+792n7*Crcerror{790E9} 10|507r49
+803e7*CRCSTATUS{790E9} 10|507r37
+820m7*RXMATCH{815M12} 10|455r56
+882m7*FREQUENCY{866M12} 10|374m30
+901E9*TXPOWER_TXPOWER_Field 10|384r9 12|922e6
+938e7*TXPOWER{901E9} 10|383m28
+954n7*Nrf_1Mbit{952E9} 10|394r58
+956n7*Nrf_2Mbit{952E9} 10|395r58
+958n7*Nrf_250Kbit{952E9} 10|396r60
+960n7*Ble_1Mbit{952E9} 10|397r55
+975e7*MODE{952E9} 10|393m25
+993n7*Automatic{991E9} 10|543r36
+1003n7*LengthIsZero{1001E10} 10|538r40
+1004n7*LengthIsOneByte{1001E10} 10|540r39
+1013n7*Val_8BIT{1011E9} 10|544r36
+1024m7*LFLEN{987M12} 10|536m26
+1028e7*S0LEN{1001E10} 10|537m26
+1032m7*S1LEN{988M12} 10|542m26
+1034e7*S1INCL{991E9} 10|543m26
+1038e7*PLEN{1011E9} 10|544m26
+1057M12*PCNF1_MAXLEN_Field{5|53M9}
+1058M12*PCNF1_STATLEN_Field{5|53M9}
+1065n7*Little{1063E9} 10|549r40
+1067n7*Big{1063E9} 10|551r40
+1076n7*Disabled{1074E9} 10|518r66
+1078n7*Enabled{1074E9} 10|518r53
+1088m7*MAXLEN{1057M12} 10|546m26
+1090m7*STATLEN{1058M12} 10|547m26
+1092m7*BALEN{1059M12} 10|412m26
+1097e7*ENDIAN{1063E9} 10|548m26
+1099e7*WHITEEN{1074E9} 10|518m26
+1117M12*PREFIX0_AP_Element{5|53M9}
+1120A9*PREFIX0_AP_Field_Array(1117M12)<integer>
+1133a13*Arr{1120A9} 10|413m28 434r44
+1145M12*PREFIX1_AP_Element{5|53M9}
+1148A9*PREFIX1_AP_Field_Array(1145M12)<integer>
+1161a13*Arr{1148A9} 10|414m28 436r44
+1177m7*TXADDRESS{1172M12} 10|446m30
+1192n7*Disabled{1190E9} 10|466r54
+1194n7*Enabled{1190E9} 10|466r41
+1201A9*RXADDRESSES_ADDR_Field_Array(1190E9)<integer>
+1215a13*Arr{1201A9} 10|465m40 465r40
+1228r7*ADDR{1206R9} 10|465m35 465r35
+1244n7*Disabled{1242E9} 10|484r43 493r37
+1246n7*One{1242E9} 10|486r43
+1248n7*Two{1242E9} 10|488r43
+1250n7*Three{1242E9} 10|490r43
+1261n7*Include{1259E9} 10|496r71
+1264n7*Skip{1259E9} 10|496r61
+1273e7*LEN{1242E9} 10|484m36 486m36 488m36 490m36 493m30
+1277e7*SKIPADDR{1259E9} 10|496m27
+1291M12*CRCPOLY_CRCPOLY_Field{5|97M9}
+1296m7*CRCPOLY{1291M12} 10|497m28
+1305M12*CRCINIT_CRCINIT_Field{5|97M9}
+1310m7*CRCINIT{1305M12} 10|498m28
+1341m7*RSSISAMPLE{1336M12} 10|305r38
+1356n7*Disabled{1354E9} 10|184r15
+1358n7*Rxru{1354E9} 10|185r15
+1360n7*Rxidle{1354E9} 10|186r15
+1362n7*Rx{1354E9} 10|187r15
+1364n7*Rxdisable{1354E9} 10|188r15
+1366n7*Txru{1354E9} 10|189r15
+1368n7*Txidle{1354E9} 10|190r15
+1370n7*Tx{1354E9} 10|191r15
+1372n7*Txdisable{1354E9} 10|192r15
+1388e7*STATE{1354E9} 10|183r31
+1407m7*DATAWHITEIV{1400M12} 10|519m32
+1527n7*Fast{1522E9} 10|334r35
+1538n7*B0{1534E9} 10|333r36
+1550e7*RU{1522E9} 10|334m29
+1554e7*DTX{1534E9} 10|333m29
+1646r7*SHORTS{144R9} 10|204m26 206m26 208m26 210m26 212m26 214m26 216m26
+. 228m26 230m26 232m26 234m26 236m26 238m26 240m26
+1652r7*CRCSTATUS{801R9} 10|507r27
+1654r7*RXMATCH{818R9} 10|455r48
+1660m7*PACKETPTR{5|97M9} 10|365m20
+1662r7*FREQUENCY{880R9} 10|374m20
+1664r7*TXPOWER{936R9} 10|383m20
+1666r7*MODE{972R9} 10|393m20
+1668r7*PCNF0{1022R9} 10|536m20 537m20 542m20 543m20 544m20
+1670r7*PCNF1{1085R9} 10|412m20 518m20 546m20 547m20 548m20
+1672m7*BASE0{5|97M9} 10|410m20 428r34
+1674m7*BASE1{5|97M9} 10|411m20 430r34
+1676r7*PREFIX0{1124R9} 10|413m20 434r36
+1678r7*PREFIX1{1152R9} 10|414m20 436r36
+1680r7*TXADDRESS{1175R9} 10|446m20
+1682r7*RXADDRESSES{1226R9} 10|465m23 465r23
+1684r7*CRCCNF{1271R9} 10|484m29 486m29 488m29 490m29 493m23 496m20
+1686r7*CRCPOLY{1294R9} 10|497m20
+1688r7*CRCINIT{1308R9} 10|498m20
+1694r7*RSSISAMPLE{1339R9} 10|305r27
+1696r7*STATE{1386R9} 10|183r25
+1698r7*DATAWHITEIV{1403R9} 10|519m20
+1708r7*MODECNF0{1548R9} 10|333m20 334m20
+1771r4*RADIO_Periph{1603R9} 10|183r12 204m13 206m13 208m13 210m13 212m13
+. 214m13 216m13 228m13 230m13 232m13 234m13 236m13 238m13 240m13 305r14 333m7
+. 334m7 365m7 374m7 383m7 393m7 410m7 411m7 412m7 413m7 414m7 428r21 430r21
+. 434r23 436r23 446m7 455r35 465m10 484m16 486m16 488m16 490m16 493m10 496m7
+. 497m7 498m7 507r14 518m7 519m7 536m7 537m7 542m7 543m7 544m7 546m7 547m7
+. 548m7
+X 13 system.ads
+50K9*System 9|102r42 10|33r6 362r23 365r42 13|166e11
+80M9*Address 9|102r49 10|362r30
+X 15 s-stoele.ads
+40K16*Storage_Elements 10|33w13 365r49 15|90e28
+82M9*Integer_Address
+87V13*To_Integer{82M9} 10|365s66
+

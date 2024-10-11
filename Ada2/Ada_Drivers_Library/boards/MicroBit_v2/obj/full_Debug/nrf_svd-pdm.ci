@@ -1,0 +1,32 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads"
+node: { title: "nrf_svd__pdm__gainl_gainl_fieldRP" label: "gainl_gainl_fieldRP\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__pdm__gainl_gainl_fieldRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:360:9" }
+node: { title: "nrf_svd__pdm__gainr_gainr_fieldRP" label: "gainr_gainr_fieldRP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__pdm__gainr_gainr_fieldRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:394:9" }
+node: { title: "nrf_svd__pdm__inten_registerIP" label: "inten_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__enable_registerIP" label: "enable_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__mode_registerIP" label: "mode_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__gainl_registerIP" label: "gainl_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__gainr_registerIP" label: "gainr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__clk_psel_registerIP" label: "clk_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__din_psel_registerIP" label: "din_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__psel_clusterIP" label: "psel_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__pdm__psel_clusterIP" targetname: "nrf_svd__pdm__clk_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:492:7" }
+edge: { sourcename: "nrf_svd__pdm__psel_clusterIP" targetname: "nrf_svd__pdm__din_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:494:7" }
+node: { title: "nrf_svd__pdm__maxcnt_sample_registerIP" label: "maxcnt_sample_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__pdm__sample_clusterIP" label: "sample_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__pdm__sample_clusterIP" targetname: "nrf_svd__pdm__maxcnt_sample_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:529:7" }
+node: { title: "nrf_svd__pdm__pdm_peripheralIP" label: "pdm_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__inten_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:556:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:558:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:560:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__enable_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:562:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__mode_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:566:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__gainl_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:568:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__gainr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:570:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__psel_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:572:7" }
+edge: { sourcename: "nrf_svd__pdm__pdm_peripheralIP" targetname: "nrf_svd__pdm__sample_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-pdm.ads:574:7" }
+}

@@ -1,0 +1,4 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft5336\ft5336.adb:115:38: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft5336\ft5336.adb:303:10: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft5336\ft5336.adb:349:52: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\ft5336\ft5336.adb:503:17: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

@@ -1,0 +1,3 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306.adb:50:45: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306.adb:202:25: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\ssd1306\ssd1306.adb:496:22: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

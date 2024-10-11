@@ -1,0 +1,1 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\MCP23xxx\mcp23x08-i2c.adb:52:10: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

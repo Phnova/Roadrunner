@@ -1,0 +1,14 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-wdt.ads"
+node: { title: "nrf_svd__wdt__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__runstatus_registerIP" label: "runstatus_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__reqstatus_registerIP" label: "reqstatus_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__rren_registerIP" label: "rren_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__config_registerIP" label: "config_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__Trr_registersBIP" label: "Trr_registersBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__wdt__wdt_peripheralIP" label: "wdt_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__wdt__wdt_peripheralIP" targetname: "nrf_svd__wdt__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-wdt.ads:468:7" }
+edge: { sourcename: "nrf_svd__wdt__wdt_peripheralIP" targetname: "nrf_svd__wdt__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-wdt.ads:470:7" }
+edge: { sourcename: "nrf_svd__wdt__wdt_peripheralIP" targetname: "nrf_svd__wdt__rren_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-wdt.ads:478:7" }
+edge: { sourcename: "nrf_svd__wdt__wdt_peripheralIP" targetname: "nrf_svd__wdt__config_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-wdt.ads:480:7" }
+}

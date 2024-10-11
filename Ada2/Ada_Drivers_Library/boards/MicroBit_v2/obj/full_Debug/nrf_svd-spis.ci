@@ -1,0 +1,44 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads"
+node: { title: "nrf_svd__spis__enable_enable_fieldRP" label: "enable_enable_fieldRP\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__spis__enable_enable_fieldRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:373:9" }
+node: { title: "nrf_svd__spis__shorts_registerIP" label: "shorts_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__semstat_semstat_fieldH" label: "semstat_semstat_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "nrf_svd__spis__semstat_registerIP" label: "semstat_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__status_registerIP" label: "status_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__enable_registerIP" label: "enable_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__sck_psel_registerIP" label: "sck_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__miso_psel_registerIP" label: "miso_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__mosi_psel_registerIP" label: "mosi_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__csn_psel_registerIP" label: "csn_psel_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__spis_psel_clusterIP" label: "spis_psel_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__spis__spis_psel_clusterIP" targetname: "nrf_svd__spis__sck_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:529:7" }
+edge: { sourcename: "nrf_svd__spis__spis_psel_clusterIP" targetname: "nrf_svd__spis__miso_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:531:7" }
+edge: { sourcename: "nrf_svd__spis__spis_psel_clusterIP" targetname: "nrf_svd__spis__mosi_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:533:7" }
+edge: { sourcename: "nrf_svd__spis__spis_psel_clusterIP" targetname: "nrf_svd__spis__csn_psel_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:535:7" }
+node: { title: "nrf_svd__spis__maxcnt_rxd_registerIP" label: "maxcnt_rxd_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__amount_rxd_registerIP" label: "amount_rxd_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__spis_rxd_clusterIP" label: "spis_rxd_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__spis__spis_rxd_clusterIP" targetname: "nrf_svd__spis__maxcnt_rxd_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:589:7" }
+node: { title: "nrf_svd__spis__maxcnt_txd_registerIP" label: "maxcnt_txd_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__amount_txd_registerIP" label: "amount_txd_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__spis_txd_clusterIP" label: "spis_txd_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__spis__spis_txd_clusterIP" targetname: "nrf_svd__spis__maxcnt_txd_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:644:7" }
+node: { title: "nrf_svd__spis__config_registerIP" label: "config_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__def_registerIP" label: "def_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__orc_registerIP" label: "orc_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__spis__spis_peripheralIP" label: "spis_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__shorts_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:788:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:790:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:792:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__status_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:796:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__enable_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:798:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__spis_psel_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:800:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__spis_rxd_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:802:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__spis_txd_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:804:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__config_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:806:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__def_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:809:7" }
+edge: { sourcename: "nrf_svd__spis__spis_peripheralIP" targetname: "nrf_svd__spis__orc_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-spis.ads:811:7" }
+}

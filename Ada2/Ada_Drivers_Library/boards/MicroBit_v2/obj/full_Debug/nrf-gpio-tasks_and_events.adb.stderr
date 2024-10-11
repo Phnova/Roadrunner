@@ -1,0 +1,6 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:79:07: warning: renamed variable "INTENCLR" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:90:07: warning: renamed variable "INTENCLR" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:101:07: warning: renamed variable "INTENSET" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:115:07: warning: renamed variable "CONFIG" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:131:07: warning: renamed variable "INTENSET" is not referenced [-gnatwu]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb:146:07: warning: renamed variable "CONFIG" is not referenced [-gnatwu]

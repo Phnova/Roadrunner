@@ -1,0 +1,10 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-systick.ads"
+node: { title: "cortex_m_svd__systick__syst_csr_registerIP" label: "syst_csr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__systick__syst_rvr_registerIP" label: "syst_rvr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__systick__syst_cvr_registerIP" label: "syst_cvr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__systick__syst_calib_registerIP" label: "syst_calib_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__systick__systick_peripheralIP" label: "systick_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "cortex_m_svd__systick__systick_peripheralIP" targetname: "cortex_m_svd__systick__syst_csr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-systick.ads:168:7" }
+edge: { sourcename: "cortex_m_svd__systick__systick_peripheralIP" targetname: "cortex_m_svd__systick__syst_rvr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-systick.ads:170:7" }
+edge: { sourcename: "cortex_m_svd__systick__systick_peripheralIP" targetname: "cortex_m_svd__systick__syst_cvr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-systick.ads:172:7" }
+}

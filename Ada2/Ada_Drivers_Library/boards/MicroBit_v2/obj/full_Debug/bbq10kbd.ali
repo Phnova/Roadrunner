@@ -1,0 +1,195 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U bbq10kbd%b		bbq10kbd.adb		1d3fdc26 OO PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+
+U bbq10kbd%s		bbq10kbd.ads		5cdd5f0d EE OO PF PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D bbq10kbd.ads		20240918101450 36f21e5a bbq10kbd%s
+D bbq10kbd.adb		20240918101450 41e2832b bbq10kbd%b
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-i2c.ads		20240918101452 416d8959 hal.i2c%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D system.ads		20240605232314 124d8146 system%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-retsta.ads		20240605232314 0f6b06cb system.return_stack%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240605232314 a1861007 system.stream_attributes%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [key_fifo_pop bbq10kbd 50 13 none]
+G c Z s b [status bbq10kbd 59 13 none]
+G c Z s b [set_backlight bbq10kbd 61 14 none]
+G c Z s b [version bbq10kbd 64 13 none]
+G c Z s b [read bbq10kbd 71 14 none]
+G c Z s b [write bbq10kbd 75 14 none]
+G c Z s s [bbq10kbd_deviceDA bbq10kbd 68 9 none]
+G c Z s s [bbq10kbd_deviceDF bbq10kbd 68 9 none]
+G c Z s s [bbq10kbd_deviceIP bbq10kbd 68 9 none]
+G c Z s s [key_stateIP bbq10kbd 45 9 none]
+G c Z s s [kbd_statusIP bbq10kbd 53 9 none]
+X 10 bbq10kbd.ads
+38K9*BBQ10KBD 68E9 91l5 91e13 11|35b14 134l5 134t13
+40R9*BBQ10KBD_Device 40d26 50p13 50r41 59p13 59r35 61p14 61r43 64p13 64r36
+. 68c9 69e25 71p14 71r34 75p14 75r35 11|41r34 61r35 81r36 92r41 112r35 129r43
+40p26 Port{13|50P9} 68r26 11|47r12 67r12
+43E9*Key_State_Kind 43e67 46r14
+43n28*Pressed{43E9} 11|99r42
+43n37*Held_Pressed{43E9} 11|100r42
+43n51*Released{43E9} 11|101r42
+43n61*Error{43E9} 11|102r42
+45R9*Key_State 48e14 50r65 11|92r65 97r22
+46e7*Kind{43E9} 11|99m34 100m34 101m34 102m34
+47m7*Code{12|53M9} 11|104m16
+50V13*Key_FIFO_Pop{45R9} 50=27 11|92b13 106l8 106t20
+50r27 This{40R9} 11|92b27 95m7 95r7
+53R9*KBD_Status 57e14 59r59 11|112r59 118r21
+54b7*Numlock{boolean} 11|119m15
+55b7*Capslock{boolean} 11|120m15
+56m7*Key_Count{12|45M9} 11|121m15
+59V13*Status{53R9} 59=21 11|112b13 123l8 123t14
+59r21 This{40R9} 11|112b21 116m7 116r7
+61U14*Set_Backlight 61=29 62>29 11|129b14 132l8 132t21
+61r29 This{40R9} 11|129b29 131m7 131r7
+62m29 Lvl{12|53M9} 11|129b60 131r34
+64V13*Version{12|53M9} 64=22 11|81b13 86l8 86t15
+64r22 This{40R9} 11|81b22 84m7 84r7
+71U14 Read 71=20 72>20 73<20 11|41b14 55l8 55t12 84s12 95s12 116s12
+71r20 This{40R9} 11|41b20 47r7
+72m20 Reg{12|53M9} 11|42b20 48r35
+73a20 Data{13|40A12} 11|43b20 50m27
+75U14 Write 75=21 76>21 77>21 11|61b14 75l8 75t13 131s12
+75r21 This{40R9} 11|61b21 67r7
+76m21 Reg{12|53M9} 11|62b21 68r36
+77a21 Data{13|40A12} 11|63b21 70r28
+79m4 Device_Addr{13|46M12} 11|47r27 67r28
+81N4 REG_VER 11|84r18
+82N4 REG_CFG
+83N4 REG_INT
+84N4 REG_KEY 11|116r18
+85N4 REG_BKL 11|131r19
+86N4 REG_DEB
+87N4 REG_FRQ
+88N4 REG_RST
+89N4 REG_FIF 11|95r18
+X 11 bbq10kbd.adb
+45e7 Status{13|34E9} 51m27 52r10
+65e7 Status{13|34E9} 71m28 72r10
+82a7 Data{13|40A12} 84m27 85r14 85r20
+93a7 Data{13|40A12} 95m27 98r15 98r21 104r24 104r30
+97r14 State{10|45R9} 99m28 100m28 101m28 102m28 104m10
+113a7 Data{13|40A12} 114r25 114r31 116m27
+114m7 D=114:25{12|53M9} 119r27 120r28 121r35
+118r14 Stat{10|53R9} 119m10 120m10 121m10
+X 12 hal.ads
+34K9*HAL 10|35w6 36r6 40r42 47r14 56r19 62r43 64r60 68r42 72r34 73r34 76r35
+. 77r35 79r27 11|32w6 32r15 33r6 33r19 42r34 43r34 62r35 63r35 81r60 129r66
+. 12|166e8
+45M9*UInt5 10|56r23 11|121r28
+53M9*UInt8<14|70M9> 10|47r18 62r47 64r64 72r38 76r39 11|42r38 62r39 81r64
+. 114r11 129r70
+54M9*UInt10
+66M9*UInt16<14|73M9> 11|48r27 68r28
+162A9*UInt8_Array(53M9)<integer>
+X 13 hal-i2c.ads
+32K13*I2C 10|36w10 40r46 68r46 73r38 77r39 79r31 11|33w10 33r23 43r38 63r39
+. 13|91e12
+34E9*I2C_Status 11|45r16 65r16 13|38e12
+35n7*Ok{34E9} 11|52r20 72r20
+40A12*I2C_Data{12|162A9}<integer> 10|73r42 77r43 11|43r42 63r43 82r14 93r14
+. 113r14
+43n7*Memory_Size_8b{42E9} 11|49r27 69r28
+46M12*I2C_Address{12|54M9} 10|79r35
+48h9*I2C_Port
+50P9*Any_I2C_Port(48R9) 10|40r50 68r50
+66x14*Mem_Write 11|67R17
+75x14*Mem_Read 11|47R17
+X 14 interfac.ads
+70M9*Unsigned_8
+73M9*Unsigned_16
+X 34 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 41 s-taskin.ads
+398V13*Get_Sec_Stack{34|46P9} 399i<c,__gnat_get_secondary_stack>22
+

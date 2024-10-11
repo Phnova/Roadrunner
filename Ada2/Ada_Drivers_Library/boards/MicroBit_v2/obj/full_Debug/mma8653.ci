@@ -1,0 +1,88 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb"
+edge: { sourcename: "mma8653__mma8653_accelerometerPI"
+  targetname: "4:ada__strings__text_buffers__root_buffer_type,ada__strings__text_buffers__root_buffer_type"
+  label: "mma8653.ads:65:9"
+}
+edge: { sourcename: "mma8653__Tmma8653_accelerometerCFD"
+  targetname: "-9:mma8653__mma8653_accelerometer,mma8653__mma8653_accelerometer"
+  label: "mma8653.ads:39:9"
+}
+class {
+  classname: "mma8653__mma8653_accelerometer"
+  label: "mma8653__mma8653_accelerometer\mma8653.ads:39:9"
+  parent: "mma8653__mma8653_accelerometer"
+  virtuals: "1:mma8653__configure\n
+             2:mma8653__check_device_id\n
+             3:mma8653__read_data\n
+             -1:mma8653___size\n
+             -10:mma8653__mma8653_accelerometerPI\n
+             -9:mma8653__mma8653_accelerometerDF"
+}
+edge: { sourcename: "mma8653__read_register"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "mma8653.adb:53:16"
+}
+edge: { sourcename: "mma8653__write_register"
+  targetname: "3:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "mma8653.adb:76:16"
+}
+edge: { sourcename: "mma8653__read_data"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "mma8653.adb:148:16"
+}
+node: { title: "mma8653__ctrl_reg1_registerIP" label: "ctrl_reg1_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "mma8653__ctrl_reg2_registerIP" label: "ctrl_reg2_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "mma8653__mma8653_accelerometerIP" label: "mma8653_accelerometerIP\n<built-in>\n24 bytes (static)" }
+node: { title: "mma8653___size" label: "mma8653\n<built-in>\n16 bytes (static)" }
+node: { title: "mma8653__mma8653_accelerometerPI" label: "mma8653_accelerometerPI\n<built-in>\n24 bytes (static)" }
+node: { title: "system__put_images__record_before" label: "Record_Before\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:110:14" shape : ellipse }
+edge: { sourcename: "mma8653__mma8653_accelerometerPI" targetname: "system__put_images__record_before" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:65:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "mma8653__mma8653_accelerometerPI" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:65:9" }
+node: { title: "system__put_images__record_after" label: "Record_After\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-putima.ads:112:14" shape : ellipse }
+edge: { sourcename: "mma8653__mma8653_accelerometerPI" targetname: "system__put_images__record_after" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:65:9" }
+node: { title: "mma8653__mma8653_accelerometerDF" label: "mma8653_accelerometerDF\n<built-in>\n16 bytes (static)" }
+node: { title: "mma8653__Tmma8653_accelerometerCFD" label: "Tmma8653_accelerometerCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "mma8653__Tmma8653_accelerometerCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:39:9" }
+node: { title: "mma8653__oversampling_modeH" label: "oversampling_modeH\n<built-in>\n32 bytes (static)" }
+node: { title: "mma8653__all_axes_dataIP" label: "all_axes_dataIP\n<built-in>\n16 bytes (static)" }
+node: { title: "mma8653__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "mma8653__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:37:1" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_register" label: "READ_REGISTER\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:47:4\n64 bytes (static)" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_register" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:53:16" }
+node: { title: "__gnat_rcheck_PE_Explicit_Raise" label: "gnat_rcheck_PE_Explicit_Raise\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_register" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:61:10" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" label: "WRITE_REGISTER\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:70:4\n72 bytes (static)" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:76:16" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:84:10" }
+node: { title: "mma8653__configure" label: "CONFIGURE\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:92:4\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "mma8653__configure" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:92:4" }
+edge: { sourcename: "mma8653__configure" targetname: "mma8653__ctrl_reg1_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:97:7" }
+edge: { sourcename: "mma8653__configure" targetname: "mma8653__ctrl_reg2_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:98:7" }
+edge: { sourcename: "mma8653__configure" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:103:11" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "mma8653__configure" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:105:21" }
+edge: { sourcename: "mma8653__configure" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:106:22" }
+edge: { sourcename: "mma8653__configure" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:107:11" }
+edge: { sourcename: "mma8653__configure" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:109:11" }
+edge: { sourcename: "mma8653__configure" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__write_register" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:112:11" }
+node: { title: "mma8653__check_device_id" label: "CHECK_DEVICE_ID\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:120:4\n16 bytes (static)" }
+edge: { sourcename: "mma8653__check_device_id" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:120:4" }
+edge: { sourcename: "mma8653__check_device_id" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_register" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:122:14" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_data__convert.0" label: "CONVERT\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:136:7\n24 bytes (static)" }
+node: { title: "mma8653__read_data" label: "READ_DATA\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:129:4\n72 bytes (static)" }
+edge: { sourcename: "mma8653__read_data" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:129:4" }
+edge: { sourcename: "mma8653__read_data" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:148:16" }
+edge: { sourcename: "mma8653__read_data" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:156:10" }
+edge: { sourcename: "mma8653__read_data" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_data__convert.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:159:16" }
+edge: { sourcename: "mma8653__read_data" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_data__convert.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:160:16" }
+edge: { sourcename: "mma8653__read_data" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:mma8653__read_data__convert.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:161:16" }
+node: { title: "mma8653___elabb" label: "MMA8653\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.adb:32:1\n4 bytes (static)" }
+node: { title: "mma8653___elabs" label: "MMA8653\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:37:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "mma8653___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:65:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "mma8653___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\mma8653\mma8653.ads:65:9" }
+}

@@ -1,0 +1,336 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U lsm303agr%b		lsm303agr.adb		aed84f71 OO PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+U lsm303agr%s		lsm303agr.ads		960ed52d EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-i2c.ads		20240918101452 416d8959 hal.i2c%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D lsm303agr.ads		20240918101450 f2bab315 lsm303agr%s
+D lsm303agr.adb		20240918101450 5c62fc64 lsm303agr%b
+D system.ads		20240605232314 124d8146 system%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [check_accelerometer_device_id lsm303agr 73 13 none]
+G c Z s b [check_magnetometer_device_id lsm303agr 76 13 none]
+G c Z s b [configure lsm303agr 79 14 none]
+G c Z s b [read_accelerometer lsm303agr 84 13 none]
+G c Z s b [read_accelerometer_raw lsm303agr 87 13 none]
+G c Z s b [read_magnetometer lsm303agr 91 13 none]
+G c Z s b [convert lsm303agr 94 13 none]
+G c Z s s [ctrl_reg1_a_registerIP lsm303agr 152 9 none]
+G c Z s s [to_uint8 lsm303agr 168 13 none]
+G c Z s s [to_reg lsm303agr 170 13 none]
+G c Z s s [status_reg_a_registerIP lsm303agr 173 9 none]
+G c Z s s [to_uint8 lsm303agr 198 13 none]
+G c Z s s [to_reg lsm303agr 200 13 none]
+G c Z s s [cfg_reg_a_m_registerIP lsm303agr 205 9 none]
+G c Z s s [to_uint8 lsm303agr 223 15 none]
+G c Z s s [to_reg lsm303agr 225 13 none]
+G c Z s s [axis_data_rawIP lsm303agr 57 9 none]
+G c Z s s [all_axes_dataIP lsm303agr 62 9 none]
+G c Z s s [all_axes_data_rawIP lsm303agr 66 12 none]
+G c Z s s [lsm303agr_accelerometerDF lsm303agr 98 9 none]
+G c Z s s [lsm303agr_accelerometerIP lsm303agr 98 9 none]
+G c Z b b [to_axis_data lsm303agr 32 13 none]
+G c Z b b [read_register lsm303agr 34 13 none]
+G c Z b b [write_register lsm303agr 38 14 none]
+G c Z b b [check_device_id lsm303agr 42 13 none]
+G c Z b b [to_multi_byte_read_address lsm303agr 47 13 none]
+G c Z b b [assert_status lsm303agr 80 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|34r14 168r29 170r27 198r29 200r27 223r31 225r27 14|32r33
+X 9 a-unccon.ads
+20v14*Unchecked_Conversion 13|34w18 168r33 170r31 198r33 200r31 223r35 225r31
+. 14|32r37
+X 10 hal.ads
+34K9*HAL 166e8 13|31w6 31r19 32r6 32r19
+37M9*Bit 13|153r14 154r14 155r14 156r14 174r16 175r16 176r16 177r16 178r16
+. 179r16 180r16 181r16 208r22 209r22 210r22 211r22
+39M9*UInt2 13|206r22 207r22
+43M9*UInt4 13|157r14
+53M9*UInt8<12|70M9> 13|42r33 43r34 58r13 59r14 94r34 169r29 171r7 199r30
+. 201r7 224r29 226r7 14|36r48 40r47 87r48 106r47 156r9 169r37 170r37 229r37
+. 230r37 295r31
+54M9*UInt10 14|32r59 171r16 175r17 176r24 231r16 239r17 244r24 296r16 300r17
+. 301r24
+66M9*UInt16<12|73M9> 14|48r48 93r55 111r55 277r48 284r14
+162A9*UInt8_Array(53M9)<integer>
+X 11 hal-i2c.ads
+32K13*I2C 91e12 13|32w10 32r23
+34E9*I2C_Status 38e12 14|80r38 90r16 108r16 180r18 202r18 257r18 287r38
+35n7*Ok{34E9} 14|289r20
+40A12*I2C_Data{10|162A9}<integer> 14|89r16 181r18 203r18 258r18
+43n7*Memory_Size_8b{42E9} 14|94r27 112r27 187r27 209r27 264r27
+46M12*I2C_Address{10|54M9} 13|112r39 115r38 14|35r62 39r62 43r58 86r62 105r62
+. 149r56
+48h9*I2C_Port
+50P9*Any_I2C_Port(48R9) 13|70r50 98r50
+66x14*Mem_Write 14|110R17
+68m7 Addr{46M12} 14|111r10
+69m7 Mem_Addr{10|66M9} 14|111r43
+70e7 Mem_Addr_Size{42E9} 14|112r10
+71a7 Data{40A12} 14|112r43
+72e7 Status{34E9} 14|113r10
+75x14*Mem_Read 14|92R17 184R17 206R17 261R17
+77m7 Addr{46M12} 14|93r10 185r10 207r10 262r10
+78m7 Mem_Addr{10|66M9} 14|93r43 186r10 208r10 263r10
+79e7 Mem_Addr_Size{42E9} 14|94r10 187r10 209r10 264r10
+80a7 Data{40A12} 14|94r43 187r43 209r43 264r43
+81e7 Status{34E9} 14|94r57 187r57 209r57 264r57
+X 12 interfac.ads
+70M9*Unsigned_8
+73M9*Unsigned_16
+96V13*Shift_Right{70M9} 14|175s25 239s25 300s25
+X 13 lsm303agr.ads
+36K9*LSM303AGR 98E9 228l5 228e14 14|31b14 304l5 304t14
+42M9*Register_Address<10|53M9> 118r26 119r26 121r27 122r27 123r27 124r27
+. 125r27 126r27 129r27 132r29 133r29 134r29 135r29 136r29 137r29 138r29 139r29
+. 141r29 142r29 143r29 144r29 145r29 146r29 14|36r23 40r23 44r28 48r23 87r23
+. 106r23 150r27 277r23
+43M9*Device_Identifier<10|53M9> 113r39 116r38 14|44r58 150r57
+44E9*Data_Rate 46e53 80r30 101r8 14|51r30
+45n7*PowerDown{44E9} 102r7
+45n18*Freq_1{44E9} 102r23
+45n26*Freq_10{44E9} 102r36
+45n35*Freq_25{44E9} 102r50
+45n44*Freq_50{44E9} 102r64
+45n53*Freq_100{44E9} 103r7
+45n63*Freq_200{44E9} 103r22
+46n7*Freq_400{44E9} 103r37
+46n17*Low_Power{44E9} 103r52
+46n28*Hi_Res_1k6_Low_power_5k3{44E9} 104r7
+48E9*Data_Rate_Mag 49e43 81r34 106r8 14|52r34
+49n7*Freq_10{48E9} 107r7
+49n16*Freq_20{48E9} 107r21
+49n25*Freq_50{48E9} 107r35
+49n34*Freq_100{48E9} 107r49
+51E9*System_Mode_Mag 52e45 82r34 109r8 14|53r34
+52n5*Continuous_Mode{51E9} 110r8
+52n22*Single_Mode{51E9} 110r30
+52n35*Idle_Mode{51E9} 110r48
+54I9*Axis_Data<short_integer> 63r17 94r48 14|32r67 169r51 170r51 192r52 229r51
+. 230r51 269r52 295r45
+57R9*Axis_Data_Raw 60e14 67r17
+58m7*Low{10|53M9} 14|214m18 216m18 218m18
+59m7*High{10|53M9} 14|215m18 217m18 219m18
+62R9*All_Axes_Data 64e14 85r46 92r46 14|164r46 182r18 224r46 259r18
+63i7*X{54I9} 14|182m40 192m16 259m40 269m16
+63i10*Y{54I9} 14|182m48 193m16 259m48 270m16
+63i13*Z{54I9} 14|182m56 194m16 259m56 271m16
+66R12*All_Axes_Data_Raw 68e14 88r46 14|200r46 204r18
+67r7*X{57R9} 14|204m44 214m16 215m16
+67r10*Y{57R9} 14|204m56 216m16 217m16
+67r13*Z{57R9} 14|204m68 218m16 219m16
+70R9*LSM303AGR_Accelerometer 70d34 73p13 74r14 76p13 77r14 79p14 79r32 84p13
+. 85r14 87p13 88r14 91p13 92r14 98c9 99e33 14|35r14 39r14 43r16 50r32 86r14
+. 105r14 123r14 136r14 149r14 164r14 200r14 224r14
+70p34 Port{11|50P9} 98r34 14|92r12 110r12 184r12 206r12 261r12
+73V13*Check_Accelerometer_Device_Id{boolean} 74>7 14|122b13 129l8 129t37
+74r7 This{70R9} 14|123b7 128r12
+76V13*Check_Magnetometer_Device_Id{boolean} 77>7 14|135b13 142l8 142t36
+77r7 This{70R9} 14|136b7 141r12
+79U14*Configure 79>25 80>25 81>25 82>25 14|50b14 78l8 78t17
+79r25 This{70R9} 14|50b25 64r7 74r7
+80e25 DR{44E9} 14|51b25 62r21
+81e25 DR_Mag{48E9} 14|52b25 68r21
+82e25 SM_Mag{51E9} 14|53b25 67r20
+84V13*Read_Accelerometer{62R9} 85>7 14|163b13 197l8 197t26
+85r7 This{70R9} 14|164b7 184r7
+87V13*Read_Accelerometer_Raw{66R12} 88>7 14|199b13 221l8 221t30
+88r7 This{70R9} 14|200b7 206r7
+91V13*Read_Magnetometer{62R9} 92>7 14|223b13 274l8 274t25
+92r7 This{70R9} 14|224b7 261r7
+94V13*Convert{54I9} 94>22 94>27 14|295b10 303l11 303t18
+94m22 Low{10|53M9} 14|295b19 300r38
+94m27 High{10|53M9} 14|295b24 301r32
+112m4 Accelerometer_Address{11|46M12} 14|65r10 128r18 185r27 207r27
+113m4 Accelerometer_Device_Id{43M9} 14|128r53
+115m4 Magnetometer_Address{11|46M12} 14|75r10 141r18 262r27
+116m4 Magnetometer_Device_Id{43M9} 14|141r52
+118m4 WHO_AM_I_A{42M9} 14|128r41
+119m4 WHO_AM_I_M{42M9} 14|141r40
+121m4 CTRL_REG1_A{42M9} 14|65r33
+122m4 CTRL_REG2_A{42M9}
+123m4 CTRL_REG3_A{42M9}
+124m4 CTRL_REG4_A{42M9}
+125m4 CTRL_REG5_A{42M9}
+126m4 CTRL_REG6_A{42M9}
+129m4 CFG_REG_A_M{42M9} 14|76r10
+132m4 DATACAPTURE_A{42M9}
+133m4 STATUS_REG_A{42M9}
+134m4 OUT_X_L_A{42M9} 14|186r55 208r55
+135m4 OUT_X_H_A{42M9}
+136m4 OUT_Y_L_A{42M9}
+137m4 OUT_Y_H_A{42M9}
+138m4 OUT_Z_L_A{42M9}
+139m4 OUT_Z_H_A{42M9}
+141m4 OUT_X_L_REG_M{42M9} 14|263r55
+142m4 OUT_X_H_REG_M{42M9}
+143m4 OUT_Y_L_REG_M{42M9}
+144m4 OUT_Y_H_REG_M{42M9}
+145m4 OUT_Z_L_REG_M{42M9}
+146m4 OUT_Z_H_REG_M{42M9}
+148N4 MULTI_BYTE_READ 14|284r40
+150N4 NORMAL_MODE_DIVISOR
+152R9 CTRL_REG1_A_Register 158e14 160r8 169r7 171r14 14|55r15
+153m7*Xen{10|37M9} 161r7 14|58m13
+154m7*Yen{10|37M9} 162r7 14|59m13
+155m7*Zen{10|37M9} 163r7 14|60m13
+156m7*LPen{10|37M9} 164r7 14|61m13
+157m7*ODR{10|43M9} 165r7 14|62m13
+168V13 To_UInt8[9|20]{10|53M9} 14|65s46
+170V13 To_Reg[9|20]{152R9}
+173R9 STATUS_REG_A_Register 182e14 184r8 199r7 201r14
+174m7*ZYXOVR{10|37M9} 195r7
+175m7*ZOVR{10|37M9} 193r7
+176m7*YOVR{10|37M9} 192r7
+177m7*XOVR{10|37M9} 191r7
+178m7*ZYXDA{10|37M9} 189r7
+179m7*ZDA{10|37M9} 187r7
+180m7*YDA{10|37M9} 186r7
+181m7*XDA{10|37M9} 185r7
+198V13 To_UInt8[9|20]{10|53M9}
+200V13 To_Reg[9|20]{173R9}
+205R9 CFG_REG_A_M_Register 212e14 214r8 224r7 226r14 14|56r15
+206m7*MD{10|39M9} 215r7 14|67m13
+207m7*ODR{10|39M9} 216r7 14|68m13
+208m7*LP{10|37M9} 217r7 14|69m13
+209m7*SOFT_RST{10|37M9} 218r7 14|70m13
+210m7*REBOOT{10|37M9} 219r7 14|71m13
+211m7*COMP_TEMP_EN{10|37M9} 220r7 14|72m13
+223V15 To_UInt8[9|20]{10|53M9} 14|77s10
+225V13 To_Reg[9|20]{205R9}
+X 14 lsm303agr.adb
+32V13 To_Axis_Data[9|20]{13|54I9} 177s17 254s17 302s17
+34V13 Read_Register{10|53M9} 35>7 35>45 36>7 85b13 98l8 98t21 155s9
+35c7 This<13|70R9> 86b7 92r7
+35m45 Device_Address{11|46M12} 86b45 93r27
+36m7 Register_Addr{13|42M9} 87b7 93r63
+38U14 Write_Register 39>7 39>45 40>7 40>41 64s12 74s12 104b14 116l8 116t22
+39c7 This<13|70R9> 105b7 110r7
+39m45 Device_Address{11|46M12} 105b45 111r27
+40m7 Register_Addr{13|42M9} 106b7 111r63
+40m41 Val{10|53M9} 106b41 112r57
+42V13 Check_Device_Id{boolean} 43>9 43>41 44>8 44>46 127s9 140s9 148b13 157l8
+. 157t23
+43r9 This{13|70R9} 149b7 155r24
+43m41 Device_Address{11|46M12} 149b39 155r30
+44m8 WHO_AM_I_Register{13|42M9} 150b7 155r46
+44m46 Device_Id{13|43M9} 150b45 156r16
+47V13 To_Multi_Byte_Read_Address{10|66M9} 48>7 186s27 208s27 263s27 276b13
+. 285l8 285t34
+48m7 Register_Addr{13|42M9} 277b7 284r22
+55r7 CTRLA{13|152R9} 58m7 59m7 60m7 61m7 62m7 65r56
+56r7 CTRLM{13|205R9} 67m7 68m7 69m7 70m7 71m7 72m7 77r20
+80U14 Assert_Status 80>29 95s7 114s7 188s7 210s7 265s7 287b14 293l8 293t21
+80e29 Status{11|34E9} 287b29 289r10
+89a7 Data{11|40A12} 94m51 97r14 97r20
+90e7 Status{11|34E9} 94m67 95r22
+108e7 Status{11|34E9} 113m27 114r22
+169V16 Convert{13|54I9} 169>25 169>30 170b16 178l11 178t18 192s21 193s21
+. 194s21
+169m25 Low{10|53M9} 170b25 175r38
+169m30 High{10|53M9} 170b30 176r32
+171m10 Tmp{10|54M9} 175m10 176m10 176r17 177r31
+180e7 Status{11|34E9} 187m67 188r22
+181a7 Data{11|40A12} 187m51 192r30 192r40 193r30 193r40 194r30 194r40
+182r7 AxisData{13|62R9} 192m7 193m7 194m7 196r14
+202e7 Status{11|34E9} 209m67 210r22
+203a7 Data{11|40A12} 209m51 214r25 215r25 216r25 217r25 218r25 219r25
+204r7 AxisData{13|66R12} 214m7 215m7 216m7 217m7 218m7 219m7 220r14
+229V16 Convert{13|54I9} 229>25 229>30 230b16 255l11 255t18 269s21 270s21
+. 271s21
+229m25 Low{10|53M9} 230b25 239r38
+229m30 High{10|53M9} 230b30 244r32
+231m10 Tmp{10|54M9} 239m10 244m10 244r17 254r31
+257e7 Status{11|34E9} 264m67 265r22
+258a7 Data{11|40A12} 264m51 269r30 269r40 270r30 270r40 271r30 271r40
+259r7 AxisData{13|62R9} 269m7 270m7 271m7 273r14
+296m10 Tmp{10|54M9} 300m10 301m10 301r17 302r31
+X 33 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 39 s-taskin.ads
+398V13*Get_Sec_Stack{33|46P9} 399i<c,__gnat_get_secondary_stack>22
+

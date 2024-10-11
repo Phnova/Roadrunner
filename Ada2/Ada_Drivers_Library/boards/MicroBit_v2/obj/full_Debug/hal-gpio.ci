@@ -1,0 +1,70 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads"
+edge: { sourcename: "hal__gpio__set_modeDP"
+  targetname: "1:hal__gpio__gpio_point,hal__gpio__gpio_point"
+  label: "hal-gpio.ads:63:28"
+}
+edge: { sourcename: "hal__gpio__set_pull_resistorDP"
+  targetname: "1:hal__gpio__gpio_point,hal__gpio__gpio_point"
+  label: "hal-gpio.ads:73:28"
+}
+edge: { sourcename: "hal__gpio__toggleDP"
+  targetname: "2:hal__gpio__gpio_point,hal__gpio__gpio_point"
+  label: "hal-gpio.ads:93:28"
+}
+edge: { sourcename: "hal__gpio__Tgpio_pointCFD"
+  targetname: "-9:hal__gpio__gpio_point,hal__gpio__gpio_point"
+  label: "hal-gpio.ads:47:9"
+}
+class {
+  classname: "hal__gpio__gpio_point"
+  label: "hal__gpio__gpio_point\hal-gpio.ads:47:9"
+  virtuals: "1:hal__gpio__support\n
+             2:hal__gpio__mode\n
+             3:hal__gpio__set_mode\n
+             4:hal__gpio__pull_resistor\n
+             5:hal__gpio__set_pull_resistor\n
+             6:hal__gpio__set\n
+             7:hal__gpio__set__2\n
+             8:hal__gpio__clear\n
+             9:hal__gpio__toggle\n
+             -1:hal__gpio___size\n
+             -10:hal__gpio__gpio_pointPI\n
+             -2:hal__gpio__gpio_pointSR\n
+             -3:hal__gpio__gpio_pointSW\n
+             -4:hal__gpio__gpio_pointSI\n
+             -5:hal__gpio__gpio_pointSO\n
+             -9:hal__gpio__gpio_pointDF"
+}
+node: { title: "hal__gpio__capabilityH" label: "capabilityH\n<built-in>\n32 bytes (static)" }
+node: { title: "hal__gpio__set_modeDP" label: "set_modeDP\n<built-in>\n16 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "hal__gpio__set_modeDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:63:28" }
+node: { title: "hal__gpio__set_pull_resistorDP" label: "set_pull_resistorDP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "hal__gpio__set_pull_resistorDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:73:28" }
+node: { title: "hal__gpio__toggleDP" label: "toggleDP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "hal__gpio__toggleDP" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:93:28" }
+node: { title: "hal__gpio__Tgpio_pointCFD" label: "Tgpio_pointCFD\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "hal__gpio__Tgpio_pointCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:47:9" }
+node: { title: "hal__gpio__finalize_spec" label: "finalize_spec\n<built-in>\n16 bytes (static)" }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:86:25" shape : ellipse }
+edge: { sourcename: "hal__gpio__finalize_spec" targetname: "system__finalization_masters__finalize" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:49:9" }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__gpio__finalize_spec" targetname: "_Unwind_Resume" }
+node: { title: "__gnat_begin_handler_v1" label: "gnat_begin_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__gpio__finalize_spec" targetname: "__gnat_begin_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:32:1" }
+node: { title: "__gnat_end_handler_v1" label: "gnat_end_handler_v1\n<built-in>" shape : ellipse }
+edge: { sourcename: "hal__gpio__finalize_spec" targetname: "__gnat_end_handler_v1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:32:1" }
+node: { title: "hal__gpio___elabs" label: "GPIO\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:32:1\n8 bytes (static)" }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:151:9" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:49:9" }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:188:25" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "system__finalization_masters__initialize__2" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:49:9" }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:191:14" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "system__finalization_masters__set_base_pool" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:49:9" }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-finmas.ads:116:14" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:49:9" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:47:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "hal__gpio___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\hal\src\hal-gpio.ads:47:9" }
+}

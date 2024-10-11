@@ -1,0 +1,7 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-tasks.adb"
+node: { title: "nrf__tasks__trigger" label: "Trigger\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-tasks.adb:42:4\n24 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Misaligned_Address_Value" label: "gnat_rcheck_PE_Misaligned_Address_Value\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__tasks__trigger" targetname: "__gnat_rcheck_PE_Misaligned_Address_Value" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-tasks.adb:43:25" }
+node: { title: "nrf__tasks__get_address" label: "Get_Address\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-tasks.adb:52:4\n16 bytes (static)" }
+node: { title: "nrf__tasks__get_address__2" label: "Get_Address\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-tasks.adb:61:4\n16 bytes (static)" }
+}

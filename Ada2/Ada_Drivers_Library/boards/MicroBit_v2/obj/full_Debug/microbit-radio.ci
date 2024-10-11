@@ -1,0 +1,104 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb"
+node: { title: "microbit__radio__radioTVIP" label: "radioTVIP\n<built-in>\n40 bytes (static)" }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\s-taprob.ads:178:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__radioTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.ads:99:4" }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\s-interr.ads:88:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__radioTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.ads:99:4" }
+node: { title: "microbit__radio__finalize_spec" label: "finalize_spec\n<built-in>\n4 bytes (static)" }
+node: { title: "microbit__radio__state" label: "State\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:39:4\n192 bytes (static)" }
+node: { title: "nrf__radio__state" label: "State\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:93:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__state" targetname: "nrf__radio__state" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:41:57" }
+node: { title: "system__img_lli__impl__image_integer" label: "Image_Integer\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-imagei.ads:68:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__state" targetname: "system__img_lli__impl__image_integer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:41:64" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__radio__state" targetname: "memcpy" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__radio__state" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:41:71" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__state" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:41:7" }
+edge: { sourcename: "microbit__radio__state" targetname: "memcpy" }
+node: { title: "microbit__radio__isinitialized" label: "Isinitialized\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:44:4\n8 bytes (static)" }
+node: { title: "nrf__radio__isinitialized" label: "Isinitialized\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:200:12" shape : ellipse }
+edge: { sourcename: "microbit__radio__isinitialized" targetname: "nrf__radio__isinitialized" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:46:23" }
+node: { title: "microbit__radio__dataready" label: "Dataready\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:49:4\n8 bytes (static)" }
+node: { title: "nrf__radio__dataready" label: "Dataready\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:202:12" shape : ellipse }
+edge: { sourcename: "microbit__radio__dataready" targetname: "nrf__radio__dataready" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:51:28" }
+node: { title: "microbit__radio__receive" label: "Receive\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:54:4\n16 bytes (static)" }
+edge: { sourcename: "microbit__radio__receive" targetname: "microbit__radio__dataready" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:56:10" }
+node: { title: "nrf__radio__get_queuedepth" label: "Get_Queuedepth\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:208:12" shape : ellipse }
+edge: { sourcename: "microbit__radio__receive" targetname: "nrf__radio__get_queuedepth" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:61:25" }
+node: { title: "nrf__radio__set_queuedepth" label: "Set_Queuedepth\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:206:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__receive" targetname: "nrf__radio__set_queuedepth" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:61:10" }
+node: { title: "nrf__radio__get_safeframebuffer" label: "Get_Safeframebuffer\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:204:12" shape : ellipse }
+edge: { sourcename: "microbit__radio__receive" targetname: "nrf__radio__get_safeframebuffer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:67:14" }
+node: { title: "microbit__radio__transmit" label: "Transmit\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:70:4\n24 bytes (static)" }
+node: { title: "nrf__interrupts__disable" label: "Disable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-interrupts.ads:90:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__transmit" targetname: "nrf__interrupts__disable" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:80:21" }
+edge: { sourcename: "microbit__radio__transmit" targetname: "microbit__radio__stopreceiving" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:83:12" }
+node: { title: "nrf__radio__set_packet" label: "Set_Packet\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:102:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__transmit" targetname: "nrf__radio__set_packet" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:86:7" }
+edge: { sourcename: "microbit__radio__transmit" targetname: "microbit__radio__transmitandwait" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:89:7" }
+edge: { sourcename: "microbit__radio__transmit" targetname: "nrf__radio__set_packet" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:93:7" }
+edge: { sourcename: "microbit__radio__transmit" targetname: "microbit__radio__startreceiving" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:96:7" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__enable" label: "Enable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:101:4\n16 bytes (static)" }
+node: { title: "nrf__radio__setup_for_rf_nrf52" label: "Setup_For_Rf_Nrf52\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:193:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__enable" targetname: "nrf__radio__setup_for_rf_nrf52" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:104:16" }
+node: { title: "nrf__events__enable_interrupt" label: "Enable_Interrupt\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-events.ads:56:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__enable" targetname: "nrf__events__enable_interrupt" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:107:17" }
+node: { title: "nrf__interrupts__set_priority" label: "Set_Priority\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-interrupts.ads:88:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__enable" targetname: "nrf__interrupts__set_priority" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:114:21" }
+node: { title: "microbit__radio__setup" label: "Setup\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:118:4\n24 bytes (static)" }
+edge: { sourcename: "microbit__radio__setup" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__enable" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:130:4" }
+node: { title: "microbit__radio__startreceiving" label: "Startreceiving\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:135:4\n8 bytes (static)" }
+node: { title: "cortex_m__nvic__clear_pending" label: "Clear_Pending\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\nvic_cm4_cm7\cortex_m-nvic.ads:104:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__startreceiving" targetname: "cortex_m__nvic__clear_pending" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:138:7" }
+node: { title: "nrf__interrupts__enable" label: "Enable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-interrupts.ads:89:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__startreceiving" targetname: "nrf__interrupts__enable" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:141:21" }
+node: { title: "nrf__tasks__trigger" label: "Trigger\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-tasks.ads:55:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__startreceiving" targetname: "nrf__tasks__trigger" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:144:16" }
+node: { title: "nrf__events__clear" label: "Clear\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-events.ads:60:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__startreceiving" targetname: "nrf__events__clear" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:147:7" }
+node: { title: "nrf__events__triggered" label: "Triggered\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-events.ads:54:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__startreceiving" targetname: "nrf__events__triggered" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:148:23" }
+node: { title: "microbit__radio__stopreceiving" label: "Stopreceiving\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:154:4\n8 bytes (static)" }
+edge: { sourcename: "microbit__radio__stopreceiving" targetname: "nrf__interrupts__disable" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:157:21" }
+edge: { sourcename: "microbit__radio__stopreceiving" targetname: "nrf__events__clear" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:160:7" }
+edge: { sourcename: "microbit__radio__stopreceiving" targetname: "nrf__tasks__trigger" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:161:16" }
+edge: { sourcename: "microbit__radio__stopreceiving" targetname: "nrf__events__triggered" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:164:23" }
+node: { title: "microbit__radio__headerok" label: "Headerok\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:170:4\n16 bytes (static)" }
+node: { title: "microbit__radio__transmitandwait" label: "Transmitandwait\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:176:4\n8 bytes (static)" }
+edge: { sourcename: "microbit__radio__transmitandwait" targetname: "nrf__tasks__trigger" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:179:16" }
+edge: { sourcename: "microbit__radio__transmitandwait" targetname: "nrf__events__clear" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:182:7" }
+edge: { sourcename: "microbit__radio__transmitandwait" targetname: "nrf__events__triggered" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:183:23" }
+node: { title: "microbit__radio__radio__radio_irqhandlerN" label: "Radio_Irqhandlern\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:7\n32 bytes (static)" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__events__triggered" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:195:21" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__get_queuedepth" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:195:49" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "microbit__radio__headerok" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:199:16" }
+node: { title: "nrf__radio__get_rssisample" label: "Get_Rssisample\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:212:12" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__get_rssisample" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:202:23" }
+node: { title: "nrf__radio__set_rssi" label: "Set_Rssi\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:214:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__set_rssi" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:203:13" }
+node: { title: "nrf__radio__get_rssi" label: "Get_Rssi\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:217:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__get_rssi" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:207:27" }
+node: { title: "nrf__radio__deepcopyintosafeframebuffer" label: "Deepcopyintosafeframebuffer\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:210:13" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__deepcopyintosafeframebuffer" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:210:13" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__get_queuedepth" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:213:28" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__set_queuedepth" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:213:13" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__set_packet" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:216:13" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__set_rssi" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:220:13" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__radio__set_rssi" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:223:10" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__events__clear" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:228:7" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerN" targetname: "nrf__tasks__trigger" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:229:16" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__radio__radio_irqhandlerP___finalizer.0" label: "radio_irqhandlerP\n<built-in>\n16 bytes (static)" }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\s-taprob.ads:198:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__radio__radio_irqhandlerP___finalizer.0" targetname: "system__tasking__protected_objects__unlock" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:7" }
+node: { title: "microbit__radio__radio__radio_irqhandlerP" label: "Radio_Irqhandlerp\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:7\n32 bytes (static)" }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnarl\s-taprob.ads:184:14" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerP" targetname: "system__tasking__protected_objects__lock" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:7" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerP" targetname: "microbit__radio__radio__radio_irqhandlerN" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:7" }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerP" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:microbit__radio__radio__radio_irqhandlerP___finalizer.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb:190:0" }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+edge: { sourcename: "microbit__radio__radio__radio_irqhandlerP" targetname: "_Unwind_Resume" }
+node: { title: "microbit__radio___elabs" label: "Radio\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.ads:56:1\n8 bytes (static)" }
+edge: { sourcename: "microbit__radio___elabs" targetname: "microbit__radio__radioTVIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.ads:99:4" }
+}

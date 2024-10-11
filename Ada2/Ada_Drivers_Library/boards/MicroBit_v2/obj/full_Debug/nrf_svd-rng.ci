@@ -1,0 +1,12 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-rng.ads"
+node: { title: "nrf_svd__rng__shorts_registerIP" label: "shorts_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__rng__intenset_registerIP" label: "intenset_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__rng__intenclr_registerIP" label: "intenclr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__rng__config_registerIP" label: "config_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__rng__value_registerIP" label: "value_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__rng__rng_peripheralIP" label: "rng_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__rng__rng_peripheralIP" targetname: "nrf_svd__rng__shorts_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-rng.ads:212:7" }
+edge: { sourcename: "nrf_svd__rng__rng_peripheralIP" targetname: "nrf_svd__rng__intenset_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-rng.ads:214:7" }
+edge: { sourcename: "nrf_svd__rng__rng_peripheralIP" targetname: "nrf_svd__rng__intenclr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-rng.ads:216:7" }
+edge: { sourcename: "nrf_svd__rng__rng_peripheralIP" targetname: "nrf_svd__rng__config_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-rng.ads:218:7" }
+}

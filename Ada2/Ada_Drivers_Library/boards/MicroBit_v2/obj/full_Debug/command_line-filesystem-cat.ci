@@ -1,0 +1,83 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb"
+edge: { sourcename: "command_line__filesystem__cat__Tcat_cmdCFD"
+  targetname: "-9:command_line__filesystem__cat__cat_cmd,command_line__filesystem__cat__cat_cmd"
+  label: "command_line-filesystem-cat.ads:34:9"
+}
+class {
+  classname: "command_line__filesystem__cat__cat_cmd"
+  label: "command_line__filesystem__cat__cat_cmd\command_line-filesystem-cat.ads:34:9"
+  parent: "command_line__command"
+  virtuals: "1:command_line__filesystem__cat__name,1:command_line__command\n
+             2:command_line__filesystem__cat__execute,2:command_line__command\n
+             3:command_line__filesystem__cat__help,3:command_line__command\n
+             -1:command_line__filesystem__cat___size__2,-1:command_line__command\n
+             -10:command_line__filesystem__cat__cat_cmdPI__2,-10:command_line__command\n
+             -9:command_line__filesystem__cat__cat_cmdDF__2,-9:command_line__command"
+}
+edge: { sourcename: "command_line__filesystem__cat__execute"
+  targetname: "1:command_line__arguments,command_line__arguments"
+  label: "command_line-filesystem-cat.adb:76:42"
+}
+node: { title: "command_line__filesystem__cat__cat_cmdIP" label: "cat_cmdIP\n<built-in>\n24 bytes (static)" }
+node: { title: "command_line__commandIP" label: "Commandip\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line.ads:102:9" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__cat_cmdIP" targetname: "command_line__commandIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:51:20" }
+node: { title: "command_line__filesystem__cat___size__2" label: "cat\n<built-in>\n16 bytes (static)" }
+node: { title: "command_line__filesystem__cat__cat_cmdPI__2" label: "cat_cmdPI\n<built-in>\n16 bytes (static)" }
+node: { title: "command_line__commandPI" label: "Commandpi\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line.ads:102:9" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__cat_cmdPI__2" targetname: "command_line__commandPI" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:51:9" }
+node: { title: "command_line__filesystem__cat__cat_cmdDF__2" label: "cat_cmdDF\n<built-in>\n16 bytes (static)" }
+node: { title: "command_line__filesystem__cat__Tcat_cmdCFD" label: "Tcat_cmdCFD\n<built-in>\n16 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__Tcat_cmdCFD" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:34:9" }
+node: { title: "command_line__filesystem__cat__name" label: "Name\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:37:4\n24 bytes (static)" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__name" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:38:8" }
+node: { title: "command_line__filesystem__cat__finalize_spec" label: "finalize_spec\n<built-in>\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:32:1" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" label: "Display_File\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:53:7\n680 bytes (dynamic)" }
+node: { title: "file_io__file_descriptorIP" label: "File_Descriptorip\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\file_io.ads:195:9" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "file_io__file_descriptorIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:54:10" }
+node: { title: "file_io__open" label: "Open\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\file_io.ads:91:13" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "file_io__open" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:59:20" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:61:61" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "memcpy" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "memcpy" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:61:13" }
+node: { title: "file_io__read" label: "Read\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\file_io.ads:108:13" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "file_io__read" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:66:23" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:68:60" }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:68:68" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:68:35" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:68:13" }
+node: { title: "file_io__close" label: "Close\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\file_io.ads:97:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" targetname: "file_io__close" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:70:10" }
+node: { title: "command_line__filesystem__cat__execute" label: "Execute\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:40:15\n88 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:40:15" }
+node: { title: "system__secondary_stack__ss_mark" label: "Ss_Mark\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:69:13" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:76:42" }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:76:42" }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__display_file.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:81:13" }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__B_3___finalizer.1" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:82:0" }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat__execute" targetname: "_Unwind_Resume" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__B_3___finalizer.1" label: "B_3\n<built-in>\n16 bytes (static)" }
+node: { title: "system__secondary_stack__ss_release" label: "Ss_Release\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:72:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:command_line__filesystem__cat__execute__B_3___finalizer.1" targetname: "system__secondary_stack__ss_release" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:75:10" }
+node: { title: "command_line__filesystem__cat__help" label: "Help\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:91:4\n40 bytes (static)" }
+edge: { sourcename: "command_line__filesystem__cat__help" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:91:4" }
+edge: { sourcename: "command_line__filesystem__cat__help" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:97:7" }
+edge: { sourcename: "command_line__filesystem__cat__help" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:98:7" }
+node: { title: "command_line__filesystem__cat___elabb" label: "Cat\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.adb:34:1\n4 bytes (static)" }
+node: { title: "command_line__filesystem__cat___elabs" label: "Cat\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:32:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:51:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "command_line__filesystem__cat___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\command_line\command_line-filesystem-cat.ads:51:9" }
+}

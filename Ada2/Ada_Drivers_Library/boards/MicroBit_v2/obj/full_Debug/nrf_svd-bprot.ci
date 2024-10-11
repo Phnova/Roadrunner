@@ -1,0 +1,20 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-bprot.ads"
+node: { title: "nrf_svd__bprot__Tconfig0_region_field_arrayBIP" label: "Tconfig0_region_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__config0_registerEQ" label: "config0_registerEQ\n<built-in>\n40 bytes (static)" }
+node: { title: "nrf_svd__bprot__config0_registerIP" label: "config0_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__Tconfig1_region_field_arrayBIP" label: "Tconfig1_region_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__config1_registerEQ" label: "config1_registerEQ\n<built-in>\n40 bytes (static)" }
+node: { title: "nrf_svd__bprot__config1_registerIP" label: "config1_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__disableindebug_registerIP" label: "disableindebug_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__Tconfig2_region_field_arrayBIP" label: "Tconfig2_region_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__config2_registerEQ" label: "config2_registerEQ\n<built-in>\n40 bytes (static)" }
+node: { title: "nrf_svd__bprot__config2_registerIP" label: "config2_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__Tconfig3_region_field_arrayBIP" label: "Tconfig3_region_field_arrayBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__config3_registerEQ" label: "config3_registerEQ\n<built-in>\n40 bytes (static)" }
+node: { title: "nrf_svd__bprot__config3_registerIP" label: "config3_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "nrf_svd__bprot__bprot_peripheralEQ" label: "bprot_peripheralEQ\n<built-in>\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf_svd__bprot__bprot_peripheralEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-bprot.ads:239:9" }
+node: { title: "nrf_svd__bprot__bprot_peripheralIP" label: "bprot_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "nrf_svd__bprot__bprot_peripheralIP" targetname: "nrf_svd__bprot__disableindebug_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-bprot.ads:245:7" }
+}

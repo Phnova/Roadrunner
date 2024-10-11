@@ -1,0 +1,3 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-fpu.ads"
+node: { title: "nrf_svd__fpu__fpu_peripheralIP" label: "fpu_peripheralIP\n<built-in>\n16 bytes (static)" }
+}

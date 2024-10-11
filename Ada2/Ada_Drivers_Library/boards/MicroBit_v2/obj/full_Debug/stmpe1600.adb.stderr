@@ -1,0 +1,7 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:212:46: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:241:46: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:259:45: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:266:46: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:283:45: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:301:46: warning: aspect Unreferenced specified for "Status" [enabled by default]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\stmpe1600\stmpe1600.adb:308:47: warning: aspect Unreferenced specified for "Status" [enabled by default]

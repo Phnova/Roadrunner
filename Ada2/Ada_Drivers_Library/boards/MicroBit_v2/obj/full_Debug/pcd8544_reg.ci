@@ -1,0 +1,4 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\screen\pcd8544\pcd8544_reg.ads"
+node: { title: "pcd8544_reg__pcd8544_function_registerIP" label: "pcd8544_function_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "pcd8544_reg__pcd8544_display_registerIP" label: "pcd8544_display_registerIP\n<built-in>\n16 bytes (static)" }
+}

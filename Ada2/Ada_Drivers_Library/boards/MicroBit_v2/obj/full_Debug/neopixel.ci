@@ -1,0 +1,31 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb"
+node: { title: "neopixel__led_componentH" label: "led_componentH\n<built-in>\n32 bytes (static)" }
+node: { title: "neopixel__Tled_valuesBIP" label: "Tled_valuesBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "neopixel__led_stripIP" label: "led_stripIP\n<built-in>\n24 bytes (static)" }
+node: { title: "neopixel__create" label: "Create\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:41:4\n120 bytes (dynamic)" }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__create" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:45:59" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__create" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:45:59" }
+node: { title: "memset" label: "builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__create" targetname: "memset" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "neopixel__create" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:43:7" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__create" targetname: "memcpy" }
+node: { title: "neopixel__Tcomponent_indicesBIP" label: "Tcomponent_indicesBIP\n<built-in>\n16 bytes (static)" }
+node: { title: "neopixel__set_color" label: "Set_Color\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:59:4\n80 bytes (static)" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-assert.ads:46:14" shape : ellipse }
+edge: { sourcename: "neopixel__set_color" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:64:22" }
+edge: { sourcename: "neopixel__set_color" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:65:43" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__set_color" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:68:28" }
+edge: { sourcename: "neopixel__set_color" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:69:29" }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__set_color" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:69:15" }
+node: { title: "neopixel__show" label: "Show\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:77:4\n80 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "neopixel__show" targetname: "__gnat_rcheck_CE_Access_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:82:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "neopixel__show" targetname: "__indirect_call" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\neopixel\neopixel.adb:82:7" }
+}

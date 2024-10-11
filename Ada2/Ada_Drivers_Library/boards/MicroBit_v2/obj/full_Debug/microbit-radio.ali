@@ -1,0 +1,359 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U microbit.radio%b	microbit-radio.adb	d9127229 NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W cortex_m%s		cortex_m.ads		cortex_m.ali
+W cortex_m.nvic%s	cortex_m-nvic.adb	cortex_m-nvic.ali
+W microbit%s		microbit.ads		microbit.ali
+W nrf%s			nrf.ads			nrf.ali
+W nrf.events%s		nrf-events.adb		nrf-events.ali
+W nrf.interrupts%s	nrf-interrupts.adb	nrf-interrupts.ali
+W nrf.tasks%s		nrf-tasks.adb		nrf-tasks.ali
+W nrf_svd%s		nrf_svd.ads		nrf_svd.ali
+W nrf_svd.radio%s	nrf_svd-radio.ads	nrf_svd-radio.ali
+Z system%s		system.ads		system.ali
+Z system.img_lli%s	s-imglli.ads		s-imglli.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U microbit.radio%s	microbit-radio.ads	2158f77a EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+W ada.interrupts.names%s  a-intnam.ads		a-intnam.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W hal%s			hal.ads			hal.ali
+W microbit%s		microbit.ads		microbit.ali
+W nrf%s			nrf.ads			nrf.ali
+W nrf.radio%s		nrf-radio.adb		nrf-radio.ali
+Z system%s		system.ads		system.ali
+Z system.interrupts%s	s-interr.adb		s-interr.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-assert.ads		20240605232314 ba465f5c ada.assertions%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-interr.ads		20240605232314 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20240605232314 543e27b6 ada.interrupts.names%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-taside.ads		20240605232314 c0a7c8d8 ada.task_identification%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D cortex_m.ads		20240918101450 38b367df cortex_m%s
+D cortex_m-nvic.ads	20240918101450 72ffb636 cortex_m.nvic%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-gpio.ads		20240918101452 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20240918101452 416d8959 hal.i2c%s
+D hal-spi.ads		20240918101452 fe139819 hal.spi%s
+D hal-uart.ads		20240918101452 d58316b4 hal.uart%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D microbit.ads		20240918101450 c5aa85df microbit%s
+D microbit-radio.ads	20240918101450 6901b417 microbit.radio%s
+D microbit-radio.adb	20240918101450 4d916cb4 microbit.radio%b
+D nrf.ads		20240918101450 74cf72f5 nrf%s
+D nrf-device.ads	20240918101450 9c9916c4 nrf.device%s
+D nrf-events.ads	20240918101450 08dbe7ee nrf.events%s
+D nrf-gpio.ads		20240918101450 ab6d4598 nrf.gpio%s
+D nrf-interrupts.ads	20240918101450 26bbe8ef nrf.interrupts%s
+D nrf-radio.ads		20240918101450 f28f290a nrf.radio%s
+D nrf-rtc.ads		20240918101450 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20240918101450 a8ff49a3 nrf.spi_master%s
+D nrf-tasks.ads		20240918101450 f048c130 nrf.tasks%s
+D nrf-timers.ads	20240918101450 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20240918101450 8de9adf3 nrf.twi%s
+D nrf-uart.ads		20240918101450 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20240918101450 87ba21d7 nrf_svd%s
+D nrf_svd-aar.ads	20240918101450 073faf5e nrf_svd.aar%s
+D nrf_svd-ccm.ads	20240918101450 989bbb45 nrf_svd.ccm%s
+D nrf_svd-clock.ads	20240918101450 15406ae2 nrf_svd.clock%s
+D nrf_svd-ecb.ads	20240918101450 ba523825 nrf_svd.ecb%s
+D nrf_svd-gpiote.ads	20240918101450 bda70f8a nrf_svd.gpiote%s
+D nrf_svd-power.ads	20240918101450 74fd31ae nrf_svd.power%s
+D nrf_svd-ppi.ads	20240918101450 0b0cc824 nrf_svd.ppi%s
+D nrf_svd-pwm.ads	20240918101450 0f5a6c9d nrf_svd.pwm%s
+D nrf_svd-qdec.ads	20240918101450 1e95ab7b nrf_svd.qdec%s
+D nrf_svd-radio.ads	20240918101450 5155d28d nrf_svd.radio%s
+D nrf_svd-rng.ads	20240918101450 a4e37bcd nrf_svd.rng%s
+D nrf_svd-rtc.ads	20240918101450 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-saadc.ads	20240918101450 2183d040 nrf_svd.saadc%s
+D nrf_svd-spi.ads	20240918101450 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-temp.ads	20240918101450 1ebb92fa nrf_svd.temp%s
+D nrf_svd-timer.ads	20240918101450 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20240918101450 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20240918101450 83bcebc8 nrf_svd.uart%s
+D nrf_svd-wdt.ads	20240918101450 c89e1b05 nrf_svd.wdt%s
+D system.ads		20240605232314 124d8146 system%s
+D s-assert.ads		20240605232314 9c4520c7 system.assertions%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-imagei.ads		20240605232314 5e131ce0 system.image_i%s
+D s-imglli.ads		20240605232314 d88f4f3b system.img_lli%s
+D s-interr.ads		20240605232314 d74bd991 system.interrupts%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20240605232314 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20240605232314 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-retsta.ads		20240605232314 0f6b06cb system.return_stack%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240605232314 a1861007 system.stream_attributes%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-taprob.ads		20240605232314 c8fc0753 system.tasking.protected_objects%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20240605232314 b0fcd073 system.val_spec%s
+D s-vaispe.ads		20240605232314 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240605232314 dbcabb05 system.value_i_spec%b
+D s-vauspe.ads		20240605232314 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240605232314 8524adb4 system.value_u_spec%b
+D s-vs_lli.ads		20240605232314 b945cf7d system.vs_lli%s
+D s-vs_llu.ads		20240605232314 8f3536c5 system.vs_llu%s
+D s-wchcon.ads		20240605232314 d9032363 system.wch_con%s
+D s-wchstw.ads		20240605232314 2d112c01 system.wch_stw%s
+G a e
+G c Z s b [setup microbit__radio 69 14 none]
+G c Z s b [startreceiving microbit__radio 75 14 none]
+G c Z s b [stopreceiving microbit__radio 77 14 none]
+G c Z s b [state microbit__radio 79 13 none]
+G c Z s b [isinitialized microbit__radio 81 13 none]
+G c Z s b [dataready microbit__radio 83 13 none]
+G c Z s b [receive microbit__radio 85 13 none]
+G c Z s b [transmit microbit__radio 87 14 none]
+G c Z s b [headerok microbit__radio 90 13 none]
+G c Z s b [radio_irqhandler microbit__radio__radio 100 17 none]
+G c Z s b [radio__radio_irqhandlerN microbit__radio 100 7 none]
+G c Z s b [radio__radio_irqhandlerP microbit__radio 100 7 none]
+G c Z s s [radioTVIP microbit__radio 99 4 none]
+G c Z s b [transmitandwait microbit__radio 104 14 none]
+G c Z b b [enable microbit__radio 101 14 none]
+G r c none [setup microbit__radio 69 14 none] [setup_for_rf_nrf52 nrf__radio 193 14 none]
+G r c none [setup microbit__radio 69 14 none] [enable_interrupt nrf__events 56 14 none]
+G r c none [setup microbit__radio 69 14 none] [set_priority nrf__interrupts 88 14 none]
+G r c none [startreceiving microbit__radio 75 14 none] [clear_pending cortex_m__nvic 104 14 none]
+G r c none [startreceiving microbit__radio 75 14 none] [enable nrf__interrupts 89 14 none]
+G r c none [startreceiving microbit__radio 75 14 none] [trigger nrf__tasks 55 14 none]
+G r c none [startreceiving microbit__radio 75 14 none] [clear nrf__events 60 14 none]
+G r c none [startreceiving microbit__radio 75 14 none] [triggered nrf__events 54 13 none]
+G r c none [stopreceiving microbit__radio 77 14 none] [disable nrf__interrupts 90 14 none]
+G r c none [stopreceiving microbit__radio 77 14 none] [clear nrf__events 60 14 none]
+G r c none [stopreceiving microbit__radio 77 14 none] [trigger nrf__tasks 55 14 none]
+G r c none [stopreceiving microbit__radio 77 14 none] [triggered nrf__events 54 13 none]
+G r c none [state microbit__radio 79 13 none] [state nrf__radio 93 13 none]
+G r c none [isinitialized microbit__radio 81 13 none] [isinitialized nrf__radio 200 12 none]
+G r c none [dataready microbit__radio 83 13 none] [dataready nrf__radio 202 12 none]
+G r c none [receive microbit__radio 85 13 none] [dataready nrf__radio 202 12 none]
+G r c none [receive microbit__radio 85 13 none] [get_queuedepth nrf__radio 208 12 none]
+G r c none [receive microbit__radio 85 13 none] [set_queuedepth nrf__radio 206 13 none]
+G r c none [receive microbit__radio 85 13 none] [get_safeframebuffer nrf__radio 204 12 none]
+G r c none [transmit microbit__radio 87 14 none] [disable nrf__interrupts 90 14 none]
+G r c none [transmit microbit__radio 87 14 none] [clear nrf__events 60 14 none]
+G r c none [transmit microbit__radio 87 14 none] [trigger nrf__tasks 55 14 none]
+G r c none [transmit microbit__radio 87 14 none] [triggered nrf__events 54 13 none]
+G r c none [transmit microbit__radio 87 14 none] [set_packet nrf__radio 102 14 none]
+G r c none [transmit microbit__radio 87 14 none] [clear_pending cortex_m__nvic 104 14 none]
+G r c none [transmit microbit__radio 87 14 none] [enable nrf__interrupts 89 14 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [triggered nrf__events 54 13 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [get_queuedepth nrf__radio 208 12 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [get_rssisample nrf__radio 212 12 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [set_rssi nrf__radio 214 13 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [get_rssi nrf__radio 217 13 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [deepcopyintosafeframebuffer nrf__radio 210 13 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [set_queuedepth nrf__radio 206 13 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [set_packet nrf__radio 102 14 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [clear nrf__events 60 14 none]
+G r c none [radio_irqhandler microbit__radio__radio 100 17 none] [trigger nrf__tasks 55 14 none]
+G r c none [transmitandwait microbit__radio 104 14 none] [trigger nrf__tasks 55 14 none]
+G r c none [transmitandwait microbit__radio 104 14 none] [clear nrf__events 60 14 none]
+G r c none [transmitandwait microbit__radio 104 14 none] [triggered nrf__events 54 13 none]
+G r c none [enable microbit__radio 101 14 none] [setup_for_rf_nrf52 nrf__radio 193 14 none]
+G r c none [enable microbit__radio 101 14 none] [enable_interrupt nrf__events 56 14 none]
+G r c none [enable microbit__radio 101 14 none] [set_priority nrf__interrupts 88 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 23|54r6 101r48
+X 5 a-interr.ads
+40K13*Interrupts 100e19 23|54r10 101r52
+42I9*Interrupt_ID<73|57I9>
+X 6 a-intnam.ads
+52K24*Names 113e25 23|54w21 101r63
+65i4*RADIO_Interrupt{5|42I9} 23|101r69
+X 14 cortex_m.ads
+32K9*Cortex_M 34e13 24|32r6 32r25
+X 15 cortex_m-nvic.ads
+48K18*NVIC 258e18 24|32w15 32r34
+104U14*Clear_Pending 24|138s7
+X 16 hal.ads
+34K9*HAL 166e8 23|53w6 53r15
+49M9*UInt7 24|191r16
+53M9*UInt8<21|70M9> 23|70r32 71r33 72r31 73r34 90r30 90r43 94r19 95r20 96r18
+. 97r21 24|119r32 120r33 121r31 122r34 170r30 171r29
+X 17 hal-gpio.ads
+47h9*GPIO_Point
+X 18 hal-i2c.ads
+48h9*I2C_Port
+X 19 hal-spi.ads
+48h9*SPI_Port
+X 20 hal-uart.ads
+48h9*UART_Port
+X 21 interfac.ads
+70M9*Unsigned_8
+X 22 microbit.ads
+57K9*MicroBit 114e13 23|56r9 106r5 24|37r14 232r5
+X 23 microbit-radio.ads
+56K18*Radio 22|57k9 23|93E4 106l14 106e19 24|37b23 232l14 232t19
+67R12*RadioData{30|181R9} 85r28 87r31 24|54r28 70r31
+69U14*Setup 69>21 70>25 71>25 72>25 73>25 24|118b14 131l8 131t13
+69i21 RadioFrequency{30|74I9} 24|118b21 124r17
+70m25 Length{16|53M9} 24|119b25 125r20
+71m25 Version{16|53M9} 24|120b25 126r21
+72m25 Group{16|53M9} 24|121b25 127r19
+73m25 Protocol{16|53M9} 24|122b25 128r22
+75U14*StartReceiving 24|96s7 135b14 152l11 152t25
+77U14*StopReceiving 24|83s12 154b14 168l8 168t21
+79V13*State{string} 24|39b13 42l8 42t13
+81V13*IsInitialized{boolean} 24|44b13 47l8 47t21
+83V13*DataReady{boolean} 24|49b13 52l8 52t17 56s10
+85V13*Receive{67R12} 24|54b13 68l8 68t15
+87U14*Transmit 87>24 24|70b14 99l8 99t16
+87r24 Data{67R12} 24|70b24 73r23 74r24 75r22 76r25 77r24
+90V13*HeaderOk{boolean} 90>23 90>37 24|170b13 174l8 174t16 199s16
+90m23 Length{16|53M9} 24|170b23 173r15
+90m37 Group{16|53M9} 24|171b23 173r43
+93i4 Frequency{30|74I9} 24|104r36 124m4
+94m4 HeaderLength{16|53M9} 24|125m4 173r24
+95m4 HeaderVersion{16|53M9} 24|126m4
+96m4 HeaderGroup{16|53M9} 24|104r86 127m4 173r51
+97m4 HeaderProtocol{16|53M9} 24|128m4
+99w14 Radio 24|189b19 231l8 231t13
+100U17 Radio_IRQHandler 101r30 24|190b17 230l8 230t24
+104U14 TransmitAndWait 24|89s7 176b14 187l8 187t23
+X 24 microbit-radio.adb
+101U14 Enable 101b14 116l8 116t14 130s4
+191m7 sample{16|49M9} 202m13 203r23
+X 25 nrf.ads
+34K9*nRF 23|52r6 52r21 67r25 24|33r6 34r6 34r21 35r6 35r22 41r48 46r14 51r19
+. 80r7 80r31 104r7 107r7 107r36 114r7 114r35 138r21 141r7 141r30 144r7 144r26
+. 148r13 157r7 157r31 161r7 161r26 164r13 179r7 179r26 183r13 195r11 199r25
+. 200r25 229r7 229r26 25|43e8
+36M9*Event_Type<57|80M9>
+38M9*Task_Type<57|80M9>
+X 27 nrf-events.ads
+52K13*Events 24|35w10 35r26 107r11 107r40 148r17 164r17 183r17 195r15 27|387e15
+54V13*Triggered{boolean} 24|148s24 164s24 183s24 195s22
+56U14*Enable_Interrupt 24|107s18
+60U14*Clear 24|147s7 160s7 182s7 228s7
+83m4*Radio_READY{25|36M9} 24|147r13 148r34
+86m4*Radio_END{25|36M9} 24|107r47 228r14
+87m4*Radio_DISABLED{25|36M9} 24|160r14 164r34 182r14 183r34
+92m4*Radio_CRCOK{25|36M9} 24|195r32
+X 29 nrf-interrupts.ads
+34K13*Interrupts 24|33w10 80r11 80r35 114r11 114r39 138r25 141r11 141r34
+. 157r11 157r35 29|151e19
+38n7*RADIO_Interrupt{36E9} 24|80r46 114r50 138r36 141r45 157r46
+88U14*Set_Priority 24|114s22
+89U14*Enable 24|141s22
+90U14*Disable 24|80s22 157s22
+X 30 nrf-radio.ads
+34K13*Radio 23|52w10 52r25 67r29 24|41r52 46r18 51r23 104r11 199r29 200r29
+. 30|262e14
+52E9*Radio_State 24|41r27 30|60e37
+74I9*Radio_Frequency_MHz<short_integer> 23|69r38 93r16 24|118r38
+78n25*Zero_Dbm{78E9} 24|104r61
+88n24*Nordic_1MBIT{88E9} 24|104r47
+93V13*State{52E9} 24|41s58
+102U14*Set_Packet 24|86s7 93s7 216s13
+174m4*MICROBIT_RADIO_MAXIMUM_RX_BUFFERS{16|53M9} 24|195r66
+178A9*Payload_Data(16|53M9)<16|53M9>
+181R9*Framebuffer 23|67r35 30|188e14
+182m7*Length{16|53M9} 24|73m13 73r28 199r41
+183m7*Version{16|53M9} 24|74m13 74r29
+184m7*Group{16|53M9} 24|75m13 75r27 200r41
+185m7*Protocol{16|53M9} 24|76m13 76r30
+186a7*Payload{178A9} 24|77m13 77r29
+187m7*RSSI{16|49M9} 24|207m19
+193U14*Setup_For_RF_nrf52 24|104s17
+200V12*IsInitialized{boolean} 24|46s24
+202V12*DataReady{boolean} 24|51s29
+204V12*Get_SafeFramebuffer{181R9} 24|67s14
+206U13*Set_QueueDepth 24|61s10 213s13
+208V12*Get_QueueDepth{16|53M9} 24|61s25 195s49 213s28
+210U13*DeepCopyIntoSafeFramebuffer 24|210s13
+212V12*Get_RSSIsample{16|49M9} 24|202s23
+214U13*Set_RSSI 24|203s13 220s13 223s10
+217V13*Get_RSSI{16|49M9} 24|207s27
+222r4*RxBuf{181R9} 24|93m18 93r18 199r35 200r35 207m13 216m24 216r24
+223r4*TxBuf{181R9} 24|73m7 74m7 75m7 76m7 77m7 86m18 86r18
+X 33 nrf-tasks.ads
+53K13*Tasks 24|34w10 34r25 144r11 144r30 161r11 161r30 179r11 179r30 229r11
+. 229r30 33|437e14
+55U14*Trigger 24|144s17 161s17 179s17 229s17
+91m4*Radio_TXEN{25|38M9} 24|179r36
+92m4*Radio_RXEN{25|38M9} 24|144r36 229r36
+95m4*Radio_DISABLE{25|38M9} 24|161r36
+X 37 nrf_svd.ads
+49K9*NRF_SVD 24|31r6 31r25 37|122e12
+X 47 nrf_svd-radio.ads
+48K17*RADIO 24|31w14 31r33 47|1774e18
+X 57 system.ads
+80M9*Address
+X 73 s-interr.ads
+57I9*Ada_Interrupt_ID<integer>
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 82 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 89 s-taskin.ads
+398V13*Get_Sec_Stack{82|46P9} 399i<c,__gnat_get_secondary_stack>22
+

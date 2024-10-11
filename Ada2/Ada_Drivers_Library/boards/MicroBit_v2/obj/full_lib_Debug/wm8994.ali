@@ -1,0 +1,252 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U wm8994%b		wm8994.adb		4d7fb9ef OO PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+U wm8994%s		wm8994.ads		7385a909 EE OO PF PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W hal.time%s		hal-time.ads		hal-time.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+
+D ada.ads		20240605232314 76789da1 ada%s
+D a-except.ads		20240605232314 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240605232314 bf4f806b ada.finalization%s
+D a-stream.ads		20240605232314 119b8fb3 ada.streams%s
+D a-string.ads		20240605232314 90ac6797 ada.strings%s
+D a-sttebu.ads		20240605232314 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240605232314 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240605232314 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240605232314 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20240918101452 2b42c80e hal%s
+D hal-i2c.ads		20240918101452 416d8959 hal.i2c%s
+D hal-time.ads		20240918101452 f5295cd7 hal.time%s
+D interfac.ads		20240605232314 9111f9c1 interfaces%s
+D system.ads		20240605232314 124d8146 system%s
+D s-bb.ads		20240605232314 09e072ae system.bb%s
+D s-bbbopa.ads		20240605232314 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20240605232314 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20240605232314 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20240605232314 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20240605232314 5a35b8f4 system.bb.mcu_parameters%s
+D s-bbpara.ads		20240605232314 1ae191c6 system.bb.parameters%s
+D s-bbthre.ads		20240605232314 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20240605232314 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20240605232314 ad086247 system.bb.time%s
+D s-finmas.ads		20240605232314 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240605232314 4ff27390 system.finalization_root%s
+D s-multip.ads		20240605232314 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20240605232314 229b14dd system.os_interface%s
+D s-parame.ads		20240605232314 07f3e19f system.parameters%s
+D s-pooglo.ads		20240605232314 91708d21 system.pool_global%s
+D s-putima.ads		20240605232314 17291fe4 system.put_images%s
+D s-secsta.ads		20240605232314 bd894d4b system.secondary_stack%s
+D s-stalib.ads		20240605232314 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240605232314 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240605232314 e9fa2dd8 system.storage_pools%s
+D s-tasinf.ads		20240605232314 801abd01 system.task_info%s
+D s-taspri.ads		20240605232314 37f162b4 system.task_primitives%s
+D s-taskin.ads		20240605232314 989d56fd system.tasking%s
+D s-traent.ads		20240605232314 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240605232314 fa2a7f59 system.unsigned_types%s
+D wm8994.ads		20240918101450 ec83b489 wm8994%s
+D wm8994.adb		20240918101450 a1fc0d66 wm8994%b
+G a e
+G c Z s b [init wm8994 95 14 none]
+G c Z s b [read_id wm8994 101 13 none]
+G c Z s b [play wm8994 102 14 none]
+G c Z s b [pause wm8994 103 14 none]
+G c Z s b [resume wm8994 104 14 none]
+G c Z s b [stop wm8994 105 14 none]
+G c Z s b [set_volume wm8994 106 14 none]
+G c Z s b [set_mute wm8994 107 14 none]
+G c Z s b [set_output_mode wm8994 108 14 none]
+G c Z s b [set_frequency wm8994 110 14 none]
+G c Z s b [reset wm8994 112 14 none]
+G c Z s b [i2c_write wm8994 119 14 none]
+G c Z s b [i2c_read wm8994 122 13 none]
+G c Z s s [wm8994_deviceDF wm8994 115 9 none]
+G c Z s s [wm8994_deviceIP wm8994 115 9 none]
+X 10 hal.ads
+34K9*HAL 166e8 41|34w6 34r20 35r6 35r20 36r6 92r27 117r44
+53M9*UInt8<13|70M9> 41|87r28 98r32 42|54r19 55r19 100r19
+54M9*UInt10 41|91r18 116r35
+66M9*UInt16<13|73M9> 41|101r58 120r33 121r33 123r29 124r30 42|46r33 47r33
+. 51r16 74r29 75r30 79r16 87r26 87r51 103r26 311r58 390r35 392r34
+162A9*UInt8_Array(53M9)<integer>
+X 11 hal-i2c.ads
+32K13*I2C 91e12 41|35w10 35r24
+34E9*I2C_Status 38e12 42|49r16 77r16
+40A12*I2C_Data{10|162A9}<integer> 42|50r16 78r16
+44n7*Memory_Size_16b{42E9} 42|60r27 84r27
+48h9*I2C_Port
+50P9*Any_I2C_Port(48R9) 41|90r27 115r44
+66x14*Mem_Write 42|57R17
+68m7 Addr{46M12} 42|58r10
+69m7 Mem_Addr{10|66M9} 42|59r10
+70e7 Mem_Addr_Size{42E9} 42|60r10
+71a7 Data{40A12} 42|61r10
+72e7 Status{34E9} 42|62r10
+75x14*Mem_Read 42|81R17
+77m7 Addr{46M12} 42|82r10
+78m7 Mem_Addr{10|66M9} 42|83r10
+79e7 Mem_Addr_Size{42E9} 42|84r10
+80a7 Data{40A12} 42|85r10
+81e7 Status{34E9} 42|86r10
+X 12 hal-time.ads
+32K13*Time 46e13 41|36w10 92r31 117r48
+34h9*Delays
+36P9*Any_Delays(34R9) 41|92r36 117r53
+41x14*Delay_Milliseconds 42|117R17 218R20 236R20
+X 13 interfac.ads
+70M9*Unsigned_8
+73M9*Unsigned_16
+116V13*Shift_Left{73M9} 42|87s14
+121V13*Shift_Right{73M9} 42|54s26
+X 32 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 38 s-taskin.ads
+398V13*Get_Sec_Stack{32|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 41 wm8994.ads
+38K9*WM8994 115E9 126l5 126e11 42|32b14 538l5 538t11
+40E9*Output_Device 45e12 97r32 109r40 42|99r19 442r40
+41n7*No_Output{40E9} 42|119r35 180r20 446r15
+42n7*Speaker{40E9} 42|454r15
+43n7*Headphone{40E9} 42|466r15
+44n7*Both{40E9} 42|479r15
+45n7*Auto{40E9} 42|466r27
+46E9*Input_Device 49e18 96r32 42|98r19
+47n7*No_Input{46E9} 42|120r34 125r15 266r19
+48n7*Microphone{46E9} 42|128r15 267r21
+49n7*Input_Line{46E9} 42|147r15 278r24
+51N4*WM8994_ID
+53E9*Audio_Frequency 61e6 62r8 99r32 111r36 42|101r19 499r36
+54n7*Audio_Freq_8kHz{53E9} 63r7 42|503r15
+55n7*Audio_Freq_11kHz{53E9} 64r7 42|515r15
+56n7*Audio_Freq_16kHz{53E9} 65r7 42|506r15
+57n7*Audio_Freq_22kHz{53E9} 66r7 42|518r15
+58n7*Audio_Freq_44kHz{53E9} 67r7 42|521r15
+59n7*Audio_Freq_48kHz{53E9} 68r7 42|509r15
+60n7*Audio_Freq_96kHz{53E9} 69r7 42|512r15
+71E9*Mute 73e16 107r59 42|419r59
+72n7*Mute_On{71E9} 42|332r22 355r25 397r25 423r18
+73n7*Mute_Off{71E9} 42|322r22 344r22 399r25 428r18
+75E9*Stop_Mode 77e26 105r55 42|351r55
+76n7*Stop_Power_Down_Sw{75E9} 42|357r19
+77n7*Stop_Power_Down_Hw{75E9}
+87M12*Volume_Level{10|53M9} 106r64 42|387r64
+89R9*WM8994_Device 90d7 91d7 92d7 95p14 95r39 101p13 101r36 102p14 102r34
+. 103p14 103r35 104p14 104r36 105p14 105r34 106p14 106r40 107p14 107r38 108p14
+. 108r45 110p14 110r43 112p14 112r35 115c9 117e94 119p14 119r41 122p13 122r37
+. 42|45r40 73r37 97r26 311r36 320r34 329r35 342r36 351r34 387r40 419r38 441r47
+. 498r44 531r35
+90p7 Port{11|50P9} 115r24 42|57r12 81r12
+91m7 I2C_Addr{10|54M9} 116r24 42|58r32 82r32
+92p7 Time{12|36P9} 117r24 42|117r12 218r15 236r15
+95U14*Init 95=20 96>20 97>20 98>20 99>20 42|96b14 305l8 305t12
+95r20 This{89R9} 42|97b7 107m18 108m18 109m18 112m18 115m18 117r7 122m7 122r7
+. 132m24 135m24 138m24 140m24 142m24 145m24 150m24 153m24 156m24 158m24 160m24
+. 163m24 166m7 166r7 170m18 172m18 175m18 178m18 185m21 188m21 192m21 196m21
+. 199m21 204m21 209m21 212m21 215m21 218r10 221m21 225m21 229m21 233m21 236r10
+. 240m21 245m21 248m21 251m21 254m21 257m21 260m21 263m10 263r10 270m24 273m24
+. 276m24 281m24 284m24 287m24 290m24 293m24 296m24 299m24 303m10 303r10
+96e20 Input{46E9} 42|98b7 120r25 124r12 266r10 267r13 278r16
+97e20 Output{40E9} 42|99b7 119r25 122r29 180r10
+98m20 Volume{10|53M9} 42|100b7 263r27 303r27
+99e20 Frequency{53E9} 42|101b7 166r27
+101V13*Read_ID{10|66M9} 101=22 42|311b13 314l8 314t15
+101r22 This{89R9} 42|311b22 313m14 313r14
+102U14*Play 102=20 42|320b14 323l8 323t12
+102r20 This{89R9} 42|320b20 322m7 322r7
+103U14*Pause 103=21 42|329b14 336l8 336t13
+103r21 This{89R9} 42|329b21 332m7 332r7 335m18
+104U14*Resume 104=22 42|342b14 345l8 345t14
+104r22 This{89R9} 42|342b22 344m7 344r7
+105U14*Stop 105=20 105>49 42|351b14 381l8 381t12
+105r20 This{89R9} 42|351b20 355m10 355r10 364m21 367m21 370m21 373m21 376m21
+. 379m21
+105e49 Cmd{75E9} 42|351b49 357r13
+106U14*Set_Volume 106=26 106>55 42|263s15 303s15 387b14 413l8 413t18
+106r26 This{89R9} 42|387b26 397m10 397r10 399m10 399r10 402m21 405m21 408m21
+. 411m21
+106m55 Volume{87M12} 42|387b55 391r32 392r42 395r10
+107U14*Set_Mute 107=24 107>53 42|322s12 332s12 344s12 355s15 397s15 399s15
+. 419b14 435l8 435t16
+107r24 This{89R9} 42|419b24 425m27 427m27 430m27 432m27
+107e53 Cmd{71E9} 42|419b53 422r15
+108U14*Set_Output_Mode 108=31 109>31 42|122s12 441b14 492l8 492t23
+108r31 This{89R9} 42|441b31 448m24 450m24 452m24 456m24 458m24 460m24 462m24
+. 464m24 469m24 471m24 473m24 475m24 477m24 482m24 484m24 486m24 488m24 490m24
+109e31 Device{40E9} 42|442b31 445r12
+110U14*Set_Frequency 110=29 111>29 42|166s12 498b14 525l8 525t21
+110r29 This{89R9} 42|498b29 505m24 508m24 511m24 514m24 517m24 520m24 523m24
+111e29 Freq{53E9} 42|499b29 502r12
+112U14*Reset 112=21 42|531b14 536l8 536t13
+112r21 This{89R9} 42|531b21 533m18
+119U14 I2C_Write 119=25 120>25 121>25 42|45b14 67l8 67t17 107s7 108s7 109s7
+. 112s7 115s7 132s13 135s13 138s13 140s13 142s13 145s13 150s13 153s13 156s13
+. 158s13 160s13 163s13 170s7 172s7 175s7 178s7 185s10 188s10 192s10 196s10
+. 199s10 204s10 209s10 212s10 215s10 221s10 225s10 229s10 233s10 240s10 245s10
+. 248s10 251s10 254s10 257s10 260s10 270s13 273s13 276s13 281s13 284s13 287s13
+. 290s13 293s13 296s13 299s13 335s7 364s10 367s10 370s10 373s10 376s10 379s10
+. 402s10 405s10 408s10 411s10 425s16 427s16 430s16 432s16 448s13 450s13 452s13
+. 456s13 458s13 460s13 462s13 464s13 469s13 471s13 473s13 475s13 477s13 482s13
+. 484s13 486s13 488s13 490s13 505s13 508s13 511s13 514s13 517s13 520s13 523s13
+. 533s7
+119r25 This{89R9} 42|45b25 57r7 58r27 65m29 65r29
+120m25 Reg{10|66M9} 42|46b25 59r27 64r10 65r35
+121m25 Value{10|66M9} 42|47b25 54r39 55r26
+122V13 I2C_Read{10|66M9} 122=23 123>23 42|65s19 73b13 90l8 90t16 313s19
+122r23 This{89R9} 42|73b23 81r7 82r27
+123m23 Reg{10|66M9} 42|74b23 83r27
+X 42 wm8994.adb
+34N4 WM8994_CHIPID_ADDR 313r29
+36b4 Output_Enabled{boolean} 119m7 353r10 361m10 421r10 534m7
+37b4 Input_Enabled{boolean} 38r25 120m7 535m7
+49e7 Status{11|34E9} 62m27
+50a7 Data{11|40A12} 54m7 55m7 61r27
+51m7 Check{10|66M9} 65m10
+77e7 Status{11|34E9} 86m27
+78a7 Data{11|40A12} 85m27 87r34 87r59
+79m7 Ret{10|66M9} 87m7 89r14
+103m7 Power_Mgnt_Reg_1{10|66M9} 208m10 208r30 209r35 269m13 269r33 270r38
+. 280m13 280r33 281r38
+390m7 Converted_Volume{10|66M9} 402r35 405r35 408r35 411r35
+

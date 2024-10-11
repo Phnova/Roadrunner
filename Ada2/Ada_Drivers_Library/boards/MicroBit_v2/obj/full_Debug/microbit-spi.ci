@@ -1,0 +1,20 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb"
+node: { title: "microbit__spi__speedH" label: "speedH\n<built-in>\n32 bytes (static)" }
+node: { title: "microbit__spi__spi_modeH" label: "spi_modeH\n<built-in>\n32 bytes (static)" }
+node: { title: "microbit__spi__initialized" label: "Initialized\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:47:4\n4 bytes (static)" }
+node: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" label: "Initialize\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:54:4\n48 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:64:29" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:75:29" }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:79:29" }
+node: { title: "nrf__spi_master__configure" label: "Configure\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-spi_master.ads:72:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" targetname: "nrf__spi_master__configure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:59:13" }
+node: { title: "nrf__spi_master__enable" label: "Enable\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-spi_master.ads:60:14" shape : ellipse }
+edge: { sourcename: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" targetname: "nrf__spi_master__enable" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:83:13" }
+node: { title: "microbit__spi__initialize" label: "Initialize\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:54:4\n32 bytes (static)" }
+edge: { sourcename: "microbit__spi__initialize" targetname: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:microbit__spi__initialize___wrapped_statements.0" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:54:4" }
+edge: { sourcename: "microbit__spi__initialize" targetname: "microbit__spi__initialized" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.ads:45:19" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\gnat\s-assert.ads:46:14" shape : ellipse }
+edge: { sourcename: "microbit__spi__initialize" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.ads:45:19" }
+node: { title: "microbit__spi__controller" label: "Controller\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-spi.adb:92:4\n4 bytes (static)" }
+}

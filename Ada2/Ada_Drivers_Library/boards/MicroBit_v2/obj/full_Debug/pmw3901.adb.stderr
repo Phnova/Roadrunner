@@ -1,0 +1,6 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:134:21: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:161:27: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:170:21: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:230:21: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:246:21: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\pmw3901\pmw3901.adb:258:24: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

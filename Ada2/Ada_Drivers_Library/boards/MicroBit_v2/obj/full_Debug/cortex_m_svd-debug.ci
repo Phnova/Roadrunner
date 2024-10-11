@@ -1,0 +1,19 @@
+graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads"
+node: { title: "cortex_m_svd__debug__dcrsr_halted_fieldH" label: "dcrsr_halted_fieldH\n<built-in>\n32 bytes (static)" }
+node: { title: "cortex_m_svd__debug__dfsr_registerIP" label: "dfsr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__debug__read_dhcsr_registerIP" label: "read_dhcsr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__debug__write_dhcsr_registerIP" label: "write_dhcsr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__debug__dhcsr_clusterEQ" label: "dhcsr_clusterEQ\n<built-in>\n208 bytes (static)" }
+node: { title: "cortex_m_svd__debug__dhcsr_clusterIP" label: "dhcsr_clusterIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "cortex_m_svd__debug__dhcsr_clusterIP" targetname: "cortex_m_svd__debug__write_dhcsr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:151:13" }
+node: { title: "cortex_m_svd__debug__dcrsr_registerIP" label: "dcrsr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__debug__demcr_registerIP" label: "demcr_registerIP\n<built-in>\n16 bytes (static)" }
+node: { title: "cortex_m_svd__debug__debug_peripheralEQ" label: "debug_peripheralEQ\n<built-in>\n64 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+edge: { sourcename: "cortex_m_svd__debug__debug_peripheralEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:291:9" }
+node: { title: "cortex_m_svd__debug__debug_peripheralIP" label: "debug_peripheralIP\n<built-in>\n16 bytes (static)" }
+edge: { sourcename: "cortex_m_svd__debug__debug_peripheralIP" targetname: "cortex_m_svd__debug__dfsr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:293:7" }
+edge: { sourcename: "cortex_m_svd__debug__debug_peripheralIP" targetname: "cortex_m_svd__debug__dhcsr_clusterIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:295:7" }
+edge: { sourcename: "cortex_m_svd__debug__debug_peripheralIP" targetname: "cortex_m_svd__debug__dcrsr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:301:7" }
+edge: { sourcename: "cortex_m_svd__debug__debug_peripheralIP" targetname: "cortex_m_svd__debug__demcr_registerIP" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\cm4f\cortex_m_svd-debug.ads:305:7" }
+}

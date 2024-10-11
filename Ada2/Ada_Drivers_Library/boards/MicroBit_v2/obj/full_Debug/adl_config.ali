@@ -1,0 +1,55 @@
+V "GNAT Lib v14"
+A -O0
+A -gnatA
+A --RTS=C:\users\saos\appdata\local\alire\cache\toolchains\gnat_arm_elf_14.1.3_184f9b28\arm-eabi\lib\gnat\embedded-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -fno-tree-loop-distribute-patterns
+A -g
+A -gnat2022
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U adl_config%s		adl_config.ads		0263fc13 NE OO PK
+
+D adl_config.ads	20240918101450 0263fc13 adl_config%s
+D system.ads		20240605232314 124d8146 system%s
+G a e
+X 1 adl_config.ads
+2K9*ADL_Config 21l5 21e15
+3a4*Architecture{string}
+4a4*Board{string}
+5a4*Boot_Memory{string}
+6a4*CPU_Core{string}
+7a4*Device_Family{string}
+8a4*Device_Name{string}
+9a4*Has_Ravenscar_Full_Runtime{string}
+10a4*Has_Ravenscar_SFP_Runtime{string}
+11a4*Has_ZFP_Runtime{string}
+12N4*Max_Mount_Name_Length
+13N4*Max_Mount_Points
+14N4*Max_Path_Length
+15N4*Number_Of_Interrupts
+16a4*Runtime_Name{string}
+17a4*Runtime_Name_Suffix{string}
+18a4*Runtime_Profile{string}
+19b4*Use_Startup_Gen{boolean}
+20a4*Vendor{string}
+

@@ -1,0 +1,1 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\l3gd20\l3gd20.adb:97:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

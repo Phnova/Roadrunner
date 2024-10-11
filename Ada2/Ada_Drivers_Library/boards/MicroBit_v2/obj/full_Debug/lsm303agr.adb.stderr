@@ -1,0 +1,4 @@
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.adb:112:51: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.adb:181:39: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.adb:203:39: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
+C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\motion\lsm303agr\lsm303agr.adb:258:39: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
