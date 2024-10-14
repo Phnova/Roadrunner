@@ -1,0 +1,14 @@
+Notater for ting som er testa:
+
+How to track rotation:
+- Compass + gyro
+- Compass
+- Use sensors to calculate
+
+Simplest solution is to depthsensors and continuously monitor distance relative to direction
+Compass + gyro can give absolute position, but is more complicated
+IR is the definitive standard in regards to accuracy in local position. 
+	- Use stationary IR sender with reciever on unit
+	- The stationary IR sender will work as a reference point
+
+
