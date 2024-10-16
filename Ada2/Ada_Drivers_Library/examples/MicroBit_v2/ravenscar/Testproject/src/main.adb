@@ -6,8 +6,8 @@ with DFR0548;
 use MicroBit;
 
 procedure Main is
-   package sensor1 is new Ultrasonic(MB_P16, MB_P15);
-   package sensor2 is new Ultrasonic(MB_P14, MB_P13);
+   package sensor1 is new Ultrasonic(MB_P1, MB_P0);
+   package sensor2 is new Ultrasonic(MB_P8, MB_P2);
 
    Distance : Distance_cm := 0;
    run : Integer := 1;
@@ -15,6 +15,7 @@ procedure Main is
    Stabilize_Time : constant Duration := 0.2;  -- Time to stabilize before changing direction
 
    Distance_2 : Distance_cm := 0;
+   Last_Distance_2 : Distance_cm := 0;
 begin
    loop
       Distance := sensor1.Read;
@@ -22,8 +23,14 @@ begin
 
       -- Log distance only if it changes to avoid slowing down
       if Distance /= Last_Distance then
-         Put_Line ("Distance: " & Distance_cm'Image(Distance));
+         Put_Line ("Right: " & Distance_cm'Image(Distance));
          Last_Distance := Distance;
+      end if;
+
+      -- Log distance only if it changes to avoid slowing down
+      if Distance_2 /= Last_Distance_2 then
+         Put_Line ("Left: " & Distance_cm'Image(Distance_2));
+         Last_Distance_2 := Distance_2;
       end if;
 
 
