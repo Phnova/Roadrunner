@@ -1,6 +1,26 @@
 # Ignore all folders
 /*/
 
+# Ignore these filetypes
+*.db
+*.ali
+*.o
+*.a
+*.xml
+*.cgpr
+*.bexch
+*.lexch
+*.ci
+*.cswi
+*.stderr
+*.stdout
+*~
+*.pyc
+
+# Ignore these dirs.
+obj/
+lib/
+
 # Except for this one
 /Ada2/Ada_Drivers_Library/examples/MicroBit_v2/
 /Ada2/Ada_Drivers_Library/examples/MicroBit_v2/**
