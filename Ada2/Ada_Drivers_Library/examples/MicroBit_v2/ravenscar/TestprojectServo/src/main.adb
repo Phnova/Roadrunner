@@ -38,24 +38,17 @@ use MicroBit; --for pin names
 procedure Main is
 
 begin
-   MotorDriver.Servo(1,90);
-   delay 1.0; -- equivalent of Time.Sleep(1000) = 1 second
 
    loop
-      -- DEMONSTRATION ROUTINE SERVO
-      for I in reverse DFR0548.Degrees range 0..90 loop
+
+      for I in DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
-          delay 0.02; --20 ms
+         delay 0.006; --20 ms
       end loop;
 
-      for I in DFR0548.Degrees range 90..180 loop
+      for I in reverse DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
-         delay 0.02; --20 ms
-      end loop;
-
-      for I in reverse DFR0548.Degrees range 90..180 loop
-         MotorDriver.Servo(1,I);
-          delay 0.02; --20 ms
+          delay 0.006; --20 ms
       end loop;
 
    end loop;
