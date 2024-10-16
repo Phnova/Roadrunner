@@ -1,2 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\stmpe811\stmpe811.adb:178:28: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\touch_panel\stmpe811\stmpe811.adb:430:17: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

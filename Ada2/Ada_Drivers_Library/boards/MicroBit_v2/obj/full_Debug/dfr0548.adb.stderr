@@ -1,5 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\dfrobot\dfr0548\dfr0548.adb:52:35: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\dfrobot\dfr0548\dfr0548.adb:57:42: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\dfrobot\dfr0548\dfr0548.adb:74:42: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\dfrobot\dfr0548\dfr0548.adb:80:42: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\dfrobot\dfr0548\dfr0548.adb:88:42: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

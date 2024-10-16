@@ -16,8 +16,8 @@ begin
 
 
       Distance_1 := sensor1.Read;
-      Put_Line ("Distance_1: " & Distance_cm'Image(Distance)); -- a console line delay the loop significantly
-      delay 0.5; --50ms
+      Put_Line ("Distance_1: " & Distance_cm'Image(Distance_1)); -- a console line delay the loop significantly
+      delay 0.05; --50ms
             
 
 

@@ -1,1 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\audio\SGTL5000\sgtl5000.adb:65:27: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

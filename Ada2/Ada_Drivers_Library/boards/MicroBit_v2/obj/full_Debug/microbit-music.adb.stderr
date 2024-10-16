@@ -1,1 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-music.ads:159:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

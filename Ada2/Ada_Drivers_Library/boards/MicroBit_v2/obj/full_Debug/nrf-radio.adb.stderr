@@ -1,4 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.adb:159:21: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.adb:413:35: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.adb:414:35: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-radio.ads:186:39: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

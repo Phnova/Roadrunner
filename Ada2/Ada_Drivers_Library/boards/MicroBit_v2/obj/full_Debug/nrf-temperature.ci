@@ -1,7 +1,0 @@
-graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-temperature.adb"
-node: { title: "nrf__temperature__read" label: "Read\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-temperature.adb:44:4\n24 bytes (static)" }
-node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
-edge: { sourcename: "nrf__temperature__read" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-temperature.adb:61:14" }
-node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
-edge: { sourcename: "nrf__temperature__read" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-temperature.adb:62:32" }
-}

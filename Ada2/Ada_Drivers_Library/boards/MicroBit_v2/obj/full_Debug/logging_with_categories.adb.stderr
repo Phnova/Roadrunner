@@ -1,3 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\logging_with_categories.adb:35:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\logging_with_categories.adb:38:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\logging_with_categories.adb:41:06: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

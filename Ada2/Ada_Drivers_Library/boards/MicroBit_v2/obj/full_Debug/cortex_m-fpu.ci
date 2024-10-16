@@ -1,6 +1,0 @@
-graph: { title: "C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\fpu\cortex_m-fpu.adb"
-node: { title: "cortex_m__fpu__rounding_modeH" label: "rounding_modeH\n<built-in>\n32 bytes (static)" }
-node: { title: "cortex_m__fpu__status_control_registerIP" label: "status_control_registerIP\n<built-in>\n16 bytes (static)" }
-node: { title: "cortex_m__fpu__sqrt" label: "Sqrt\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\fpu\cortex_m-fpu.adb:43:4\n24 bytes (static)" }
-node: { title: "cortex_m__fpu__fpscr" label: "Fpscr\nC:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\fpu\cortex_m-fpu.adb:57:4\n24 bytes (static)" }
-}

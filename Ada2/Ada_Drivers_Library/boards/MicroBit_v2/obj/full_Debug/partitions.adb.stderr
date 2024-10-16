@@ -1,4 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\partitions.adb:91:79: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\partitions.adb:127:34: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\partitions.adb:168:30: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\partitions.adb:214:30: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

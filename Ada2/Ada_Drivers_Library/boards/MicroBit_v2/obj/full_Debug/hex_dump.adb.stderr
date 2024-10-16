@@ -1,3 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\hex_dump.adb:53:63: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\hex_dump.adb:55:12: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\utils\hex_dump.adb:109:34: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

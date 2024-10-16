@@ -1,3 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\filesystem-fat.adb:412:36: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\filesystem-fat.adb:429:39: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\middleware\src\filesystem\filesystem-fat.adb:1044:36: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

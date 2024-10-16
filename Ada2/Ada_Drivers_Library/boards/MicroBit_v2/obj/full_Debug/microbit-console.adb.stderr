@@ -1,1 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-console.adb:59:09: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

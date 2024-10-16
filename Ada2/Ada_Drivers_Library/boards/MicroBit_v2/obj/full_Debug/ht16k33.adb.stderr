@@ -1,3 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\ht16k33\ht16k33.adb:114:44: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\ht16k33\ht16k33.ads:97:42: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\components\src\io_expander\ht16k33\ht16k33.ads:98:47: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]

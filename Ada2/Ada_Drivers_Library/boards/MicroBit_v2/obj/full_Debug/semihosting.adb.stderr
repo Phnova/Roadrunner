@@ -1,1 +1,0 @@
-C:\Users\Saos\Git\Ada2\Ada_Drivers_Library\arch\ARM\cortex_m\src\semihosting.adb:89:24: warning: array aggregate using () is an obsolescent syntax, use [] instead [-gnatwj]
