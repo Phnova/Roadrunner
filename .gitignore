@@ -1,1 +1,6 @@
-/Ada2/Ada_Drivers_Library/boards/MicroBit_v2/obj
+# Ignore all folders
+/*/
+
+# Except for this one
+/Ada2/Ada_Drivers_Library/examples/MicroBit_v2/
+/Ada2/Ada_Drivers_Library/examples/MicroBit_v2/**
