@@ -11,16 +11,12 @@ procedure Main is
    --package sensor3 is new Ultrasonic(MB_P14, MB_P0);
 
    Distance_1 : Distance_cm := 0;
-   Distance_2 : Distance_cm := 0;
 begin
    loop
 
 
       Distance_1 := sensor1.Read;
       Put_Line ("Distance_1: " & Distance_cm'Image(Distance)); -- a console line delay the loop significantly
-      delay 0.5; --50ms
-      Distance_2 := sensor1.Read;
-      Put_Line ("Distance_2: " & Distance_cm'Image(Distance)); -- a console line delay the loop significantly
       delay 0.5; --50ms
             
 
