@@ -51,10 +51,6 @@ begin
          MotorDriver.Drive(Forward, (4095, 4095, 4095, 4095));
       elsif run = 0 then
          MotorDriver.Drive(Rotating_Right, (4095, 4095, 4095, 4095));
-      elsif run = 2 then
-         MotorDriver.Drive(Forward_Left, (4095, 4095, 4095, 4095));
-      elsif run = 3 then 
-         MotorDriver.Drive(Forward_Right, (4095, 4095, 4095, 4095));
       end if;
 
       delay 0.05;  -- Allow sensor to refresh
