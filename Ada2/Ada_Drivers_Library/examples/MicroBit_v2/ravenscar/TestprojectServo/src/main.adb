@@ -37,26 +37,26 @@ use MicroBit; --for pin names
 
 procedure Main is
    deg_rot : DFR0548.Degrees := 0;
-   deg_rot_rev : Integer := 180;
+   deg_rot_rev : DFR0548.Degrees := 180;
 begin
 
-   
    loop
 
+      -- Forward rotation
       for I in DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
          deg_rot := I;
          Put_Line("Degrees: " & DFR0548.Degrees'Image(deg_rot));
-         delay 0.006; --20 ms
+         delay 0.006; -- 20 ms
       end loop;
 
+      -- Reverse rotation
       for I in reverse DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
-         deg_rot_rev := deg_rot_rev - 1;
-         Put_Line("Degrees: " & Integer'Image(deg_rot_rev));
-         delay 0.006; --20 ms
+         deg_rot_rev := I;
+         Put_Line("Degrees: " & DFR0548.Degrees'Image(deg_rot_rev));
+         delay 0.006; -- 20 ms
       end loop;
 
-      deg_rot_rev := 180;
    end loop;
 end Main;
