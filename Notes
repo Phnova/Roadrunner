@@ -11,3 +11,7 @@ IR is the definitive standard in regards to accuracy in local position.
 	- Use stationary IR sender with reciever on unit
 	- The stationary IR sender will work as a reference point
 
+Todo:
+- Convert existing functioning code into tasks and task body
+- Make states
+- Drawing to document how the servo works
