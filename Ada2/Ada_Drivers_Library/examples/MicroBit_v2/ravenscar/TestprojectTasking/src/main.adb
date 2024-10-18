@@ -16,20 +16,13 @@ procedure Main is
    Distance_Servo_Sensor : Distance_cm := 0;  -- Distance for the third sensor on the servo
 
    -- Flags for angular zones
-   Zone_0_60_Clear   : Boolean := False;  -- No obstacles in 0-60°
-   Zone_60_120_Clear : Boolean := False;  -- No obstacles in 60-120°
-   Zone_120_180_Clear: Boolean := False;  -- No obstacles in 120-180°
+   Zone_Clear : array (1..3) of Boolean := (True, True, True);  -- Flags for 3 zones: 0-60°, 60-120°, 120-180°
 
    Stabilize_Time   : constant Duration := 0.2;
    Sensor_Period    : constant Duration := 0.05;
 
    -- Degree tracking for servo
    Deg_Rot : DFR0548.Degrees := 0;
-   Deg_Rot_Rev : DFR0548.Degrees := 180;
-
-   -- Shared variable between tasks
-   Current_Angle : DFR0548.Degrees := 0;
-   Current_Distance_Servo : Distance_cm := 0;
 
    -- Task to handle motor control logic
    task type Motor_Control is
@@ -48,17 +41,12 @@ procedure Main is
 
          -- If an object is detected by front sensors, consult rear zone flags
          elsif (Distance_Sensor1 < 20) or (Distance_Sensor2 < 20) then
-            if Zone_0_60_Clear then
-               -- No obstacle in 0-60°, move right
-               MotorDriver.Drive(Rotating_Right, (4095, 4095, 4095, 4095));
-
-            elsif Zone_120_180_Clear then
-               -- No obstacle in 120-180°, move left
-               MotorDriver.Drive(Rotating_Left, (4095, 4095, 4095, 4095));
-
-            elsif Zone_60_120_Clear then
-               -- No obstacle in 60-120°, continue moving forward
-               MotorDriver.Drive(Backward, (4095, 4095, 4095, 4095));
+            if Zone_Clear(1) then
+               MotorDriver.Drive(Rotating_Right, (4095, 4095, 4095, 4095));  -- Move right (0-60° clear)
+            elsif Zone_Clear(3) then
+               MotorDriver.Drive(Rotating_Left, (4095, 4095, 4095, 4095));   -- Move left (120-180° clear)
+            elsif Zone_Clear(2) then
+               MotorDriver.Drive(Forward, (4095, 4095, 4095, 4095));         -- Continue forward (60-120° clear)
             end if;
          end if;
 
@@ -74,66 +62,71 @@ procedure Main is
    task body Servo_Control is
    begin
       loop
-         -- Reset flags for a new scan
-         Zone_0_60_Clear := True;
-         Zone_60_120_Clear := True;
-         Zone_120_180_Clear := True;
-
-         -- Servo rotates between 0 and 180 degrees to allow rear sensor to scan
+         -- Forward rotation: 0 to 180 degrees
          for I in DFR0548.Degrees range 0..180 loop
             MotorDriver.Servo(1, I);
             Deg_Rot := I;
 
-            -- Read the distance from the third sensor while rotating
+            -- Reset zone flags when servo reaches boundaries
+            if Deg_Rot = 0 then
+               Zone_Clear(1) := True;  -- Reset zone 0-60°
+            elsif Deg_Rot = 59 then
+               Zone_Clear(2) := True;  -- Reset zone 60-120° during normal rotation
+            elsif Deg_Rot = 119 then
+               Zone_Clear(3) := True;  -- Reset zone 120-180° during normal rotation
+            end if;
+
+            -- Read distance from servo-mounted sensor
             Distance_Servo_Sensor := Servo_Sensor.Read;
 
-            -- Update shared data for motor control task
-            Current_Angle := Deg_Rot;
-            Current_Distance_Servo := Distance_Servo_Sensor;
-
-            -- Update flags for the different zones based on distance
+            -- Update zone flags based on distance
             if (Deg_Rot >= 0) and (Deg_Rot < 60) and (Distance_Servo_Sensor < 30) then
-               Zone_0_60_Clear := False;
+               Zone_Clear(1) := False;
             elsif (Deg_Rot >= 60) and (Deg_Rot < 120) and (Distance_Servo_Sensor < 30) then
-               Zone_60_120_Clear := False;
+               Zone_Clear(2) := False;
             elsif (Deg_Rot >= 120) and (Deg_Rot <= 180) and (Distance_Servo_Sensor < 30) then
-               Zone_120_180_Clear := False;
+               Zone_Clear(3) := False;
             end if;
 
             Put_Line("Degrees: " & DFR0548.Degrees'Image(Deg_Rot) &
                      " | Distance (Servo Sensor): " & Distance_cm'Image(Distance_Servo_Sensor));
-            
-            delay 0.006; -- 20 ms
+
+            delay 0.006;  -- 20 ms
          end loop;
 
-         -- Reverse rotation
+         -- Reverse rotation: 180 to 0 degrees
          for I in reverse DFR0548.Degrees range 0..180 loop
             MotorDriver.Servo(1, I);
-            Deg_Rot_Rev := I;
+            Deg_Rot := I;
 
-            -- Read the distance from the third sensor while rotating
-            Distance_Servo_Sensor := Servo_Sensor.Read;
-
-            -- Update shared data for motor control task
-            Current_Angle := Deg_Rot_Rev;
-            Current_Distance_Servo := Distance_Servo_Sensor;
-
-            -- Update flags for the different zones based on distance
-            if (Deg_Rot_Rev >= 0) and (Deg_Rot_Rev < 60) and (Distance_Servo_Sensor < 30) then
-               Zone_0_60_Clear := False;
-            elsif (Deg_Rot_Rev >= 60) and (Deg_Rot_Rev < 120) and (Distance_Servo_Sensor < 30) then
-               Zone_60_120_Clear := False;
-            elsif (Deg_Rot_Rev >= 120) and (Deg_Rot_Rev <= 180) and (Distance_Servo_Sensor < 30) then
-               Zone_120_180_Clear := False;
+            -- Reset zone flags when servo reaches boundaries
+            if Deg_Rot = 61 then
+               Zone_Clear(1) := True;  -- Reset zone 0-60°
+            elsif Deg_Rot = 121 then
+               Zone_Clear(2) := True;  -- Reset zone 60-120° during reverse
+            elsif Deg_Rot = 180 then
+               Zone_Clear(3) := True;  -- Reset zone 120-180° during reverse
             end if;
 
-            Put_Line("Degrees: " & DFR0548.Degrees'Image(Deg_Rot_Rev) &
+            -- Read distance from servo-mounted sensor
+            Distance_Servo_Sensor := Servo_Sensor.Read;
+
+            -- Update zone flags based on distance
+            if (Deg_Rot >= 0) and (Deg_Rot < 60) and (Distance_Servo_Sensor < 30) then
+               Zone_Clear(1) := False;
+            elsif (Deg_Rot >= 60) and (Deg_Rot < 120) and (Distance_Servo_Sensor < 30) then
+               Zone_Clear(2) := False;
+            elsif (Deg_Rot >= 120) and (Deg_Rot <= 180) and (Distance_Servo_Sensor < 30) then
+               Zone_Clear(3) := False;
+            end if;
+
+            Put_Line("Degrees: " & DFR0548.Degrees'Image(Deg_Rot) &
                      " | Distance (Servo Sensor): " & Distance_cm'Image(Distance_Servo_Sensor));
-            
-            delay 0.006; -- 20 ms
+
+            delay 0.006;  -- 20 ms
          end loop;
 
-         delay 0.05;  -- Allow servo to reset
+         delay 0.05;  -- Allow small pause for task scheduling
       end loop;
    end Servo_Control;
 
