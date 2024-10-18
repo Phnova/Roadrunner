@@ -36,20 +36,27 @@ with MicroBit.Console; use MicroBit.Console; -- for serial port communication
 use MicroBit; --for pin names
 
 procedure Main is
-
+   deg_rot : DFR0548.Degrees := 0;
+   deg_rot_rev : Integer := 180;
 begin
 
+   
    loop
 
       for I in DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
+         deg_rot := I;
+         Put_Line("Degrees: " & DFR0548.Degrees'Image(deg_rot));
          delay 0.006; --20 ms
       end loop;
 
       for I in reverse DFR0548.Degrees range 0..180 loop
          MotorDriver.Servo(1,I);
-          delay 0.006; --20 ms
+         deg_rot_rev := deg_rot_rev - 1;
+         Put_Line("Degrees: " & Integer'Image(deg_rot_rev));
+         delay 0.006; --20 ms
       end loop;
 
+      deg_rot_rev := 180;
    end loop;
 end Main;
