@@ -38,6 +38,7 @@ package MicroBit.MotorDriver is
                        Left,
                        Right,
                        Forward_Left,
+                       Forward_Right,
                        Backward_Left,
                        Turning,
                        Lateral_Left,

@@ -43,6 +43,7 @@ begin
          MotorDriver.Drive(Stop, (0, 0, 0, 0)); -- Stop momentarily
          delay Stabilize_Time;
          run := 1;  -- Switch to forward
+      
       end if;
 
       -- Run the motor based on the direction
@@ -50,9 +51,24 @@ begin
          MotorDriver.Drive(Forward, (4095, 4095, 4095, 4095));
       elsif run = 0 then
          MotorDriver.Drive(Rotating_Right, (4095, 4095, 4095, 4095));
+      elsif run = 2 then
+         MotorDriver.Drive(Forward_Left, (4095, 4095, 4095, 4095));
+      elsif run = 3 then 
+         MotorDriver.Drive(Forward_Right, (4095, 4095, 4095, 4095));
       end if;
 
       delay 0.05;  -- Allow sensor to refresh
+
+      for I in DFR0548.Degrees range 0..180 loop
+         MotorDriver.Servo(1,I);
+         delay 0.006; --20 ms
+      end loop;
+
+      for I in reverse DFR0548.Degrees range 0..180 loop
+         MotorDriver.Servo(1,I);
+          delay 0.006; --20 ms
+      end loop;
+
    end loop;
 
 end Main;

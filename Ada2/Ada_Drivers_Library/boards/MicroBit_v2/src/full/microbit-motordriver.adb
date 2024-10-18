@@ -77,6 +77,11 @@ package body MicroBit.MotorDriver is
                          rb => (0, 0),
                          lf => (0, 0),
                          lb => (Speed.lb, 0));
+         when Forward_Right => --forward left diagonal
+            Drive_Wheels(rf => (0,0),
+                         rb => (Speed.rb, 0),
+                         lf => (Speed.lf, 0),
+                         lb => (0,0));
          when Backward_Left => --backward left diagonal
             Drive_Wheels(rf => (0, Speed.rf),
                          rb => (0, 0),
