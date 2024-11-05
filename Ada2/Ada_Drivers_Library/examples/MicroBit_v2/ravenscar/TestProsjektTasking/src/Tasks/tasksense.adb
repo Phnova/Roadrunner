@@ -25,6 +25,7 @@ package body TaskSense is
       Distance_2 : Distance_cm := 0;
       Distance_3 : Distance_cm := 0;
       --Distance_4 : Distance_cm := 0;
+      
    begin
       
       null; -- note that you can place Setup code here that is only run once for the entire task
