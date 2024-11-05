@@ -1,6 +1,6 @@
-With TaskSense;
 With TaskThink;
 With TaskAct;
+With TaskSense;
 
 package MyController is -- this package is empty and has no ADB file. 
                         -- It only serves as a container (folder) to structure the code a bit

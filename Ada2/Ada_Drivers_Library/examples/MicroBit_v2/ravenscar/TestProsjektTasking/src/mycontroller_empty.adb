@@ -1,22 +1,49 @@
 with Ada.Real_Time; use Ada.Real_Time;
 with MicroBit.Console; use MicroBit.Console;
+with MicroBit.Ultrasonic;
+
+with MicroBit.MotorDriver; use MicroBit.MotorDriver; --using the procedures defined here
+with DFR0548;
+
 package body MyController_empty is
 
+
+   -- Main task for sensing environment
+   -- Use ultrasonic sensors here
    task body sense is
       myClock : Time;
+      
+      -- array of booleans to store sensordata
+      package sensor1 is new Ultrasonic(MB_P1, MB_P0);
+      package sensor2 is new Ultrasonic(MB_P8, MB_P2);
+      package sensor3 is new Ultrasonic(MB_P12, MB_P13);
+      --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
+
+      Distance_1 : Distance_cm := 0;
+      Distance_2 : Distance_cm := 0;
+      Distance_3 : Distance_cm := 0;
+      --Distance_4 : Distance_cm := 0;
+
+      -- need a function here that returns where obstacles are detected
+      -- this function will be used by task think
+
    begin
       loop
          myClock := Clock;
          
-         delay (0.05); --simulate 50 ms execution time, replace with your code
-         
-         MotorDriver.SetDirection (Stop);
-         
+         Distance_1 := sensor1.Read;      
+         Distance_2 := sensor2.Read;
+         Distance_3 := sensor3.Read;
+         --Distance_4 := sensor4.Read;
+
+         Put_Line("Sensing");
          delay until myClock + Milliseconds(100);
       end loop;
    end sense;
 
-      task body think is
+   -- Main task for decisionmaking
+   -- Use this task to gather data from sense and decide where obsitcles are
+   task body think is
       myClock : Time;
    begin
       loop
@@ -25,12 +52,15 @@ package body MyController_empty is
          delay (0.05); --simulate 50 ms execution time, replace with your code
          
          MotorDriver.SetDirection (Forward);
-         
+         Put_Line("Thinking");
          delay until myClock + Milliseconds(100);
       end loop;
    end think;
    
-      task body act is
+
+   -- Main task to set direction of vehicle
+   -- Use motordiver stuff here
+   task body act is
       myClock : Time;
    begin
       loop
