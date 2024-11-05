@@ -4,7 +4,7 @@ With Ada.Real_Time; use Ada.Real_Time;
 -- The intention is to use the getter functions from task.sense and use this information to make decicions regarding 
 -- which dirction the vehicle shall drive
 -- Example might be if (GetDistance1 < 20 then "change direction") or something
---
+-- The changes in directions will be implemented by calling functions from task.act 
 
 
 package body TaskThink is
