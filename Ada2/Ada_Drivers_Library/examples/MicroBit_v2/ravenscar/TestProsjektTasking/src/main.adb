@@ -8,8 +8,17 @@ with MyController_empty;
 -- The MyController package contains a better structured STA template with each task having its own file
 -- Build your own controller from scratch using the template and structured coding principles as a guide line.
 -- Use
-------------------
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+--  
+--  TO DO: Replace motordriver stuff in this program with Microbit.Motordriver stuff
+--  
+--  
+--  
+--  
+--  
+--  
+--  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 --Empty main running as a task currently set to lowest priority. Can be used as it is a normal task!
 
 Procedure Main with Priority => 0 is

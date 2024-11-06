@@ -25,10 +25,10 @@ package MyController_empty is
       Distance : Distance_cm := 0;
    end DistanceHandling;
 
-   protected MotorDriver is
+   protected MotorHandling is
       function GetDirection return Directions;
       procedure SetDirection (V : Directions);
    private
       DriveDirection : Directions := Stop;
-   end MotorDriver;
+   end MotorHandling;
 end MyController_empty;

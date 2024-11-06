@@ -48,10 +48,10 @@ package body MyController_empty is
          delay (0.05); --simulate 50 ms execution time, replace with your code
          Put_Line("Thinking");         
          if SafeDistance < 20 then
-            MotorDriver.SetDirection(Stop);
+            MotorHandling.SetDirection(Stop);
             Put_line("Reverse");
          else
-            MotorDriver.SetDirection (Forward);
+            MotorHandling.SetDirection (Forward);
             Put_line("Forward");
          end 
          if;
@@ -68,7 +68,7 @@ package body MyController_empty is
       loop
          myClock := Clock;
        
-         Put_Line ("Direction is: " & Directions'Image (MotorDriver.GetDirection));
+         Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
          
          delay until myClock + Milliseconds(40);
       end loop;
@@ -87,12 +87,20 @@ package body MyController_empty is
 
    end DistanceHandling;
    
+   
 
-    protected body MotorDriver is
+    protected body MotorHandling is
       --  procedures can modify the data
       procedure SetDirection (V : Directions) is
       begin
-         DriveDirection := V;
+         if V = Stop then
+         MotorDriver.Drive(Stop, (0,0,0,0));
+         DriveDirection := Stop;
+         end if;
+         if V = Forward then
+         MotorDriver.Drive(Forward, (2048, 2048, 2048, 2048));
+         DriveDirection := Forward;
+         end if;
       end SetDirection;
 
       --  functions cannot modify the data
@@ -100,5 +108,5 @@ package body MyController_empty is
       begin
          return DriveDirection;
       end GetDirection;
-    end MotorDriver;
+    end MotorHandling;
 end MyController_empty;
