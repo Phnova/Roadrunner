@@ -10,11 +10,12 @@ with MyController_empty;
 -- Use
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 --  
---  TO DO: Replace motordriver stuff in this program with Microbit.Motordriver stuff
---  
---  
---  
---  
+--  TO DO:  Replace motordriver stuff in this program with Microbit.Motordriver stuff -- DONE
+--          
+--          Make funcitonality in SENSE that stores sensordata in an enum or some sort of datastructure in regards to obstacle sensing
+--          - Like one boolean or something for each sensor. This value if something a function can return if the "think" needs to check this
+--          - Example: Sense stores sensordata for front,back,left,right. Think checks these spots, if something is close front, think needs
+--             to check if back/left/right is safe, and maneuver to a safe direction.
 --  
 --  
 --  

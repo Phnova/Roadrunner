@@ -18,13 +18,29 @@ package body MyController_empty is
       --package sensor2 is new Ultrasonic(MB_P8, MB_P2);
       --package sensor3 is new Ultrasonic(MB_P12, MB_P13);
       --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
-
-
+----
+      --Sensor1Distance : Distance_cm := 0;
+      --Sensor2Distance : Distance_cm := 0;      
+      --Sensor3Distance : Distance_cm := 0;
+      --Sensor4Distance : Distance_cm := 0;
    begin
       loop
          myClock := Clock;
          
-         DistanceHandling.SetDistance(sensor1.Read);
+         --if sensor1.Read /= 0 then
+         --   Sensor1Distance := sensor1.read;
+         --end if;
+         --if sensor2.Read /= 0 then
+         --   Sensor2Distance := sensor2.read;
+         --end if;
+         --if sensor3.Read /= 0 then
+         --   Sensor3Distance := sensor3.read;
+         --end if;
+         --if sensor4.Read /= 0 then
+         --   Sensor4Distance := sensor4.read;
+         --end if;
+         --DistanceHandling.MultiDistance(Sensor1Distance, Sensor2Distance, Sensor3Distance, Sensor4Distance);
+         DistanceHandling.SetDistance(Sensor1.Read);
          
          Put_Line("Sensing: " & Distance_cm'Image(DistanceHandling.GetDistance));
          delay until myClock + Milliseconds(100);
@@ -43,7 +59,7 @@ package body MyController_empty is
    begin
       loop
          myClock := Clock;
-         
+         --Put_Line("SafeDistance: " & Distance_cm'Image(SafeDistance));
          SafeDistance := DistanceHandling.GetDistance;
          delay (0.05); --simulate 50 ms execution time, replace with your code
          Put_Line("Thinking");         
@@ -53,8 +69,7 @@ package body MyController_empty is
          else
             MotorHandling.SetDirection (Forward);
             Put_line("Forward");
-         end 
-         if;
+         end if;
          delay until myClock + Milliseconds(100);
       end loop;
    end think;
@@ -80,10 +95,20 @@ package body MyController_empty is
       begin
          Distance := V;
       end SetDistance;
+      
+      procedure MultiDistance (A : Distance_cm; B : Distance_cm; C : Distance_cm; D : Distance_cm) is 
+      begin 
+         Sensor1Distance := A;
+         Sensor2Distance := B;
+         Sensor3Distance := C;
+         Sensor4Distance := D;
+      end MultiDistance;
       function GetDistance return Distance_cm is
       begin
          return Distance;
       end GetDistance;
+
+
 
    end DistanceHandling;
    
@@ -97,10 +122,28 @@ package body MyController_empty is
          MotorDriver.Drive(Stop, (0,0,0,0));
          DriveDirection := Stop;
          end if;
+
          if V = Forward then
          MotorDriver.Drive(Forward, (2048, 2048, 2048, 2048));
          DriveDirection := Forward;
          end if;
+
+         if V = Backward then
+         MotorDriver.Drive(Backward, (2048, 2048, 2048, 2048));
+         DriveDirection := Backward;
+         end if;
+--
+         if V = Right then
+         MotorDriver.Drive(Right, (2048, 2048, 2048, 2048));
+         DriveDirection := Right;
+         end if;
+--
+         if V = Left then
+         MotorDriver.Drive(Left, (2048, 2048, 2048, 2048));
+         DriveDirection := Left;
+         end if;
+
+
       end SetDirection;
 
       --  functions cannot modify the data
