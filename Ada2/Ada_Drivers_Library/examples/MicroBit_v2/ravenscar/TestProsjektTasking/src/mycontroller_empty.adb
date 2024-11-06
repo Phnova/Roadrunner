@@ -7,7 +7,6 @@ with DFR0548;
 
 package body MyController_empty is
 
-
    -- Main task for sensing environment
    -- Use ultrasonic sensors here
    task body sense is
@@ -15,30 +14,27 @@ package body MyController_empty is
       
       -- array of booleans to store sensordata
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
-      package sensor2 is new Ultrasonic(MB_P8, MB_P2);
-      package sensor3 is new Ultrasonic(MB_P12, MB_P13);
+      --package sensor2 is new Ultrasonic(MB_P8, MB_P2);
+      --package sensor3 is new Ultrasonic(MB_P12, MB_P13);
       --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
 
-      Distance_1 : Distance_cm := 0;
-      Distance_2 : Distance_cm := 0;
-      Distance_3 : Distance_cm := 0;
+      --Distance_1 : Distance_cm := 0;
+      --Distance_2 : Distance_cm := 0;
+      --Distance_3 : Distance_cm := 0;
       --Distance_4 : Distance_cm := 0;
-
       -- need a function here that returns where obstacles are detected
       -- this function will be used by task think
-
    begin
       loop
          myClock := Clock;
          
-         Distance_1 := sensor1.Read;      
-         Distance_2 := sensor2.Read;
-         Distance_3 := sensor3.Read;
-         --Distance_4 := sensor4.Read;
-
-         Put_Line("Sensing");
+         
+         Put_Line("Sensing: " & Distance_cm'Image(DistanceHandling.GetDistance));
          delay until myClock + Milliseconds(100);
+
+         DistanceHandling.SetDistance(sensor1.Read);
       end loop;
+
    end sense;
 
    -- Main task for decisionmaking
@@ -72,6 +68,20 @@ package body MyController_empty is
       end loop;
    end act;
    
+   protected body DistanceHandling is
+      
+      procedure SetDistance (V : Distance_cm) is
+      begin
+         Distance := V;
+      end SetDistance;
+      function GetDistance return Distance_cm is
+      begin
+         return Distance;
+      end GetDistance;
+
+   end DistanceHandling;
+   
+
     protected body MotorDriver is
       --  procedures can modify the data
       procedure SetDirection (V : Directions) is

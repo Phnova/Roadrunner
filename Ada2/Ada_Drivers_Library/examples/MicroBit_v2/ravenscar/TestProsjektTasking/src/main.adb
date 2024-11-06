@@ -1,7 +1,7 @@
---with MyController; -- This embeds and instantiates the MyController package
---with MyController_empty;
+--with Tasks; -- This embeds and instantiates the MyController package
+with MyController_empty;
 --With TaskThink;
---With TaskAct;
+--With TaskThink;
 --With TaskSense;
 -- NOTE ----------
 -- See the MyController_empty package first for a single file empty Sense-Think-Act (STA) template

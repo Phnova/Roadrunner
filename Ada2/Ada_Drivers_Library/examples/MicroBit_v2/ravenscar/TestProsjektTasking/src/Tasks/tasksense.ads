@@ -12,8 +12,8 @@ package TaskSense is
    task Sense with Priority => 1; --random priority. argue and calculate what these values should be
    
    -- function get obstacles
-   function GetDistance1 return Distance_1
-   function GetDistance2 return Distance_2
-   function GetDistance3 return Distance_3
+   function GetDistance1 return Distance_1;
+   --function GetDistance2 return Distance_2;
+   --function GetDistance3 return Distance_3;
 
 end TaskSense;
