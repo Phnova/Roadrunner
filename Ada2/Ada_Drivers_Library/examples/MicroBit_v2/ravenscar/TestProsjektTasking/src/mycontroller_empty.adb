@@ -9,30 +9,27 @@ package body MyController_empty is
 
    -- Main task for sensing environment
    -- Use ultrasonic sensors here
+   -- This task is only meant for SENSING the environment, what the vehicle does with this data is supposed to happen in THINK
    task body sense is
       myClock : Time;
       
-      -- array of booleans to store sensordata
+
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
       --package sensor2 is new Ultrasonic(MB_P8, MB_P2);
       --package sensor3 is new Ultrasonic(MB_P12, MB_P13);
       --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
 
-      --Distance_1 : Distance_cm := 0;
-      --Distance_2 : Distance_cm := 0;
-      --Distance_3 : Distance_cm := 0;
-      --Distance_4 : Distance_cm := 0;
-      -- need a function here that returns where obstacles are detected
-      -- this function will be used by task think
+
    begin
       loop
          myClock := Clock;
          
+         DistanceHandling.SetDistance(sensor1.Read);
          
          Put_Line("Sensing: " & Distance_cm'Image(DistanceHandling.GetDistance));
          delay until myClock + Milliseconds(100);
 
-         DistanceHandling.SetDistance(sensor1.Read);
+
       end loop;
 
    end sense;
@@ -41,14 +38,23 @@ package body MyController_empty is
    -- Use this task to gather data from sense and decide where obsitcles are
    task body think is
       myClock : Time;
+
+      SafeDistance : Distance_cm := 0;
    begin
       loop
          myClock := Clock;
          
+         SafeDistance := DistanceHandling.GetDistance;
          delay (0.05); --simulate 50 ms execution time, replace with your code
-         
-         MotorDriver.SetDirection (Forward);
-         Put_Line("Thinking");
+         Put_Line("Thinking");         
+         if SafeDistance < 20 then
+            MotorDriver.SetDirection(Stop);
+            Put_line("Reverse");
+         else
+            MotorDriver.SetDirection (Forward);
+            Put_line("Forward");
+         end 
+         if;
          delay until myClock + Milliseconds(100);
       end loop;
    end think;
