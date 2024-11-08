@@ -1,15 +1,12 @@
 --with MyController; -- This embeds and instantiates the MyController package
 with MyController_empty;
-<<<<<<< HEAD:Ada2/Ada_Drivers_Library/examples/MicroBit_v2/ravenscar/Roadrunner2.0/src/main.adb
+
 
 --With TaskThink;
 --With TaskThink;
 --With TaskSense;
-=======
-With Tasks.Think;
-With Tasks.Think;
-With Tasks.Sense;
->>>>>>> 0d7339e5e8566680728d0662c072806b9b6f0ba0:Ada2/Ada_Drivers_Library/examples/MicroBit_v2/ravenscar/TestProsjektTasking/src/main.adb
+
+
 -- NOTE ----------
 -- See the MyController_empty package first for a single file empty Sense-Think-Act (STA) template
 -- The MyController package contains a better structured STA template with each task having its own file

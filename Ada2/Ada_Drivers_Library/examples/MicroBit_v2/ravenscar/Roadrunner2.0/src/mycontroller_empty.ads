@@ -8,7 +8,7 @@ use MicroBit;
 
 package MyController_empty is
 
-   type Directions is (Stop, Forward);--, Backward, Left, Right);
+   type Directions is (Stop, Forward, Backward, Left, Right);
 
    --type Obstacle is (Front, left, right, rear, none);
    

@@ -48,7 +48,7 @@ package body MyController_empty is
          --Put_Line("Distance front: " & Distance_cm'Image(DistanceHandling.GetDistanceFront));
          --Put_Line("Distance right: " & Distance_cm'Image(DistanceHandling.GetDistanceRight));        
          --Put_Line("Distance left: " & Distance_cm'Image(DistanceHandling.GetDistanceLeft));
-         delay until myClock + Milliseconds(150);
+         delay until myClock + Milliseconds(100);
 
 
 
