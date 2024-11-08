@@ -8,7 +8,7 @@ use MicroBit;
 
 package MyController_empty is
 
-   type Directions is (Stop, Forward, Backward, Left, Right);
+   type Directions is (Stop, Forward);--, Backward, Left, Right);
 
    --type Obstacle is (Front, left, right, rear, none);
    
@@ -21,19 +21,29 @@ package MyController_empty is
 
    protected DistanceHandling is
       function GetDistance return Distance_cm;
+
       procedure SetDistance (V : Distance_cm);
-      procedure MultiDistance (A : Distance_cm; B : Distance_cm; C : Distance_cm; D : Distance_cm);
+
+      procedure SetFrontDistance (Front : Distance_cm);
+      procedure SetRightDistance (Right : Distance_cm);
+      procedure SetLeftDistance (Left : Distance_cm);
+      --procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm);
+      function GetFrontDistance return Distance_cm;
+      function GetRightDistance return Distance_cm;
+      function GetLeftDistance return Distance_cm;
    private
       Distance : Distance_cm := 0;
-      Sensor1Distance : Distance_cm := 0;
-      Sensor2Distance : Distance_cm := 0;
-      Sensor3Distance : Distance_cm := 0;
-      Sensor4Distance : Distance_cm := 0;
+
+      SensorFrontDistance : Distance_cm := 0;
+      SensorRightDistance : Distance_cm := 0;
+      SensorLeftDistance : Distance_cm := 0;
+      --Sensor4Distance : Distance_cm := 0;
    end DistanceHandling;
 
    protected MotorHandling is
       function GetDirection return Directions;
       procedure SetDirection (V : Directions);
+      procedure DriveVehicle (V : Directions);
    private
       DriveDirection : Directions := Stop;
    end MotorHandling;
