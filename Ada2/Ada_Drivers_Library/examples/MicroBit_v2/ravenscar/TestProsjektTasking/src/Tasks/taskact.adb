@@ -4,7 +4,7 @@ With MicroBit.Console; use MicroBit.Console;
 --Important: use Microbit.IOsForTasking for controlling pins as the timer used there is implemented as an protected object
 With MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
-package body TaskAct is
+package body Tasks.Act is
 
    task body act is
       myClock : Time;      
@@ -62,4 +62,4 @@ package body TaskAct is
           Write (w.PinSpeed, w.PinSpeedValue);   
       end DriveWheel;
    
-end TaskAct;
+end Tasks.Act;
