@@ -16,38 +16,21 @@ package body MyController_empty is
 
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
       package sensor2 is new Ultrasonic(MB_P8, MB_P2);
-      package sensor3 is new Ultrasonic(MB_P12, MB_P13);
+      package sensor3 is new Ultrasonic(MB_P13, MB_P12);
       --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
 
 
    begin
       loop
          myClock := Clock;
-         
-         --if sensor1.Read /= 0 then
-         --   Sensor1Distance := sensor1.read;
-         --end if;
-         --if sensor2.Read /= 0 then
-         --   Sensor2Distance := sensor2.read;
-         --end if;
-         --if sensor3.Read /= 0 then
-         --   Sensor3Distance := sensor3.read;
-         --end if;
-         --if sensor4.Read /= 0 then
-         --   Sensor4Distance := sensor4.read;
-         --end if;
-         --DistanceHandling.MultiDistance(sensor1.Read, sensor2.Read, sensor3.Read);
-         --delay until myClock + Milliseconds(10);
-         DistanceHandling.SetFrontDistance(sensor1.Read);
-         --DistanceHandling.SetRightDistance(sensor2.Read);
-         --DistanceHandling.SetLeftDistance(sensor3.Read);
-         --DistanceHandling.SetLeftDistance(SensorLeftRead);
-         
-         Put_Line("Sensing: " & Distance_cm'Image(DistanceHandling.GetFrontDistance));
 
-         --Put_Line("Distance front: " & Distance_cm'Image(DistanceHandling.GetDistanceFront));
-         --Put_Line("Distance right: " & Distance_cm'Image(DistanceHandling.GetDistanceRight));        
-         --Put_Line("Distance left: " & Distance_cm'Image(DistanceHandling.GetDistanceLeft));
+         Put_Line("Sensing");
+
+         DistanceHandling.MultiDistance(sensor1.Read, sensor2.Read, sensor3.Read);
+
+         --Put_Line("Distance front: " & Distance_cm'Image(DistanceHandling.GetFrontDistance));
+         --Put_Line("Distance right: " & Distance_cm'Image(DistanceHandling.GetRightDistance));        
+         --Put_Line("Distance left: " & Distance_cm'Image(DistanceHandling.GetLeftDistance));
          delay until myClock + Milliseconds(100);
 
 
@@ -72,30 +55,28 @@ package body MyController_empty is
          Put_Line("Thinking");         
          if SafeDistance < 20 and SafeDistance /= 0 then
             MotorHandling.SetDirection(Stop);
-            Put_line("Reverse");
          else
             MotorHandling.SetDirection(Forward);
-            Put_line("Forward");
          end if;
-         delay until myClock + Milliseconds(100);
+         delay until myClock + Milliseconds(40);
       end loop;
    end think;
    
 
-   -- Main task to set direction of vehicle
-   -- Use motordiver stuff here
-   task body act is
-      myClock : Time;
-   begin
-      loop
-         myClock := Clock;
-         
-         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
-         Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
-         
-         delay until myClock + Milliseconds(40);
-      end loop;
-   end act;
+  -- Main task to set direction of vehicle
+  -- Use motordiver stuff here
+  task body act is
+     myClock : Time;
+  begin
+     loop
+        myClock := Clock;
+        Put_Line("Act");
+        MotorHandling.DriveVehicle(MotorHandling.GetDirection);
+        --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
+        
+        delay until myClock + Milliseconds(40);
+     end loop;
+  end act;
    
    protected body DistanceHandling is
       
@@ -104,29 +85,12 @@ package body MyController_empty is
          Distance := V;
       end SetDistance;
       
-      procedure SetFrontDistance (Front : Distance_cm) is
-      begin
-         SensorFrontDistance := Front;
-      end SetFrontDistance;
-
-      procedure SetRightDistance (Right : Distance_cm) is
-      begin
-         SensorRightDistance := Right;
-      end SetRightDistance;
-
-      procedure SetLeftDistance (Left : Distance_cm) is
+      procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm) is 
       begin 
+         SensorFrontDistance := Front;
+         SensorRightDistance := Right;
          SensorLeftDistance := Left;
-      end SetLeftDistance;
-      --procedure MultiDistance (Front : Distance_cm; 
-
-      --procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm) is 
-      --begin 
-      --   SensorFrontDistance := Front;
-      --   SensorRightDistance := Right;
-      --   SensorLeftDistance := Left;
-      ----   Sensor4Distance := D;
-      --end MultiDistance;
+      end MultiDistance;
       function GetDistance return Distance_cm is
       begin
          return Distance;
@@ -156,29 +120,24 @@ package body MyController_empty is
       procedure SetDirection (V : Directions) is
       begin
          if V = Stop then
-         --MotorDriver.Drive(Stop, (0,0,0,0));
          DriveDirection := Stop;
          end if;
 
          if V = Forward then
-         --MotorDriver.Drive(Forward, (2048, 2048, 2048, 2048));
          DriveDirection := Forward;
          end if;
 
-         --if V = Backward then
-         --MotorDriver.Drive(Backward, (2048, 2048, 2048, 2048));
-         --DriveDirection := Backward;
-         --end if;
-----
-         --if V = Right then
-         --MotorDriver.Drive(Right, (2048, 2048, 2048, 2048));
-         --DriveDirection := Right;
-         --end if;
-----
-         --if V = Left then
-         --MotorDriver.Drive(Left, (2048, 2048, 2048, 2048));
-         --DriveDirection := Left;
-         --end if;
+         if V = Backward then
+         DriveDirection := Backward;
+         end if;
+
+         if V = Right then
+         DriveDirection := Right;
+         end if;
+
+         if V = Left then
+         DriveDirection := Left;
+         end if;
 
 
       end SetDirection;
@@ -196,6 +155,16 @@ package body MyController_empty is
          if V = Forward then
          MotorDriver.Drive(Forward, (2048, 2048, 2048, 2048));
          end if;
+         if V = Backward then
+         MotorDriver.Drive(Backward, (2048, 2048, 2048, 2048));
+         end if;
+         if V = Right then
+         MotorDriver.Drive(Right, (2048, 2048, 2048, 2048));
+         end if;
+         if V = Left then
+         MotorDriver.Drive(Left, (2048, 2048, 2048, 2048));
+         end if;
+
 
       end DriveVehicle;
 

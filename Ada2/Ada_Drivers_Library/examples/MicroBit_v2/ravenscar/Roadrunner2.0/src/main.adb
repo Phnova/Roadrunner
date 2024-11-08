@@ -1,7 +1,7 @@
 --with MyController; -- This embeds and instantiates the MyController package
 with MyController_empty;
 
-
+--with Tasks.Think;
 --With TaskThink;
 --With TaskThink;
 --With TaskSense;

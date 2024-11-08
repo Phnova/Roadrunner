@@ -18,7 +18,7 @@ package body Tasks.Sense is
       -- array of booleans to store sensordata
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
       package sensor2 is new Ultrasonic(MB_P8, MB_P2);
-      package sensor3 is new Ultrasonic(MB_P12, MB_P13);
+      package sensor3 is new Ultrasonic(MB_P13, MB_P12);
       -- package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
 
       Distance_1 : Distance_cm := 0;

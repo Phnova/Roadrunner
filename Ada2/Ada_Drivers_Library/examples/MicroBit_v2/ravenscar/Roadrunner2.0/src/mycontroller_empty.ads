@@ -24,10 +24,7 @@ package MyController_empty is
 
       procedure SetDistance (V : Distance_cm);
 
-      procedure SetFrontDistance (Front : Distance_cm);
-      procedure SetRightDistance (Right : Distance_cm);
-      procedure SetLeftDistance (Left : Distance_cm);
-      --procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm);
+      procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm);
       function GetFrontDistance return Distance_cm;
       function GetRightDistance return Distance_cm;
       function GetLeftDistance return Distance_cm;
