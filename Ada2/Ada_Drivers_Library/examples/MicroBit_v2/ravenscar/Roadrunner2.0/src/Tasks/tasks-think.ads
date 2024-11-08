@@ -8,8 +8,8 @@ with MyBrain; use MyBrain;
 -- The changes in directions will be implemented by calling functions from task.act 
 
 
-package TaskThink is
+package Tasks.Think is
 
    task Think with Priority=> 2;
   
-end TaskThink;
+end Tasks.Think;

@@ -7,7 +7,7 @@ With MyBrain; use MyBrain;
 
 -- Timing and delays needs to be checked
 
-package TaskSense is
+package Tasks.Sense is
 
    task Sense with Priority => 1; --random priority. argue and calculate what these values should be
    
@@ -16,4 +16,4 @@ package TaskSense is
    --function GetDistance2 return Distance_2;
    --function GetDistance3 return Distance_3;
 
-end TaskSense;
+end Tasks.Sense;

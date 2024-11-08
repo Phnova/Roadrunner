@@ -7,7 +7,7 @@ With Ada.Real_Time; use Ada.Real_Time;
 -- The changes in directions will be implemented by calling functions from task.act 
 
 
-package body TaskThink is
+package body Tasks.Think is
 
   task body think is
    myClock : Time;
@@ -27,4 +27,4 @@ package body TaskThink is
    end think;
 
 
-end TaskThink;
+end Tasks.Think;

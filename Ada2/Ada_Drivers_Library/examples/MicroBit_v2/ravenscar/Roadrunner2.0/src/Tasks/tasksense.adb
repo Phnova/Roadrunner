@@ -9,7 +9,7 @@ With Ada.Real_Time; use Ada.Real_Time;
 -- Timing and delays needs to be checked
 
 
-package body TaskSense is
+package body Tasks.Sense is
 
     task body sense is
       myClock : Time;
@@ -78,4 +78,4 @@ package body TaskSense is
    begin
       return Distance_3;
    end GetDistance3;
-end TaskSense;
+end Tasks.Sense;
