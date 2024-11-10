@@ -31,7 +31,7 @@ package body MyController_empty is
          --Put_Line("Distance front: " & Distance_cm'Image(DistanceHandling.GetFrontDistance));
          --Put_Line("Distance right: " & Distance_cm'Image(DistanceHandling.GetRightDistance));        
          --Put_Line("Distance left: " & Distance_cm'Image(DistanceHandling.GetLeftDistance));
-         delay until myClock + Milliseconds(60);
+         delay until myClock + Milliseconds(30);
 
 
 
@@ -45,20 +45,31 @@ package body MyController_empty is
    task body think is
       myClock : Time;
 
-      SafeDistance : Distance_cm := 0;
+      DistanceFront : Distance_cm := 0;
+      DistanceRight : Distance_cm := 0;
+      DistanceLeft : Distance_cm := 0;
    begin
       loop
          myClock := Clock;
-         --Put_Line("SafeDistance: " & Distance_cm'Image(SafeDistance));
-         SafeDistance := DistanceHandling.GetFrontDistance;
-         delay (0.05); --simulate 50 ms execution time, replace with your code
-         Put_Line("Thinking");         
-         if SafeDistance < 20 and SafeDistance /= 0 then
-            MotorHandling.SetDirection(Stop);
-         else
+
+         DistanceFront := DistanceHandling.GetFrontDistance;
+         DistanceRight := DistanceHandling.GetRightDistance;
+         DistanceLeft := DistanceHandling.GetLeftDistance;
+ 
+         Put_Line("Thinking");        
+
+
+         if DistanceFront > 20 and DistanceFront /= 0 then
             MotorHandling.SetDirection(Forward);
+         elsif DistanceRight > 20 and DistanceRight /= 0 then
+            MotorHandling.SetDirection(Right);
+         elsif DistanceLeft > 20 and DistanceLeft /= 0 then
+            MotorHandling.SetDirection(Left);
+         else
+            MotorHandling.SetDirection(Stop);
          end if;
-         delay until myClock + Milliseconds(40);
+         delay until myClock + Milliseconds(100);
+
       end loop;
    end think;
    
@@ -74,7 +85,7 @@ package body MyController_empty is
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
         
-        delay until myClock + Milliseconds(40);
+        delay until myClock + Milliseconds(10);
      end loop;
   end act;
    
@@ -87,9 +98,24 @@ package body MyController_empty is
       
       procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm) is 
       begin 
-         SensorFrontDistance := Front;
-         SensorRightDistance := Right;
-         SensorLeftDistance := Left;
+         if Front > 300 then 
+            SensorFrontDistance := 400;
+         else
+            SensorFrontDistance := Front;
+         end if;
+
+         if Right > 300 then 
+            SensorRightDistance := 400;
+         else
+            SensorRightDistance := Right;
+         end if;
+
+         if Left > 400 then 
+            SensorLeftDistance := 400;
+         else
+            SensorLeftDistance := Left;
+         end if;
+
       end MultiDistance;
       function GetDistance return Distance_cm is
       begin

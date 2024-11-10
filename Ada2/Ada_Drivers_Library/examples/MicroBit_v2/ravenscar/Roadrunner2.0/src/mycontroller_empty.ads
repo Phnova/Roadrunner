@@ -34,7 +34,7 @@ package MyController_empty is
       SensorFrontDistance : Distance_cm := 0;
       SensorRightDistance : Distance_cm := 0;
       SensorLeftDistance : Distance_cm := 0;
-      --Sensor4Distance : Distance_cm := 0;
+
    end DistanceHandling;
 
    protected MotorHandling is
