@@ -14,12 +14,16 @@ with MyController_empty;
 -- Use
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 --  
---  TO DO:  Replace motordriver stuff in this program with Microbit.Motordriver stuff -- DONE
---          
---          Make funcitonality in SENSE that stores sensordata in an enum or some sort of datastructure in regards to obstacle sensing
---          - Like one boolean or something for each sensor. This value if something a function can return if the "think" needs to check this
---          - Example: Sense stores sensordata for front,back,left,right. Think checks these spots, if something is close front, think needs
---             to check if back/left/right is safe, and maneuver to a safe direction.
+--  TO DO:  Replace motordriver stuff in this program with Microbit.Motordriver stuff  -- DONE
+--          Need workaround if the sensor goes out of range                            -- DONE (kinda. See **)
+--             - Through testing: If the sensor gets out of range, it registers as 0. 
+--             ** Need to ensure that 0 is a valid distance if close to sensor. Maybe try to have a variable that stores data, then check if
+--                objects move closer or further by comparing the stored with new?
+--          Use built in stuff to time tasks
+--          Sense: 	0.016265869 
+--          Think: 	0.000030518
+--          Act:	   0.000976563
+--          All timings are in seconds. Use this data to time tasks better 
 --  
 --  
 --  

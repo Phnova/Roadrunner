@@ -12,7 +12,7 @@ package body MyController_empty is
    -- This task is only meant for SENSING the environment, what the vehicle does with this data is supposed to happen in THINK
    task body sense is
       myClock : Time;
-      
+      endTime : Time;
 
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
       package sensor2 is new Ultrasonic(MB_P8, MB_P2);
@@ -24,17 +24,13 @@ package body MyController_empty is
       loop
          myClock := Clock;
 
-         Put_Line("Sensing");
+         --Put_Line("Sensing");
 
          DistanceHandling.MultiDistance(sensor1.Read, sensor2.Read, sensor3.Read);
+         endTime := Clock;
+         Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         --Put_Line("Distance front: " & Distance_cm'Image(DistanceHandling.GetFrontDistance));
-         --Put_Line("Distance right: " & Distance_cm'Image(DistanceHandling.GetRightDistance));        
-         --Put_Line("Distance left: " & Distance_cm'Image(DistanceHandling.GetLeftDistance));
-         delay until myClock + Milliseconds(30);
-
-
-
+         delay until myClock + Milliseconds(50);
 
       end loop;
 
@@ -44,6 +40,8 @@ package body MyController_empty is
    -- Use this task to gather data from sense and decide where obsitcles are
    task body think is
       myClock : Time;
+      endTime : Time;
+
 
       DistanceFront : Distance_cm := 0;
       DistanceRight : Distance_cm := 0;
@@ -56,18 +54,21 @@ package body MyController_empty is
          DistanceRight := DistanceHandling.GetRightDistance;
          DistanceLeft := DistanceHandling.GetLeftDistance;
  
-         Put_Line("Thinking");        
+         --Put_Line("Thinking");        
 
 
-         if DistanceFront > 20 and DistanceFront /= 0 then
+         if DistanceFront > 20 then
             MotorHandling.SetDirection(Forward);
-         elsif DistanceRight > 20 and DistanceRight /= 0 then
+         elsif DistanceRight > 20 then
             MotorHandling.SetDirection(Right);
-         elsif DistanceLeft > 20 and DistanceLeft /= 0 then
+         elsif DistanceLeft > 20 then
             MotorHandling.SetDirection(Left);
          else
             MotorHandling.SetDirection(Stop);
          end if;
+         endTime := Clock;
+         Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+
          delay until myClock + Milliseconds(100);
 
       end loop;
@@ -77,14 +78,17 @@ package body MyController_empty is
   -- Main task to set direction of vehicle
   -- Use motordiver stuff here
   task body act is
-     myClock : Time;
+      myClock : Time;
+      endTime: Time;
+
   begin
      loop
         myClock := Clock;
-        Put_Line("Act");
+        --Put_Line("Act");
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
-        
+         endTime := Clock;
+         Put_Line("Act Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
         delay until myClock + Milliseconds(10);
      end loop;
   end act;
@@ -98,19 +102,19 @@ package body MyController_empty is
       
       procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm) is 
       begin 
-         if Front > 300 then 
+         if Front > 300 or Front = 0 then 
             SensorFrontDistance := 400;
          else
             SensorFrontDistance := Front;
          end if;
 
-         if Right > 300 then 
+         if Right > 300 or Right = 0 then 
             SensorRightDistance := 400;
          else
             SensorRightDistance := Right;
          end if;
 
-         if Left > 400 then 
+         if Left > 300 or Left = 0 then 
             SensorLeftDistance := 400;
          else
             SensorLeftDistance := Left;

@@ -15,10 +15,7 @@ package body Tasks.Act is
       loop
          myClock := Clock;
      
-         Drive(MotorDriver.GetDirection);
-         
-         Put_Line ("Direction is: " & MotorDriver.GetDirection'Image);
-       
+         -- Insert drivingcode here
          delay until myClock + Milliseconds(50);  --random period, but faster than 20 ms is no use because Set_Analog_Period_Us(20000) !
                                                   --faster is better but note the weakest link: if decisions in the thinking task come at 100ms and acting come at 20ms 
                                                   --then no change is set in the acting task for at least 5x (and is wasting power to wake up and execute task!)
