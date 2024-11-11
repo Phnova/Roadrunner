@@ -30,7 +30,7 @@ package body MyController_empty is
 
          DistanceHandling.MultiDistance(sensorFrontLeft.Read, sensorFrontRight.Read, sensorLeft.Read, sensorRight.Read);
 
-         Put_Line("Sense task exec: " & Time'Image(Clock));
+         --Put_Line("Sense task exec: " & Time'Image(Clock));
 
 
          endTime := Clock;
