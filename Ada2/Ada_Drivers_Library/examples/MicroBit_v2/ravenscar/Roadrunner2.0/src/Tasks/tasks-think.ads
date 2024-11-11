@@ -1,5 +1,11 @@
-with MyMotorDriver; use MyMotorDriver;
-with MyBrain; use MyBrain;
+with MicroBit.Ultrasonic;
+with MicroBit.Console; use MicroBit.Console;
+with MicroBit.Types; use MicroBit.Types;
+with MicroBit.MotorDriver; use MicroBit.MotorDriver; --using the procedures defined here
+with DFR0548;
+use MicroBit;
+with Tasks.Act;
+with Tasks.Think;
 
 -- This task is inteded to be used as the main decicionmaker
 -- The intention is to use the getter functions from task.sense and use this information to make decicions regarding 

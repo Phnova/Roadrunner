@@ -8,30 +8,32 @@ use MicroBit;
 
 package MyController_empty is
 
-   type Directions is (Stop, Forward, Backward, Left, Right);
+   type Directions is (Stop, Forward, Backward, Left, Right, Rotating_Left, Rotating_Right);
 
    --type Obstacle is (Front, left, right, rear, none);
    
-   task Sense with Priority => 1;
+   task Sense with Priority => 3;
 
    task Think with Priority=> 2; -- what happens for the set direction if think and sense have the same prio and period?
                                  -- what happens if think has a higher priority? Why is think' set direction overwritten by sense' set direction?
    
-   task Act with Priority=> 3;
+   task Act with Priority=> 1;
 
    protected DistanceHandling is
-      function GetDistance return Distance_cm;
-
       procedure SetDistance (V : Distance_cm);
-
-      procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm);
-      function GetFrontDistance return Distance_cm;
-      function GetRightDistance return Distance_cm;
+      procedure MultiDistance (FrontLeft : Distance_cm; FrontRight : Distance_cm; Left : Distance_cm; Right : Distance_cm);
+      
+      function GetDistance return Distance_cm;
+      function GetFrontLeftDistance return Distance_cm;
+      function GetFrontRightDistance return Distance_cm;
       function GetLeftDistance return Distance_cm;
+      function GetRightDistance return Distance_cm;
+
    private
       Distance : Distance_cm := 0;
 
-      SensorFrontDistance : Distance_cm := 0;
+      SensorFrontLeftDistance : Distance_cm := 0;
+      SensorFrontRightDistance : Distance_cm := 0;
       SensorRightDistance : Distance_cm := 0;
       SensorLeftDistance : Distance_cm := 0;
 

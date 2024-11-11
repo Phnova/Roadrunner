@@ -24,7 +24,7 @@ with MyController_empty;
 --          Think: 	0.000030518
 --          Act:	   0.000976563
 --          All timings are in seconds. Use this data to time tasks better 
---  
+--          Change optional directions to rotation, not lateral direction. Ensure safe rotational direction with side sensors
 --  
 --  
 --------------------------------------------------------------------------------------------------------------------------------------------------------

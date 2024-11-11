@@ -13,69 +13,78 @@ package body Tasks.Sense is
 
     task body sense is
       myClock : Time;
+      endTime : Time;
 
-               
-      -- array of booleans to store sensordata
       package sensor1 is new Ultrasonic(MB_P1, MB_P0);
       package sensor2 is new Ultrasonic(MB_P8, MB_P2);
       package sensor3 is new Ultrasonic(MB_P13, MB_P12);
-      -- package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
+      --package sensor4 is new Ultrasonic(MB_P14, MB_P15);   
 
-      Distance_1 : Distance_cm := 0;
-      Distance_2 : Distance_cm := 0;
-      Distance_3 : Distance_cm := 0;
-      --Distance_4 : Distance_cm := 0;
-      
+
    begin
-      
-      null; -- note that you can place Setup code here that is only run once for the entire task
-      
       loop
-         myClock := Clock; --important to get current time such that the period is exactly 200ms.
-                           --you need to make sure that the instruction NEVER takes more than this period. 
-                           --make sure to measure how long the task needs, see Tasking_Calculate_Execution_Time example in the repository.
-                           --What if for some known or unknown reason the execution time becomes larger?
-                           --When Worst Case Execution Time (WCET) is overrun so higher than your set period, see : https://www.sigada.org/ada_letters/dec2003/07_Puente_final.pdf
-                           --In this template we put the responsiblity on the designer/developer.
-         ----------------------------------------------------------------------------------      
-         Distance_1 := sensor1.Read;      
-         Distance_2 := sensor2.Read;
-         Distance_3 := sensor3.Read;
-         --Distance_4 := sensor4.Read;
+         myClock := Clock;
 
-
-
-
-
-         --delay (0.024); --simulate a sensor eg the ultrasonic sensors needs at least 24ms for 400cm range, replace with your code!!!
-                        -- to integrate for example an ultrasonic sensor: copy paste the ultrasonic package for the ultrasonic example to the src directory
-                        -- include it using  "with ultrasonic; use ultrasonic". The ultrasonic sensor uses type Distance_CM how can we make that compatible with our Brain.SetMeasurementSensor1?  
          --Put_Line("Sensing");
-         --Brain.SetMeasurementSensor1 (10); -- random value, hook up a sensor here note that you might need to either cast to integer OR -better- change type of Brain.SetMeasurementSensor1
-         --Brain.SetMeasurementSensor2 (1); -- random value, hook up another sensor here
 
-      
-      -- need a function here that returns where obstacles are detected
-      -- this function will be used by task think
+         DistanceHandling.MultiDistance(sensor1.Read, sensor2.Read, sensor3.Read);
+         endTime := Clock;
+         Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
+         delay until myClock + Milliseconds(50);
 
-
-         delay until myClock + Milliseconds(200); --random period
       end loop;
+
    end sense;
 
-   function GetDistance1 return Distance_1 is
-   begin
-      return Distance_1;
-   end GetDistance1;
+   protected body DistanceHandling is
+      
+      procedure SetDistance (V : Distance_cm) is
+      begin
+         Distance := V;
+      end SetDistance;
+      
+      procedure MultiDistance (Front : Distance_cm; Right : Distance_cm; Left : Distance_cm) is 
+      begin 
+         if Front > 300 or Front = 0 then 
+            SensorFrontDistance := 400;
+         else
+            SensorFrontDistance := Front;
+         end if;
 
-   function GetDistance2 return Distance_2 is
-   begin
-      return Distance_2;
-   end GetDistance2;
+         if Right > 300 or Right = 0 then 
+            SensorRightDistance := 400;
+         else
+            SensorRightDistance := Right;
+         end if;
 
-   function GetDistance3 return Distance_3 is
-   begin
-      return Distance_3;
-   end GetDistance3;
+         if Left > 300 or Left = 0 then 
+            SensorLeftDistance := 400;
+         else
+            SensorLeftDistance := Left;
+         end if;
+
+      end MultiDistance;
+      function GetDistance return Distance_cm is
+      begin
+         return Distance;
+      end GetDistance;
+
+      function GetFrontDistance return Distance_cm is
+      begin
+         return SensorFrontDistance;
+      end GetFrontDistance;
+
+      function GetRightDistance return Distance_cm is
+      begin
+         return SensorRightDistance;
+      end GetRightDistance;
+
+      function GetLeftDistance return Distance_cm is
+      begin
+         return SensorLeftDistance;
+      end GetLeftDistance;
+
+   end DistanceHandling;   
+
 end Tasks.Sense;

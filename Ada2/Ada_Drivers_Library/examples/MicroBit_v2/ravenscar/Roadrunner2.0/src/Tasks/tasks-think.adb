@@ -9,22 +9,40 @@ With Ada.Real_Time; use Ada.Real_Time;
 
 package body Tasks.Think is
 
-  task body think is
-   myClock : Time;
+task body think is
+      myClock : Time;
+      endTime : Time;
+
+
+      DistanceFront : Distance_cm := 0;
+      DistanceRight : Distance_cm := 0;
+      DistanceLeft : Distance_cm := 0;
    begin
       loop
          myClock := Clock;
-        
-         --make a decision (could be wrapped nicely in a procedure)
-         if Brain.GetMeasurementSensor1 > 5 and Brain.GetMeasurementSensor2 = 1 then            
-            MotorDriver.SetDirection (Forward); --our decision what to do based on the sensor values        
+
+         DistanceFront := Tasks.Sense.DistanceHandling.GetFrontDistance;
+         DistanceRight := Tasks.Sense.DistanceHandling.GetRightDistance;
+         DistanceLeft := Tasks.Sense.DistanceHandling.GetLeftDistance;
+ 
+         --Put_Line("Thinking");        
+         
+
+         if DistanceFront > 20 then
+            Tasks.Act.MotorHandling.SetDirection(Forward);
+         elsif DistanceRight > 20 then
+            Tasks.Act.MotorHandling.SetDirection(Right);
+         elsif DistanceLeft > 20 then
+            Tasks.Act.MotorHandling.SetDirection(Left);
          else
-            MotorDriver.SetDirection (Stop); 
+            Tasks.Act.MotorHandling.SetDirection(Stop);
          end if;
-         Put_Line("Thinking");
-         delay until myClock + Milliseconds(100);  --random period
+         endTime := Clock;
+         Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+
+         delay until myClock + Milliseconds(100);
+
       end loop;
    end think;
-
 
 end Tasks.Think;
