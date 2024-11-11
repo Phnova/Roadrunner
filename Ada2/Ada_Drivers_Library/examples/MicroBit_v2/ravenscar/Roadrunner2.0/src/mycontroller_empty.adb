@@ -18,6 +18,8 @@ package body MyController_empty is
       package sensorFrontRight is new Ultrasonic(MB_P2, MB_P8);
       package sensorLeft is new Ultrasonic(MB_P12, MB_P13);
       package sensorRight is new Ultrasonic(MB_P14, MB_P15);   
+
+
    begin
       loop
          myClock := Clock;
@@ -27,6 +29,10 @@ package body MyController_empty is
          --Put_Line("Sensing");
 
          DistanceHandling.MultiDistance(sensorFrontLeft.Read, sensorFrontRight.Read, sensorLeft.Read, sensorRight.Read);
+
+         Put_Line("Sense task exec: " & Time'Image(Clock));
+
+
          endTime := Clock;
          Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
@@ -58,41 +64,31 @@ package body MyController_empty is
          DistanceRight := DistanceHandling.GetRightDistance;
 
  
-         --Put_Line("Thinking");        
+      
          --Put_Line("FrontLeft: " & Distance_cm'Image(DistanceFrontLeft));
          --Put_Line("FrontRight: " & Distance_cm'Image(DistanceFrontRight));
-         --Put_Line("Left: " & Distance_cm'Image(DistanceLeft));
-         --Put_Line("Right: " & Distance_cm'Image(DistanceRight));            
-         --if DistanceFront > 20 then
-         --   MotorHandling.SetDirection(Forward);
-         --elsif DistanceRight > 20 then
-         --   MotorHandling.SetDirection(Rotating_left);
-         --elsif DistanceLeft > 20 then
-         --   MotorHandling.SetDirection(Rotating_Right);
-         --else
-         --   MotorHandling.SetDirection(Stop);
-         --end if;
 
-         if DistanceFrontLeft > 30 and DistanceFrontRight > 30 then
+
+         if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
             MotorHandling.SetDirection(Forward);
          end if;
-         if DistanceFrontLeft < 30 or DistanceFrontRight < 30 then
+         if DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
             MotorHandling.SetDirection(Stop);
-            if DistanceFrontLeft < 20 then 
+            if DistanceFrontLeft < 40 then 
                MotorHandling.SetDirection(Rotating_Left);
             end if;
-            if DistanceFrontRight < 20 then 
+            if DistanceFrontRight < 40 then 
                MotorHandling.SetDirection(Rotating_Right);
             end if;
          
          end if;
-         if DistanceLeft < 10 then
+         if DistanceLeft < 20 then
             MotorHandling.SetDirection(Right);
          end if;
-         if DistanceRight < 10 then
+         if DistanceRight < 20 then
             MotorHandling.SetDirection(Left);
          end if;
-         if DistanceLeft < 10 and DistanceRight < 10 then
+         if DistanceLeft < 20 and DistanceRight < 20 then
             MotorHandling.SetDirection(Forward);
          end if; 
          
@@ -101,7 +97,7 @@ package body MyController_empty is
          endTime := Clock;
          Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(50);
+         delay until myClock + Milliseconds(20);
 
       end loop;
    end think;
