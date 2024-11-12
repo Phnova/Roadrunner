@@ -1,0 +1,84 @@
+import math
+
+# Look at multiple solutions to infinite loops in the calculations.
+
+
+# Function to compute the response time for a single task
+def compute_response_time(C, other_tasks):
+    # Initial guess (X0)
+    prev_X = C
+    iteration = 0
+
+    while True:
+        iteration += 1
+        new_X = C
+
+        # Sum over the other tasks (recursive calculation)
+        for C_other, T in other_tasks:
+            new_X += math.ceil(prev_X / T) * C_other
+
+        # Print the current iteration
+        print(f"Iteration {iteration}: Response time = {new_X}")
+
+        # Check if the new response time is the same as the previous one
+        if new_X == prev_X:
+            print(f"Converged after {iteration} iterations.")
+            break
+        if iteration >= 20:
+            break
+        # Update for the next iteration
+        prev_X = new_X
+
+    return new_X
+
+
+# Define computation times (C) and periods (T) for each task
+"""
+tasks = {
+    'a': {'C': 0.09, 'T': 60},
+    'b': {'C': 0.73, 'T': 10},
+    'c': {'C': 1.13, 'T': 20},
+    'd': {'C': 0.12, 'T': 10},
+    #'e': {'C': 2, 'T': 25}
+}
+"""
+tasks = {
+    'a': {'C': 210, 'T': 350},
+    'b': {'C': 7, 'T': 50},
+    'c': {'C': 1, 'T': 40},
+    #'d': {'C': 3, 'T': 20},
+    #'e': {'C': 2, 'T': 25}
+}
+
+# Now compute the response time for each task in order, with the correct dependencies
+
+# Task a has no preceding tasks
+print("Calculating response time for task a:")
+response_time_a = compute_response_time(tasks['a']['C'], [])
+print(f"Final response time for task a: {response_time_a}\n")
+
+# Task b depends on task a
+print("Calculating response time for task b:")
+response_time_b = compute_response_time(tasks['b']['C'], [(tasks['a']['C'], tasks['a']['T'])])
+print(f"Final response time for task b: {response_time_b}\n")
+
+# Task c depends on tasks a and b
+print("Calculating response time for task c:")
+response_time_c = compute_response_time(tasks['c']['C'],
+                                        [(tasks['a']['C'], tasks['a']['T']), (tasks['b']['C'], tasks['b']['T'])])
+print(f"Final response time for task c: {response_time_c}\n")
+"""
+# Task d depends on tasks a, b, and c
+print("Calculating response time for task d:")
+response_time_d = compute_response_time(tasks['d']['C'],
+                                        [(tasks['a']['C'], tasks['a']['T']), (tasks['b']['C'], tasks['b']['T']),
+                                         (tasks['c']['C'], tasks['c']['T'])])
+print(f"Final response time for task d: {response_time_d}\n")
+
+# Task e depends on tasks a, b, c, and d
+print("Calculating response time for task e:")
+response_time_e = compute_response_time(tasks['e']['C'],
+                                        [(tasks['a']['C'], tasks['a']['T']), (tasks['b']['C'], tasks['b']['T']),
+                                         (tasks['c']['C'], tasks['c']['T']), (tasks['d']['C'], tasks['d']['T'])])
+print(f"Final response time for task e: {response_time_e}")
+"""
