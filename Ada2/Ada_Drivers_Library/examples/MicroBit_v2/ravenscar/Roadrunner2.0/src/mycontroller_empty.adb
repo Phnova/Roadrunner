@@ -93,9 +93,9 @@ package body MyController_empty is
             end if;
             if DistanceFrontRight < 40 then 
                MotorHandling.SetDirection(Rotating_Right);
-            end if;
-         
+            end if;        
          end if;
+         
          if DistanceLeft < 20 then
             MotorHandling.SetDirection(Right);
          end if;

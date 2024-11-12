@@ -10,26 +10,21 @@ package MyController_empty is
 
    type Directions is (Stop, Forward, Backward, Left, Right, Rotating_Left, Rotating_Right);
 
-   subtype Buffer_Index is Positive range 1 .. 8;  -- Adjust size as needed
+   subtype Buffer_Index is Positive range 1 .. 8; -- Adjust this according to the size of the buffer
 
    type Distance_Array is array (Buffer_Index) of Distance_cm;
-
-
-
-   --type Obstacle is (Front, left, right, rear, none);
+   type DistanceZones is (Close, Medium, Far);
    
    task Sense with Priority => 3;
 
-   task Think with Priority=> 2; -- what happens for the set direction if think and sense have the same prio and period?
-                                 -- what happens if think has a higher priority? Why is think' set direction overwritten by sense' set direction?
+   task Think with Priority=> 2; 
    
    task Act with Priority=> 1;
 
+   -- Protected 
    protected DistanceHandling is
-      procedure SetDistance (V : Distance_cm);
       procedure MultiDistance (FrontLeft : Distance_cm; FrontRight : Distance_cm; Left : Distance_cm; Right : Distance_cm);
-      
-      function GetDistance return Distance_cm;
+
       function GetFrontLeftDistance return Distance_cm;
       function GetFrontRightDistance return Distance_cm;
       function GetLeftDistance return Distance_cm;
@@ -42,6 +37,8 @@ package MyController_empty is
       SensorFrontRightDistance : Distance_cm := 0;
       SensorRightDistance : Distance_cm := 0;
       SensorLeftDistance : Distance_cm := 0;
+
+      WhatZone : DistanceZones;
 
    end DistanceHandling;
 

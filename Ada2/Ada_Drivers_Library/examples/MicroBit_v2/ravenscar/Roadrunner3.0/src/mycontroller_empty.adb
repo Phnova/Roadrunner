@@ -8,30 +8,25 @@ with Ada.Execution_Time; use Ada.Execution_Time;
 
 package body MyController_empty is
 
-   -- Main task for sensing environment
-   -- Use ultrasonic sensors here
-   -- This task is only meant for SENSING the environment, what the vehicle does with this data is supposed to happen in THINK
 
+   -- Initiation of buffer
    Buffer : SensorBuffer;
 
-
    task body sense is
+      -- Declare timing variables used to time task
       myClock : Time;
       endTime : Time;
-
+      -- Set up ultrasonic sensors
       package sensorFrontLeft is new Ultrasonic(MB_P0, MB_P1);
       package sensorFrontRight is new Ultrasonic(MB_P2, MB_P8);
       package sensorLeft is new Ultrasonic(MB_P12, MB_P13);
       package sensorRight is new Ultrasonic(MB_P14, MB_P15);
 
-      -- Instantiate the buffer
-
-
    begin
       loop
          myClock := Clock;
 
-         -- Read current distances from sensors
+         -- Use declare to make objects inside task
          declare
             NewFrontLeft  : constant Distance_cm := sensorFrontLeft.Read;
             NewFrontRight : constant Distance_cm := sensorFrontRight.Read;
@@ -41,11 +36,12 @@ package body MyController_empty is
             -- Add data to the buffer
             Buffer.Add_Data(NewFrontLeft, NewFrontRight, NewLeft, NewRight);
          end;
-
+         -- End timing
          endTime := Clock;
-         Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-
-         delay until myClock + Milliseconds(250);
+         -- Write timing to terminal
+         --Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         -- Task worst case is ~200ms, 50ms overhead
+         delay until myClock + Milliseconds(340);
       end loop;
    end sense;
 
@@ -56,13 +52,16 @@ package body MyController_empty is
       myClock : Time;
       endTime : Time;
 
-      DistanceFrontLeft : Distance_cm := 0;
-      DistanceFrontRight : Distance_cm := 0;
-      DistanceRight : Distance_cm := 0;
-      DistanceLeft : Distance_cm := 0;
+      DistanceFrontLeft    : Distance_cm := 0;
+      DistanceFrontRight   : Distance_cm := 0;
+      DistanceRight        : Distance_cm := 0;
+      DistanceLeft         : Distance_cm := 0;  
    
-   
-   
+      ZoneFrontLeft        : DistanceZones;
+      ZoneFrontRight       : DistanceZones;
+      ZoneLeft             : DistanceZones;
+      ZoneRight            : DistanceZones;
+
    begin
       loop
          myClock := Clock;
@@ -71,25 +70,32 @@ package body MyController_empty is
          if Buffer.Get_Data then
             Buffer.Retrieve_Data(DistanceFrontLeft, DistanceFrontRight, DistanceLeft, DistanceRight);
 
-            Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
-            Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
-            Put_Line("Left          " & Distance_cm'Image(DistanceLeft));
-            Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
+            --Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
+            --Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
+            --Put_Line("Left:         " & Distance_cm'Image(DistanceLeft));
+            --Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
 
+
+            --Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
+            --Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
+            --Put_Line("Left:         " & Distance_cm'Image(DistanceLeft));
+            --Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
 
             -- Process data here
             -- Example: Check conditions and set directions based on the retrieved data
-           if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
-              MotorHandling.SetDirection(Forward);
-           elsif DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
-              MotorHandling.SetDirection(Stop);
-              if DistanceFrontLeft < 40 then 
-                 MotorHandling.SetDirection(Rotating_Left);
-              end if;
-              if DistanceFrontRight < 40 then 
-                 MotorHandling.SetDirection(Rotating_Right);
-              end if;
-           end if;
+
+
+            if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
+               MotorHandling.SetDirection(Forward);
+            elsif DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
+               MotorHandling.SetDirection(Stop);
+               if DistanceFrontLeft < 40 then 
+                  MotorHandling.SetDirection(Rotating_Left);
+               end if;
+               if DistanceFrontRight < 40 then 
+                  MotorHandling.SetDirection(Rotating_Right);
+               end if;
+            end if;
 
             if DistanceLeft < 20 then
                MotorHandling.SetDirection(Right);
@@ -104,9 +110,9 @@ package body MyController_empty is
          end if;
 
          endTime := Clock;
-         Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         --Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(60);
+         delay until myClock + Milliseconds(50);
       end loop;
    end think;
 
@@ -125,17 +131,13 @@ package body MyController_empty is
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
          endTime := Clock;
-         Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         --Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
         delay until myClock + Milliseconds(40);
      end loop;
   end act;
    
    protected body DistanceHandling is
       
-      procedure SetDistance (V : Distance_cm) is
-      begin
-         Distance := V;
-      end SetDistance;
       
       procedure MultiDistance (FrontLeft : Distance_cm; FrontRight : Distance_cm; Left : Distance_cm; Right : Distance_cm) is 
       begin 
@@ -161,9 +163,6 @@ package body MyController_empty is
          else
             SensorRightDistance := Right;
          end if;
-
-
-
       end MultiDistance;
 
       function GetFrontLeftDistance return Distance_cm is
@@ -184,16 +183,11 @@ package body MyController_empty is
          return SensorRightDistance;
       end GetRightDistance;
 
-      function GetDistance return Distance_cm is
-      begin
-         return Distance;
-      end GetDistance;
-
    end DistanceHandling;   
 
 
 
-    protected body MotorHandling is
+   protected body MotorHandling is
       --  procedures can modify the data
       procedure SetDirection (V : Directions) is
       begin
