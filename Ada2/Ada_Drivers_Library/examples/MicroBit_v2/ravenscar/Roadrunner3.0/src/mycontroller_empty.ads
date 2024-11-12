@@ -10,7 +10,7 @@ package MyController_empty is
 
    type Directions is (Stop, Forward, Backward, Left, Right, Rotating_Left, Rotating_Right);
 
-   subtype Buffer_Index is Positive range 1 .. 10;  -- Adjust size as needed
+   subtype Buffer_Index is Positive range 1 .. 8;  -- Adjust size as needed
 
    type Distance_Array is array (Buffer_Index) of Distance_cm;
 

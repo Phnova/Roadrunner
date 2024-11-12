@@ -45,7 +45,7 @@ package body MyController_empty is
          endTime := Clock;
          Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(120);
+         delay until myClock + Milliseconds(110);
       end loop;
    end sense;
 
@@ -71,21 +71,35 @@ package body MyController_empty is
          if Buffer.Get_Data then
             Buffer.Retrieve_Data(DistanceFrontLeft, DistanceFrontRight, DistanceLeft, DistanceRight);
 
+            Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
+            Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
+            Put_Line("Left          " & Distance_cm'Image(DistanceLeft));
+            Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
+
+
             -- Process data here
             -- Example: Check conditions and set directions based on the retrieved data
-            if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
-               MotorHandling.SetDirection(Forward);
-            elsif DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
-               MotorHandling.SetDirection(Stop);
-               if DistanceFrontLeft < 40 then 
-                  MotorHandling.SetDirection(Rotating_Left);
-               end if;
-               if DistanceFrontRight < 40 then 
-                  MotorHandling.SetDirection(Rotating_Right);
-               end if;
-            end if;
+           if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
+              MotorHandling.SetDirection(Forward);
+           elsif DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
+              MotorHandling.SetDirection(Stop);
+              if DistanceFrontLeft < 40 then 
+                 MotorHandling.SetDirection(Rotating_Left);
+              end if;
+              if DistanceFrontRight < 40 then 
+                 MotorHandling.SetDirection(Rotating_Right);
+              end if;
+           end if;
 
-            -- Additional processing...
+            if DistanceLeft < 20 then
+               MotorHandling.SetDirection(Right);
+            end if;
+            if DistanceRight < 20 then
+               MotorHandling.SetDirection(Left);
+            end if;
+            if DistanceLeft < 20 and DistanceRight < 20 then
+               MotorHandling.SetDirection(Forward);
+            end if;          
 
          end if;
 
@@ -111,7 +125,7 @@ package body MyController_empty is
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
          endTime := Clock;
-         Put_Line("Act Task Duration:  " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
         delay until myClock + Milliseconds(40);
      end loop;
   end act;
@@ -252,11 +266,26 @@ protected body SensorBuffer is
    begin
       if Count < Buffer_Size then
          -- Add data to the buffer at the current write position
-         FrontLeft_Buffer(Write_Index) := FrontLeft;
-         FrontRight_Buffer(Write_Index) := FrontRight;
-         Left_Buffer(Write_Index) := Left;
-         Right_Buffer(Write_Index) := Right;
-         
+         if FrontLeft > 300 or FrontLeft = 0 then
+            FrontLeft_Buffer(Write_Index) := 400;
+         else
+            FrontLeft_Buffer(Write_Index) := FrontLeft;
+         end if;
+         if FrontRight > 300 or FrontRight = 0 then
+            FrontRight_Buffer(Write_Index) := 400;
+         else
+            FrontRight_Buffer(Write_Index) := FrontRight;
+         end if;
+         if Left > 300 or Left = 0 then
+            Left_Buffer(Write_Index) := 400;
+         else 
+            Left_Buffer(Write_Index) := Left;
+         end if;
+         if Right > 300 or Right = 0 then
+            Right_Buffer(Write_Index) := 400;
+         else 
+            Right_Buffer(Write_Index) := Right;
+         end if;
          -- Update write index and count
          Write_Index := (Write_Index mod Buffer_Size) + 1;
          Count := Count + 1;
