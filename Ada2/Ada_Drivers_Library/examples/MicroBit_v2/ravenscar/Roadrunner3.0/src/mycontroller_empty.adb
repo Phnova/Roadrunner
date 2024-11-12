@@ -45,7 +45,7 @@ package body MyController_empty is
          endTime := Clock;
          Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(110);
+         delay until myClock + Milliseconds(250);
       end loop;
    end sense;
 
