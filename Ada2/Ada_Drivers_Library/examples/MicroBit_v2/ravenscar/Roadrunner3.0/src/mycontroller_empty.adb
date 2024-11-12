@@ -11,6 +11,10 @@ package body MyController_empty is
    -- Main task for sensing environment
    -- Use ultrasonic sensors here
    -- This task is only meant for SENSING the environment, what the vehicle does with this data is supposed to happen in THINK
+
+   Buffer : SensorBuffer;
+
+
    task body sense is
       myClock : Time;
       endTime : Time;
@@ -18,50 +22,33 @@ package body MyController_empty is
       package sensorFrontLeft is new Ultrasonic(MB_P0, MB_P1);
       package sensorFrontRight is new Ultrasonic(MB_P2, MB_P8);
       package sensorLeft is new Ultrasonic(MB_P12, MB_P13);
-      package sensorRight is new Ultrasonic(MB_P14, MB_P15);   
+      package sensorRight is new Ultrasonic(MB_P14, MB_P15);
+
+      -- Instantiate the buffer
 
 
-      --LastFrontLeft  : Distance_cm := sensorFrontLeft.Read;
-      --LastFrontRight : Distance_cm := sensorFrontRight.Read;
-      --LastLeft       : Distance_cm := sensorLeft.Read;
-      --LastRight      : Distance_cm := sensorRight.Read;
    begin
       loop
          myClock := Clock;
 
-         --declare
-         --   NewFrontLeft   : constant Distance_cm := sensorFrontLeft.Read;
-         --   NewFrontRight  : constant Distance_cm := sensorFrontRight.Read;
-         --   NewLeft        : constant Distance_cm := sensorLeft.Read;
-         --   NewRight       : constant Distance_cm := sensorRight.Read;
-         --begin
-         --   if NewFrontLeft /= LastFrontLeft or
-         --      NewFrontRight /= LastFrontRight or
-         --      NewLeft /= LastLeft or
-         --      NewRight /= LastRight
-         --   then
-         --      DistanceHandling.MultiDistance(sensorFrontLeft.Read, sensorFrontRight.Read, sensorLeft.Read, sensorRight.Read);
---
---
-         --      -- update sensordata
-         --      LastFrontLeft  := NewFrontLeft;
-         --      LastFrontRight := NewFrontRight;
-         --      LastLeft       := NewLeft;
-         --      LastRight      := NewRight;
-         --   end if;
-         --end;
-         
-         
-         DistanceHandling.MultiDistance(sensorFrontLeft.Read, sensorFrontRight.Read, sensorLeft.Read, sensorRight.Read);
+         -- Read current distances from sensors
+         declare
+            NewFrontLeft  : constant Distance_cm := sensorFrontLeft.Read;
+            NewFrontRight : constant Distance_cm := sensorFrontRight.Read;
+            NewLeft       : constant Distance_cm := sensorLeft.Read;
+            NewRight      : constant Distance_cm := sensorRight.Read;
+         begin
+            -- Add data to the buffer
+            Buffer.Add_Data(NewFrontLeft, NewFrontRight, NewLeft, NewRight);
+         end;
 
          endTime := Clock;
-         Put_Line("Sense Task Duration:   " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(100);
-
+         delay until myClock + Milliseconds(120);
       end loop;
-
    end sense;
+
 
    -- Main task for decisionmaking
    -- Use this task to gather data from sense and decide where obsitcles are
@@ -73,48 +60,42 @@ package body MyController_empty is
       DistanceFrontRight : Distance_cm := 0;
       DistanceRight : Distance_cm := 0;
       DistanceLeft : Distance_cm := 0;
+   
+   
+   
    begin
       loop
          myClock := Clock;
 
-         DistanceFrontLeft := DistanceHandling.GetFrontLeftDistance;
-         DistanceFrontRight := DistanceHandling.GetFrontRightDistance;
-         DistanceLeft := DistanceHandling.GetLeftDistance;
-         DistanceRight := DistanceHandling.GetRightDistance;
+         -- Retrieve buffered data if available
+         if Buffer.Get_Data then
+            Buffer.Retrieve_Data(DistanceFrontLeft, DistanceFrontRight, DistanceLeft, DistanceRight);
 
-
-         if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
-            MotorHandling.SetDirection(Forward);
-         end if;
-         if DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
-            MotorHandling.SetDirection(Stop);
-            if DistanceFrontLeft < 40 then 
-               MotorHandling.SetDirection(Rotating_Left);
+            -- Process data here
+            -- Example: Check conditions and set directions based on the retrieved data
+            if DistanceFrontLeft > 40 and DistanceFrontRight > 40 then
+               MotorHandling.SetDirection(Forward);
+            elsif DistanceFrontLeft < 40 or DistanceFrontRight < 40 then
+               MotorHandling.SetDirection(Stop);
+               if DistanceFrontLeft < 40 then 
+                  MotorHandling.SetDirection(Rotating_Left);
+               end if;
+               if DistanceFrontRight < 40 then 
+                  MotorHandling.SetDirection(Rotating_Right);
+               end if;
             end if;
-            if DistanceFrontRight < 40 then 
-               MotorHandling.SetDirection(Rotating_Right);
-            end if;
-         
-         end if;
-         if DistanceLeft < 20 then
-            MotorHandling.SetDirection(Right);
-         end if;
-         if DistanceRight < 20 then
-            MotorHandling.SetDirection(Left);
-         end if;
-         if DistanceLeft < 20 and DistanceRight < 20 then
-            MotorHandling.SetDirection(Forward);
-         end if; 
-         
 
+            -- Additional processing...
+
+         end if;
 
          endTime := Clock;
-         --Put_Line("Think Task Duration:   " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
-         delay until myClock + Milliseconds(20);
-
+         delay until myClock + Milliseconds(60);
       end loop;
    end think;
+
    
 
   -- Main task to set direction of vehicle
@@ -130,8 +111,8 @@ package body MyController_empty is
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
          endTime := Clock;
-         --Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-        delay until myClock + Milliseconds(20);
+         Put_Line("Act Task Duration:  " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+        delay until myClock + Milliseconds(40);
      end loop;
   end act;
    
@@ -262,7 +243,46 @@ package body MyController_empty is
          end if;
 
       end DriveVehicle;
+   end MotorHandling;
 
+protected body SensorBuffer is
 
-    end MotorHandling;
+   -- Adds new sensor data to the buffer
+   procedure Add_Data(FrontLeft : in Distance_cm; FrontRight : in Distance_cm; Left : in Distance_cm; Right : in Distance_cm) is
+   begin
+      if Count < Buffer_Size then
+         -- Add data to the buffer at the current write position
+         FrontLeft_Buffer(Write_Index) := FrontLeft;
+         FrontRight_Buffer(Write_Index) := FrontRight;
+         Left_Buffer(Write_Index) := Left;
+         Right_Buffer(Write_Index) := Right;
+         
+         -- Update write index and count
+         Write_Index := (Write_Index mod Buffer_Size) + 1;
+         Count := Count + 1;
+      end if;
+   end Add_Data;
+
+   -- Checks if data is available in the buffer
+   function Get_Data return Boolean is
+   begin
+      return Count > 0;
+   end Get_Data;
+
+   -- Retrieves data from the buffer if available
+   entry Retrieve_Data(FrontLeft : out Distance_cm; FrontRight : out Distance_cm; Left : out Distance_cm; Right : out Distance_cm) when Count > 0 is
+   begin
+      -- Output the data at the current read position
+      FrontLeft := FrontLeft_Buffer(Read_Index);
+      FrontRight := FrontRight_Buffer(Read_Index);
+      Left := Left_Buffer(Read_Index);
+      Right := Right_Buffer(Read_Index);
+      
+      -- Update read index and count
+      Read_Index := (Read_Index mod Buffer_Size) + 1;
+      Count := Count - 1;
+   end Retrieve_Data;
+
+end SensorBuffer;
+
 end MyController_empty;
