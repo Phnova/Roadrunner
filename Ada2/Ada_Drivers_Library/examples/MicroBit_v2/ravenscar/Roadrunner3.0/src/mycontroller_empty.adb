@@ -126,7 +126,7 @@ package body MyController_empty is
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
         endTime := Clock;
         Put_Line("Act Task Duration  :       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-        delay until myClock + Milliseconds(7);
+        delay until myClock + Milliseconds(40);
      end loop;
   end act;
    
