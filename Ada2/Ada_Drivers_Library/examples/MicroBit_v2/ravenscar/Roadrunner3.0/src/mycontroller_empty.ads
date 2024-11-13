@@ -10,16 +10,16 @@ package MyController_empty is
 
    type Directions is (Stop, Forward, Backward, Left, Right, Rotating_Left, Rotating_Right);
 
-   subtype Buffer_Index is Positive range 1 .. 8; -- Adjust this according to the size of the buffer
+   subtype Buffer_Index is Positive range 1 .. 5; -- Adjust this according to the size of the buffer
 
    type Distance_Array is array (Buffer_Index) of Distance_cm;
    type DistanceZones is (Close, Medium, Far);
    
    task Sense  with Priority  => 3;
 
-   task Think  with Priority  => 2; 
+   task Think  with Priority  => 1; 
    
-   task Act    with Priority  => 1;
+   task Act    with Priority  => 2;
 
 
    protected DistanceHandling is
@@ -56,7 +56,7 @@ package MyController_empty is
       function Get_Data return Boolean;
       entry Retrieve_Data(FrontLeft : out Distance_cm; FrontRight : out Distance_cm; Left : out Distance_cm; Right : out Distance_cm);
    private
-      Buffer_Size       : Positive := 8;
+      Buffer_Size       : Positive := 5;
       FrontLeft_Buffer  : Distance_Array := (others => 0);
       FrontRight_Buffer : Distance_Array := (others => 0);
       Left_Buffer       : Distance_Array := (others => 0);

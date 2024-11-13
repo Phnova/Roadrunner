@@ -1,0 +1,46 @@
+import math
+
+# Define the tasks with their worst-case computation times, periods, and priorities
+tasks = [
+    {"name": "Sense", "C": 1, "T": 50, "priority": 3},
+    {"name": "Think", "C": 12, "T": 90, "priority": 2},
+    {"name": "Act", "C": 125, "T": 300, "priority": 1},
+]
+
+# Sort tasks by priority (highest first)
+tasks = sorted(tasks, key=lambda x: -x["priority"])
+
+
+# Calculate worst-case response time (WCRT) for each task
+def calculate_wcrt(tasks):
+    response_times = {}
+    iteration_counts = {}
+    for i, task in enumerate(tasks):
+        # Initialize response time to the computation time of the task
+        R = task["C"]
+        previous_R = -1  # Starting value for convergence comparison
+        iterations = 0  # Counter for the number of iterations
+        print(f"\nCalculating WCRT for task '{task['name']}'")
+
+        # Iteratively compute response time until convergence within tolerance
+        while abs(R - previous_R) > 1e-7:  # Higher precision to reduce premature convergence
+            previous_R = R
+            interference = sum(
+                (R / tasks[j]["T"]) * tasks[j]["C"]
+                for j in range(i)
+            )
+            R = task["C"] + interference
+            iterations += 1
+
+            # Print each iteration result
+            print(f"  Iteration {iterations}: R = {R:.10f}")
+
+        response_times[task["name"]] = round(R, 7)  # Round only after convergence
+        iteration_counts[task["name"]] = iterations
+    return response_times, iteration_counts
+
+
+# Run the WCRT calculation and print results
+wcrt_results, iteration_counts = calculate_wcrt(tasks)
+for task_name, wcrt in wcrt_results.items():
+    print(f"\nTask {task_name} WCRT: {wcrt} seconds (converged in {iteration_counts[task_name]} iterations)")

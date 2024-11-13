@@ -41,7 +41,7 @@ package body MyController_empty is
          -- Write timing to terminal
          Put_Line("Sense Task Duration:       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
          -- Task worst case is ~200ms, 50ms overhead
-         delay until myClock + Milliseconds(350);
+         delay until myClock + Milliseconds(300);
       end loop;
    end sense;
 
@@ -99,7 +99,10 @@ package body MyController_empty is
             end if;
             if DistanceLeft < 20 and DistanceRight < 20 then
                MotorHandling.SetDirection(Forward);
-            end if;          
+            end if; 
+            if DistanceFrontLeft < 40 and DistanceFrontRight < 40 and DistanceLeft < 40 and DistanceRight < 40 then
+               MotorHandling.SetDirection(Stop);
+            end if;         
 
          end if;
 
@@ -126,7 +129,7 @@ package body MyController_empty is
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
         endTime := Clock;
         Put_Line("Act Task Duration  :       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-        delay until myClock + Milliseconds(40);
+        delay until myClock + Milliseconds(90);
      end loop;
   end act;
    
