@@ -15,28 +15,28 @@ package MyController_empty is
    type Distance_Array is array (Buffer_Index) of Distance_cm;
    type DistanceZones is (Close, Medium, Far);
    
-   task Sense with Priority => 3;
+   task Sense  with Priority  => 3;
 
-   task Think with Priority=> 2; 
+   task Think  with Priority  => 2; 
    
-   task Act with Priority=> 1;
+   task Act    with Priority  => 1;
 
-   -- Protected 
+
    protected DistanceHandling is
       procedure MultiDistance (FrontLeft : Distance_cm; FrontRight : Distance_cm; Left : Distance_cm; Right : Distance_cm);
 
-      function GetFrontLeftDistance return Distance_cm;
-      function GetFrontRightDistance return Distance_cm;
-      function GetLeftDistance return Distance_cm;
-      function GetRightDistance return Distance_cm;
+      function GetFrontLeftDistance    return Distance_cm;
+      function GetFrontRightDistance   return Distance_cm;
+      function GetLeftDistance         return Distance_cm;
+      function GetRightDistance        return Distance_cm;
 
    private
       Distance : Distance_cm := 0;
 
-      SensorFrontLeftDistance : Distance_cm := 0;
-      SensorFrontRightDistance : Distance_cm := 0;
-      SensorRightDistance : Distance_cm := 0;
-      SensorLeftDistance : Distance_cm := 0;
+      SensorFrontLeftDistance    : Distance_cm := 0;
+      SensorFrontRightDistance   : Distance_cm := 0;
+      SensorRightDistance        : Distance_cm := 0;
+      SensorLeftDistance         : Distance_cm := 0;
 
       WhatZone : DistanceZones;
 
@@ -47,7 +47,7 @@ package MyController_empty is
       procedure SetDirection (V : Directions);
       procedure DriveVehicle (V : Directions);
    private
-      DriveDirection : Directions := Stop;
+      DriveDirection             : Directions := Stop;
    end MotorHandling;
 
    
@@ -62,9 +62,9 @@ package MyController_empty is
       Left_Buffer       : Distance_Array := (others => 0);
       Right_Buffer      : Distance_Array := (others => 0);
 
-      Count : Natural := 0;  -- Number of items currently in buffer
-      Read_Index  : Buffer_Index := 1;
-      Write_Index : Buffer_Index := 1;
+      Count             : Natural      := 0;  -- Number of items currently in buffer
+      Read_Index        : Buffer_Index := 1;
+      Write_Index       : Buffer_Index := 1;
    end SensorBuffer;
 
 
