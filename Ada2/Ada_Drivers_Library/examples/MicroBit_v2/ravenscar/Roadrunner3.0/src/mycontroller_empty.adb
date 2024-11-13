@@ -39,9 +39,9 @@ package body MyController_empty is
          -- End timing
          endTime := Clock;
          -- Write timing to terminal
-         --Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Sense Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
          -- Task worst case is ~200ms, 50ms overhead
-         delay until myClock + Milliseconds(340);
+         delay until myClock + Milliseconds(350);
       end loop;
    end sense;
 
@@ -70,16 +70,10 @@ package body MyController_empty is
          if Buffer.Get_Data then
             Buffer.Retrieve_Data(DistanceFrontLeft, DistanceFrontRight, DistanceLeft, DistanceRight);
 
-            --Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
-            --Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
-            --Put_Line("Left:         " & Distance_cm'Image(DistanceLeft));
-            --Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
-
-
-            --Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
-            --Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
-            --Put_Line("Left:         " & Distance_cm'Image(DistanceLeft));
-            --Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
+            Put_Line("FrontLeft:    " & Distance_cm'Image(DistanceFrontLeft));
+            Put_Line("FrontRight:   " & Distance_cm'Image(DistanceFrontRight));
+            Put_Line("Left:         " & Distance_cm'Image(DistanceLeft));
+            Put_Line("Right:        " & Distance_cm'Image(DistanceRight));
 
             -- Process data here
             -- Example: Check conditions and set directions based on the retrieved data
@@ -110,7 +104,7 @@ package body MyController_empty is
          end if;
 
          endTime := Clock;
-         --Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Think Task Duration: " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
 
          delay until myClock + Milliseconds(50);
       end loop;
@@ -131,7 +125,7 @@ package body MyController_empty is
         MotorHandling.DriveVehicle(MotorHandling.GetDirection);
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
          endTime := Clock;
-         --Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
+         Put_Line("Act Task Duration:     " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
         delay until myClock + Milliseconds(40);
      end loop;
   end act;
