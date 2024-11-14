@@ -41,7 +41,7 @@ package body MyController_empty is
          -- Write timing to terminal
          Put_Line("Sense Task Duration:       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
          -- Task worst case is ~200ms, 50ms overhead
-         delay until myClock + Milliseconds(300);
+         delay until myClock + Milliseconds(350);
       end loop;
    end sense;
 
@@ -129,7 +129,7 @@ package body MyController_empty is
         --Put_Line ("Direction is: " & Directions'Image (MotorHandling.GetDirection));
         endTime := Clock;
         Put_Line("Act Task Duration  :       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-        delay until myClock + Milliseconds(90);
+        delay until myClock + Milliseconds(40);
      end loop;
   end act;
    

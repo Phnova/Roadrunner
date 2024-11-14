@@ -17,9 +17,9 @@ package MyController_empty is
    
    task Sense  with Priority  => 3;
 
-   task Think  with Priority  => 1; 
+   task Think  with Priority  => 2; 
    
-   task Act    with Priority  => 2;
+   task Act    with Priority  => 1;
 
 
    protected DistanceHandling is
