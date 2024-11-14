@@ -40,7 +40,7 @@ package body MyController_empty is
          endTime := Clock;
          -- Write timing to terminal
          Put_Line("Sense Task Duration:       " & Duration'Image(To_Duration(endTime - myClock)) & " seconds");
-         -- Task worst case is ~200ms, 50ms overhead
+         
          delay until myClock + Milliseconds(350);
       end loop;
    end sense;
@@ -56,11 +56,6 @@ package body MyController_empty is
       DistanceFrontRight   : Distance_cm := 0;
       DistanceRight        : Distance_cm := 0;
       DistanceLeft         : Distance_cm := 0;  
-   
-      ZoneFrontLeft        : DistanceZones;
-      ZoneFrontRight       : DistanceZones;
-      ZoneLeft             : DistanceZones;
-      ZoneRight            : DistanceZones;
 
    begin
       loop
@@ -133,55 +128,6 @@ package body MyController_empty is
      end loop;
   end act;
    
-   protected body DistanceHandling is
-      
-      
-      procedure MultiDistance (FrontLeft : Distance_cm; FrontRight : Distance_cm; Left : Distance_cm; Right : Distance_cm) is 
-      begin 
-         if FrontLeft > 300 or FrontLeft = 0 then 
-            SensorFrontLeftDistance := 400;
-         else
-            SensorFrontLeftDistance := FrontLeft;
-         end if;
-         if FrontRight > 300 or FrontRight = 0 then
-            SensorFrontRightDistance := 400;
-         else 
-            SensorFrontRightDistance := FrontRight;
-         end if;
-
-         if Left > 300 or Left = 0 then 
-            SensorLeftDistance := 400;
-         else
-            SensorLeftDistance := Left;
-         end if;
-
-         if Right > 300 or Right = 0 then 
-            SensorRightDistance := 400;
-         else
-            SensorRightDistance := Right;
-         end if;
-      end MultiDistance;
-
-      function GetFrontLeftDistance return Distance_cm is
-      begin
-         return SensorFrontLeftDistance;
-      end GetFrontLeftDistance;
-      function GetFrontRightDistance return Distance_cm is
-      begin
-         return SensorFrontRightDistance;
-      end GetFrontRightDistance;
-
-      function GetLeftDistance return Distance_cm is
-      begin
-         return SensorLeftDistance;
-      end GetLeftDistance;
-      function GetRightDistance return Distance_cm is
-      begin
-         return SensorRightDistance;
-      end GetRightDistance;
-
-   end DistanceHandling;   
-
 
 
    protected body MotorHandling is
